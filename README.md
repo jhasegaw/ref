@@ -1,4 +1,4 @@
-#ref
+#ref My bibtex database
 
 This repo is just a place to store my personal bibtex file.
 This file contains, more or less, every article I've ever read and
