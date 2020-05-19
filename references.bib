@@ -7,6 +7,7 @@
 @string{CL = {Computational Linguistics}}
 @string{CLEAR = "Classification of Events, Activities and Relationships"}
 @string{cliaws = "NAACL HLT Cross-Language Information Access Workshop (CLIAWS)"}
+@string{cocosda =  "International Conference COCOSDA"}
 @string{cvpr = "{IEEE} Conf. Computer Vision and Pattern Recogn. (CVPR)"}
 @string{embs = "Internat. Conf. {IEEE} Engineering in Medicine and Biology Society"}
 @string{diss = "{ISCA} Workshop on Disfluency in Spontaneous Speech"}
@@ -53,7 +54,7 @@
 @string{taccess = "{ACM} Trans. Accessible Computing"}
 @string{talip = "{ACM} Trans. Asian Language Information Processing"}
 @string{tae = "{IEEE} Trans. Audio and Electro­Acoust."}
-@string{tasl = "{IEEE} Trans. Audio, Speech and Language"}
+@string{tasl = "{IEEE/ACM} Transactions on Audio, Speech and Language"}
 @string{tassp = "{IEEE} Trans. Acoustics, Speech, and Signal Processing"}
 @string{tbme = "{IEEE} Trans. Biomed. Eng."}
 @string{tc = "{IEEE} Trans. Comm."}
@@ -256,6 +257,22 @@
  volume="45",
  year="1993"
 }
+
+@inproceedings{Adams2017,
+ author="Oliver Adams and Trevor Cohn and Graham Neubig and Alexis Michaud",
+ title="Phonemic Transcription of Low-Resource Tonal Languages",
+ booktitle="Proceedings of Australasian Language Technology Association Workshop",
+ pages="53-60",
+ year="2017"
+ }
+
+@INPROCEEDINGS{Adams2019,
+ author={O. {Adams} and M. {Wiesner} and S. {Watanabe} and D. {Yarowsky}},
+ booktitle=naacl,
+ title={Massive Multilingual Adversarial Speech Recognition},
+ year={2019},
+ keywords="multilingual CTC"
+ }
 
 @inproceedings{Adams02,
  author="R.M. Adams and B. Stancampiano and M. McKenna and D. Small",
@@ -1086,6 +1103,17 @@ year="2016"
  title="Grammar Fragment Acquisition using Syntactic and Semantic
      Clustering",
  year="1998"
+}
+
+@inproceedings{Argyriou2008,
+ keywords="transfer learning",
+ author="Andreas Argyriou and Charles A. Micchelli and Mssimiliano Pontil and Yiming Yang",
+ title="A Spectral Regularization Framework for Multi-Task Structure Learning",
+ booktitle="Proc. Neural Information Processing Systems",
+ year="2008",
+ abstract="learns a linear function, for each of T distinct tasks, regularized by a weighted loss
+  of the projection into a lower-dimensional subspace that is common across the tasks.
+  Projection-loss weighting function is learned along with the task-dependent linear regressors"
 }
 
 @phdthesis{Arnfield94,
@@ -1930,6 +1958,24 @@ year={2008},
  year="1981"
 }
 
+@article{Barr2003,
+ author="Victoria J. Barr and Sylvia Robinson and Brenda Marin-Link and
+  Lisa Underhill and Anita Dotts and Darlene Ravensdale and Sandy Salivaras",
+ title="The Expanded Chronic Care Model: An Integration of Concepts and
+  Strategies from Population Health Promotion and the Chronic Care Model",
+ journal="Hospital Quarterly",
+ volume="7",
+ number="1",
+ pages="73-82",
+ year="2003",
+ keywords="type II diabetes self-management, chronic care",
+ abstract="In the Chronic Care Model, improved functional and clinical outcomes
+  for disease management are the result of productive interactions between
+  informed, activated patients and the prepared, proactive practice team of
+  clinicians and healthcare professionals.  The Expanded CCM integrates 
+  CCM into community and population health."
+}
+
 @article{Barras06,
  author="Claude Barras and Xuan Zhu and Sylvain Meignier and Jean-Luc Gauvain",
  title="Multistage Speaker Diarization of Broadcast News",
@@ -2030,6 +2076,22 @@ year={2008},
  volume="3",
  number="3",
  pages="463-482"
+}
+
+@misc{Baskar2019,
+ title="Semi-supervised Sequence-to-sequence ASR using Unpaired Speech and Text",
+ author=" Murali Karthick Baskar and Shinji Watanabe and Ramon Astudillo and Takaaki Hori and
+  Lukáš Burget and Jan {\v{C}}ernock{\'{y}}",
+ howpublished="https://arxiv.org/pdf/1905.01152.pdf",
+ year="2019",
+ keywords="cycle-consistent training, speech to text to speech, transfer learning,
+  under-resourced languages",
+ abstract="improves their previous text-to-encoder framework by proposing 
+  end-to-end differentiable losses for ASR->TTS and TTS->ASR using an auxiliary
+  X-vector to encode speaker identity.  Thus the ASR->TTS loss is the 
+  expected loss, over all Yk constructed by ASR from X, of the TTS X* constructed
+  from Yk and from f(X) the X-vector.  Ltts is turned into a reward term using the
+  REINFORCE algorithm as in the TTE system."
 }
 
 @article{Bass99,
@@ -2901,14 +2963,21 @@ year={2008},
  editor="L. Bottou and O. Chapelle and D. Decoste and J. Weston"
 }
 
-@inproceedings{Bengio1<2,
+@inproceedings{Bengio12,
+ keywords="transfer learning",
  author="Yoshua Bengio",
  title="Deep learning of representations for unsupervised and
    transfer learning",
  booktitle="JMLR: Proceedings of Unsupervised and Transfer
    Learning Challenge and Workshop",
  pages="17--36",
- year="2012"
+ year="2012",
+ abstract="presents winning system in the Unsupervised and Transfer Learning Challenge, in which
+  labels and probabilities were sometimes completely different from training data.  great review
+  of 1.2 PCA, manifolds, sparse codes, 1.3 deep circuits can represent, in polynomial time, functions
+  that require exponential timne in a shallow circuit, 2. deep belief networks, with fine-tuning for
+  labeled data, but for transfer learning, end it with a PCA layer learned on the test data,
+  3. PCA, Norm, DAE, CAE as layers"
 }
 
 @article{Benjamin00,
@@ -3790,6 +3859,28 @@ pages="1211-1215"
  volume="IT-8",
  year="1962"
 }
+
+@inproceedings{Blitzer2008,
+title = {Learning Bounds for Domain Adaptation},
+author = {John Blitzer and Crammer, Koby and Kulesza, Alex and Fernando Pereira and Jennifer Wortman},
+booktitle = {Advances in Neural Information Processing Systems 20},
+editor = {J. C. Platt and D. Koller and Y. Singer and S. T. Roweis},
+pages = {129--136},
+year = {2008},
+publisher = {Curran Associates, Inc.},
+url = {http://papers.nips.cc/paper/3212-learning-bounds-for-domain-adaptation.pdf},
+abstract="let s be source, t be target. 
+ dHdH(Ds,Dt)=2sup|PrDs(h,h' disagree)-PrDt(h,h' disagree)| can be estimated
+ empirically (dhat) using m' unlabeled samples from both Ds and Dt, then
+ error_t(h)<=error_S(h)+0.5 dhat(Ds,Dt)+4sqrt((2dlog(m')+log(4/delta))/m')+lambda w/prob 1-delta,
+ where d is the VC dimension, and lambda=min_h(error_t(h)+error_s(h)).   Difference between s 
+ and t in the labeling function is wholly captured by lambda, the best-possible hypothesis.
+ The effect of differences in the evidence distribution, then, are captured by measuring 
+ dHdH empirically using unlabeled data, and bounding the difference between the empirical and true values.
+ So error_t <= error_s + error caused by evidence distributions + error necessarily caused by
+ labeling differences if the best hypothesis is chosen."
+}
+
 
 @book{Bloch42,
  address="Baltimore",
@@ -5057,7 +5148,7 @@ pages="1211-1215"
 }
 
 @inproceedings{Byrne01a,
- author="Bill Byrne",
+ author="William Byrne",
  booktitle="NIST 2001 Workshop on Speech Transcription",
  keywords="recognition, systems",
  title="The Johns Hopkins University 2001 Large Vocabulary
@@ -5077,6 +5168,17 @@ pages="1211-1215"
  year="1994"
 }
 
+@inproceedings{Byrne2000,
+ author="William Byrne and Peter Beyerlein and Juan M. Huerta and Sanjeev Khudanpur and 
+  Bhaskara Marthi and John J. Morgan and Nino Peterek and Joseph Picone and Dimitra Vergyri and W. Wang",
+ title="Towards language independent acoustic modeling",
+ booktitle=icassp,
+ year="2000",
+ doi="10.1109/ICASSP.2000.859138",
+ pages="1029-1032",
+ abstract="We describe procedures and experimental  results using speech from diverse source languages to build an ASR  system for a single tar- get language. This work is intended to improve ASR in languages for  which  large amounts of training data  are not available. We have developed both  knowledge-based and automatic methods to map phonetic  units  from the source languages to the target  lan- guage. We employed HMM adaptation  techniques and Discrimi- native Model  Combination to combine acoustic  models  from the individual source languages for recognition of speech in the tar- get  language. Experiments are described in which Czech Broad- cast News is transcribed using acoustic models trained  from  small amounts of Czech read  speech augmented by English, Spanish, Russian, and Mandarin  acoustic models."
+ }
+ 
 @inproceedings{Byrne01b,
  author="W. Byrne and V. Venkataramani and T. Kamm and T. F. Zheng
      and Z. Song and P. Fung and Y. Liuand U. Ruhi",
@@ -5918,141 +6020,17 @@ ISSN={1520-6149},}
  year="2000"
 }
 
-@mastersthesis{Chen91,
- address="Cambridge, MA",
- author="Marilyn Y. Chen",
- keywords="voice quality, nasals",
- month="August",
- school="MIT",
- superviser="K. N. Stevens",
- title="Acoustic Parameters of Nasal Vowels of the Hearing
-     Impaired",
- year="1991"
+@inproceedings{ChenBarry2004,
+ address="Jeju Island, Korea",
+ author="Barry Chen and Qifeng Zhu and Nelson Morgan",
+ booktitle=interspeech,
+ pages="925-8",
+ title="Learning Long-Term Temporal Features in {LVCSR} Using
+     Neural Networks",
+ year="2004"
 }
 
-@article{Chen92,
- author="J.-H. Chen and R. V. Cox and Y.-C. Lin and N. Jayant and M.
-     J. Melchner",
- journal="IEEE J. Sel. Areas Commun.",
- keywords="speech coding",
- pages="830-849",
- title="A low delay {CELP} coder for the {CCITT} 16 kb/s speech
-     coding standard",
- volume="10",
- year="1992"
-}
-
-@article{Chen95,
- author="J.-H. Chen and A. Gersho",
- journal="{IEEE} Trans. Speech Audio Process.",
- number="1",
- pages="59-71",
- title="Adaptive postfiltering for quality enhancement of coded
-     speech",
- volume="3",
- year="1995"
-}
-
-@inproceedings{Chen97,
- author="Fangxin Chen and Aleksandar Kostov",
- booktitle="Proc. International Conference of the IEEE Engineering in
-     Medicine and Biology Society",
- pages="1436-1439",
- title="Optimization of dysarthric speech recognition",
- year="1997"
-}
-
-@inproceedings{Chen98,
- address="Los Angeles, CA",
- author="Lawrence S. Chen and Hai Tao and Thomas S. Huang and T.
-     Miyasato and R. Nakatsu",
- booktitle="Proc. IEEE Workshop on Multimedia Signal Processing",
- month="Dec.",
- pages="83-88",
- title="Emotion Recognition From Audiovisual Information",
- year="1998"
-}
-
-@inproceedings{Chen99a,
- author="C. Julian Chen",
- booktitle=eurospeech,
- keywords="understanding, parsing, rich text annotation",
- pages="447-450",
- title="Speech Recognition with Automatic Punctuation",
- year="1999"
-}
-
-@article{Chen99b,
- author="Stanley F. Chen and Joshua Goodman",
- journal=jcsl,
- keywords="language modeling, recognition",
- pages="359-394",
- title="An empirical study of smoothing techniques for language
-     modeling",
- volume="13",
- year="1999"
-}
-
-@inproceedings{Chen00a,
- address="Beijing",
- author="Marilyn Chen",
- booktitle=icslp,
- keywords="speech recognition, acoustic correlates, distinctive
-     features",
- pages="636-639",
- title="Nasal Landmark Detection",
- year="2000"
-}
-
-@article{Chen00b,
- abstract="compares Chen-Goodman and other smoothing techniques with
-     maximum entropy smoothing. ME smoothing more
-     computationally intensive, but ME smoothing optimally
-     selects discounting parameter for each word count",
- author="Stanley F. Chen and Ronald Rosenfeld",
- institution="ibm",
- journal=tsap,
- keywords="language modeling, stochastic grammar, maximum entropy",
- number="1",
- pages="37-50",
- title="A Survey of Smoothing Techniques for {ME} Models",
- volume="8",
- year="2000"
-}
-
-@techreport{Chen08,
- abstract="demonstrates that the sum of feature magnitudes is a good estimate
-   of generalization error, and is the theoretically precise measure,
-   for maxent language models.  proposes creating class-based language
-   models to take advantage of this; the best is model M",
- author="Stanley Chen",
- institution="IBM",
- year=2008,
- title="Performance Prediction for Exponential Language Models",
- url="http://www.ee.columbia.edu/~stanchen/papers/c033d1.pdf",
- number="C033D1"
-}
-
-@inproceedings{Chen00c,
- author="Willa S. Chen and Abeer Alwan",
- booktitle="Proc. Int. Conf. Spoken Lang. Proc.",
- keywords="phonetics, acoustic correlates",
- title="Place of articulation cues for voiced and voiceless
-     plosives and fricatives in syllable-initial position",
- year="2000"
-}
-
-@article{Chen01,
- author="Helen Chen and Kenneth N. Stevens",
- journal=jslhr,
- pages="1300-1314",
- title="An Acoustical Study of the Fricative /s/ in the Speech of
-     Individuals with Dysarthria",
- volume="44",
- year="2001"
-}
-
-@article{Chen02,
+@article{ChenBerlin2002,
  abstract="document retrieval using LSA-like measurement, but features
      include both whole words, syllables, and temporally
      separated syllable pairs",
@@ -6068,7 +6046,91 @@ ISSN={1520-6149},}
  volume="10"
 }
 
-@inproceedings{Chen03a,
+@article{ChenBin2007,
+ abstract="MMSE-SA speech enhancement method is rederived assuming
+     that speech Fourier coefficients are Laplacian, noise is
+     Gaussian",
+ author="Bin Chen and Philipos C. Loizou",
+ journal=jsc,
+ pages="134-143",
+ title="A {Laplacian}-based {MMSE} estimator for speech
+     enhancement",
+ volume="49",
+ year="2007"
+}
+
+@inproceedings{ChenCharles2016,
+ author = "Charles Chen and Razvan Bunescu and Li Xu and Chang Liu",
+ title = "Tone Classification in {M}andarin {C}hinese using Convolutional Neural Networks",
+ booktitle = "Interspeech",
+ year = "2016",
+ keywords="DNN tone recognition"
+ }
+
+@inproceedings{ChenFangxin1997,
+ author="Fangxin Chen and Aleksandar Kostov",
+ booktitle="Proc. International Conference of the IEEE Engineering in
+     Medicine and Biology Society",
+ pages="1436-1439",
+ title="Optimization of dysarthric speech recognition",
+ year="1997"
+}
+
+@article{ChenHelen2001,
+ author="Helen Chen and Kenneth N. Stevens",
+ journal=jslhr,
+ pages="1300-1314",
+ title="An Acoustical Study of the Fricative /s/ in the Speech of
+     Individuals with Dysarthria",
+ volume="44",
+ year="2001"
+}
+
+@article{ChenJuinHwey92,
+ author="Juin-Hwey Chen and Richard V. Cox and Yen-Chun Lin and Nikil Jayant and Melvin
+     J. Melchner",
+ journal="IEEE J. Sel. Areas Commun.",
+ keywords="speech coding",
+ pages="830-849",
+ title="A low delay {CELP} coder for the {CCITT} 16 kb/s speech
+     coding standard",
+ volume="10",
+ year="1992"
+}
+
+@article{ChenJuinHwey95,
+ author="Juin-Hwey Chen and Alan Gersho",
+ journal="{IEEE} Trans. Speech Audio Process.",
+ number="1",
+ pages="59-71",
+ title="Adaptive postfiltering for quality enhancement of coded
+     speech",
+ volume="3",
+ year="1995"
+}
+
+@inproceedings{ChenJulian1999,
+ author="C. Julian Chen",
+ booktitle=eurospeech,
+ keywords="understanding, parsing, rich text annotation",
+ pages="447-450",
+ title="Speech Recognition with Automatic Punctuation",
+ year="1999"
+}
+
+@article{ChenKe2011,
+ author="Ke Chen and Ahmad Salman",
+ title="Learning Speaker-Specific Characteristicswith a Deep Neural Architecture",
+ journal=tnn,
+ volume="22",
+ number="11",
+ year="2011",
+ pages="1744-1756",
+ abstract="proposed Siamese networks, pre-trained using triplet loss, for speaker identification
+  and speaker clustering"
+  }
+  
+@inproceedings{ChenKen2003a,
  address="Geneva",
  author="Ken Chen and Sarah Borys and Mark Hasegawa-Johnson",
  booktitle=eurospeech,
@@ -6078,7 +6140,7 @@ ISSN={1520-6149},}
  year="2003"
 }
 
-@unpublished{Chen03b,
+@unpublished{ChenKen2003b,
  author="Ken Chen and Mark Hasegawa-Johnson",
  note="Software available at http://www.isle.uiuc.edu/software",
  title="{HDK}: Extensions of {HTK} for explicit-duration hidden
@@ -6086,7 +6148,7 @@ ISSN={1520-6149},}
  year="2003"
 }
 
-@inproceedings{Chen03c,
+@inproceedings{ChenKen2003c,
  address="Virgin Islands",
  author="Ken Chen and Mark Hasegawa-Johnson",
  booktitle=asru,
@@ -6096,17 +6158,7 @@ ISSN={1520-6149},}
  year="2003"
 }
 
-@inproceedings{Chen04a,
- address="Jeju Island, Korea",
- author="Barry Chen and Qifeng Zhu and Nelson Morgan",
- booktitle=interspeech,
- pages="925-8",
- title="Learning Long-Term Temporal Features in {LVCSR} Using
-     Neural Networks",
- year="2004"
-}
-
-@inproceedings{Chen04b,
+@inproceedings{ChenKen2004b,
  author="Ken Chen and Mark Hasegawa-Johnson and Aaron Cohen",
  booktitle=icassp,
  title="An Automatic Prosody Labeling System Using {ANN}-Based
@@ -6115,7 +6167,7 @@ ISSN={1520-6149},}
  year="2004"
 }
 
-@inproceedings{Chen04c,
+@inproceedings{ChenKen2004c,
  address="Jeju Island, Korea",
  author="Ken Chen and Mark Hasegawa-Johnson",
  booktitle=interspeech,
@@ -6125,7 +6177,7 @@ ISSN={1520-6149},}
  year="2004"
 }
 
-@inproceedings{Chen04d,
+@inproceedings{ChenKen2004d,
  address="Nara, Japan",
  author="Ken Chen and Mark Hasegawa-Johnson",
  booktitle=speechprosody,
@@ -6134,7 +6186,7 @@ ISSN={1520-6149},}
  year="2004"
  }
 
-@article{Chen06a,
+@article{ChenKen2006,
  author="Ken Chen and Mark Hasegawa-Johnson and Aaron Cohen and
      Sarah Borys and Sung-Suk Kim and Jennifer Cole and
      Jeung-Yoon Choi",
@@ -6147,7 +6199,62 @@ ISSN={1520-6149},}
  year="2006"
 }
 
-@inproceedings{Chen06b,
+@incollection{ChenKen2007,
+ author="Ken Chen and Mark Hasegawa-Johnson and Jennifer Cole",
+ booktitle="Speech Synthesis and Recognition",
+ title="A factored language model for prosody dependent speech
+     recognition",
+ editor="Vedran Kordic",
+ publisher="Advanced Robotic Systems",
+ year="2007"
+}
+
+@inproceedings{ChenLawrence1998,
+ address="Los Angeles, CA",
+ author="Lawrence S. Chen and Hai Tao and Thomas S. Huang and T.
+     Miyasato and R. Nakatsu",
+ booktitle="Proc. IEEE Workshop on Multimedia Signal Processing",
+ month="Dec.",
+ pages="83-88",
+ title="Emotion Recognition From Audiovisual Information",
+ year="1998"
+}
+
+@article{ChenLiangChieh2018,
+ author="Liang-Chieh Chen and George Papandreou and Iasonos Kokkinos and Kevin Murphy and Alan L. Yuille",
+ title="DeepLab: Semantic image segmentation with deep convolutional nets and fully connected {CRFs}",
+ journal=tpami,
+ year="2018",
+ volume="40",
+ number="4",
+ pages="834-848",
+ keywords="dilated convolution for image segmentation"
+ }
+
+@mastersthesis{ChenMarilyn91,
+ address="Cambridge, MA",
+ author="Marilyn Y. Chen",
+ keywords="voice quality, nasals",
+ month="August",
+ school="MIT",
+ superviser="K. N. Stevens",
+ title="Acoustic Parameters of Nasal Vowels of the Hearing
+     Impaired",
+ year="1991"
+}
+
+@inproceedings{ChenMarilyn2000,
+ address="Beijing",
+ author="Marilyn Chen",
+ booktitle=icslp,
+ keywords="speech recognition, acoustic correlates, distinctive
+     features",
+ pages="636-639",
+ title="Nasal Landmark Detection",
+ year="2000"
+}
+
+@inproceedings{ChenMinhua06,
  abstract="similar to pencil-based signal subspace methods, but for
      the case when noise subspace and signal subspace may not be
      orthogonal in practice",
@@ -6159,7 +6266,47 @@ ISSN={1520-6149},}
  year="2006"
 }
 
-@article{Chen06c,
+@article{ChenStanley1999,
+ author="Stanley F. Chen and Joshua Goodman",
+ journal=jcsl,
+ keywords="language modeling, recognition",
+ pages="359-394",
+ title="An empirical study of smoothing techniques for language
+     modeling",
+ volume="13",
+ year="1999"
+}
+
+@article{ChenStanley2000,
+ abstract="compares Chen-Goodman and other smoothing techniques with
+     maximum entropy smoothing. ME smoothing more
+     computationally intensive, but ME smoothing optimally
+     selects discounting parameter for each word count",
+ author="Stanley F. Chen and Ronald Rosenfeld",
+ institution="ibm",
+ journal=tsap,
+ keywords="language modeling, stochastic grammar, maximum entropy",
+ number="1",
+ pages="37-50",
+ title="A Survey of Smoothing Techniques for {ME} Models",
+ volume="8",
+ year="2000"
+}
+
+@techreport{ChenStanley2008,
+ abstract="demonstrates that the sum of feature magnitudes is a good estimate
+   of generalization error, and is the theoretically precise measure,
+   for maxent language models.  proposes creating class-based language
+   models to take advantage of this; the best is model M",
+ author="Stanley Chen",
+ institution="IBM",
+ year=2008,
+ title="Performance Prediction for Exponential Language Models",
+ url="http://www.ee.columbia.edu/~stanchen/papers/c033d1.pdf",
+ number="C033D1"
+}
+
+@article{ChenStanley2006,
  author="Stanley F. Chen and Brian Kingsbury and Lidia Mangu and Daniel 
   Povey and George Saon and Hagen Soltau and Geoffrey Zweig",
  title="Advances in Speech Transcription at {IBM} Under the 
@@ -6179,30 +6326,25 @@ ISSN={1520-6149},}
    but MPE can not be done that way"
 }
 
-@article{Chen07a,
- abstract="MMSE-SA speech enhancement method is rederived assuming
-     that speech Fourier coefficients are Laplacian, noise is
-     Gaussian",
- author="Bin Chen and Philipos C. Loizou",
- journal=jsc,
- pages="134-143",
- title="A {Laplacian}-based {MMSE} estimator for speech
-     enhancement",
- volume="49",
- year="2007"
+@inproceedings{ChenWilla00,
+ author="Willa S. Chen and Abeer Alwan",
+ booktitle="Proc. Int. Conf. Spoken Lang. Proc.",
+ keywords="phonetics, acoustic correlates",
+ title="Place of articulation cues for voiced and voiceless
+     plosives and fricatives in syllable-initial position",
+ year="2000"
 }
 
-@incollection{Chen07b,
- author="Ken Chen and Mark Hasegawa-Johnson and Jennifer Cole",
- booktitle="Speech Synthesis and Recognition",
- title="A factored language model for prosody dependent speech
-     recognition",
- editor="Vedran Kordic",
- publisher="Advanced Robotic Systems",
- year="2007"
+@misc{ChenX2015,
+author="X Chen and H Fang and T-Y Lin and R Vedantam and S Gupta and P Dollar and C: Zitnick",
+title="Microsoft {COCO} Captions: Data Collection and Evaluation Server",
+year="2015",
+howpublished="https://arxiv.org/abs/1504.00325",
+note="Downloaded 2017-09-14",
+keywords="MSCOCO"
 }
 
-@incollection{Chen09,
+@incollection{ChenYu2009,
  author="Yu Chen and Martin Kay and Andreas Eisele",
  title="Intersecting multilingual data for faster and better statistical 
    translation",
@@ -6211,15 +6353,6 @@ ISSN={1520-6149},}
  abstract="reduce the size of the machine translation by filtering out 
    translation pairs that dont make sense from the point of view of 
    a third language, they call this triangulation"
-}
-
-@misc{Chen2015,
-author="X Chen and H Fang and T-Y Lin and R Vedantam and S Gupta and P Dollar and C: Zitnick",
-title="Microsoft {COCO} Captions: Data Collection and Evaluation Server",
-year="2015",
-howpublished="https://arxiv.org/abs/1504.00325",
-note="Downloaded 2017-09-14",
-keywords="MSCOCO"
 }
 
 @unpublished{Chenausky95,
@@ -6453,6 +6586,17 @@ keywords="MSCOCO"
  title="Hessian-free Optimization for Learning Deep Multidimensional Recurrent Neural Networks",
  booktitle=nips,
  year="2015"
+ }
+
+@INPROCEEDINGS{Cho2018,
+ author={J. {Cho} and M. K. {Baskar} and R. {Li} and M. {Wiesner} and S. H. {Mallidi} and
+  N. {Yalta} and M. {Karafiát} and S. {Watanabe} and T. {Hori}},
+ booktitle=slt,
+ title={Multilingual Sequence-to-Sequence Speech Recognition: Architecture, Transfer Learning,
+  and Language Modeling},
+ year={2018},
+ pages={521-527},
+ keywords="multilingual CTC, cross-lingual CTC"
  }
  
 @phdthesis{ChoT01,
@@ -7191,6 +7335,17 @@ keywords="computer vision, imagenet"
     reducing test-time computational complexity"
 }
 
+@techreport{Collobert2019,
+ author="Ronan Collobert and Awni Hannun and Gabriel Synnaeve",
+ title="A fully differentiable beam search decoder",
+ institution="arXiV",
+ number="1902.06022v1",
+ year="2019",
+ abstract="avoids label bias by performing only global normalization of probabilities, no 
+  local normalization.  So if pi_T is a path matching label sequence T, pi_B is any path 
+  in the beam, and s(pi|X)=logprob(pi|X), then logprob(T|X)=logadd s(pi_T|X)-logadd s(pi_B|X)"
+}
+  
 @article{Colton47,
  author="F. B. Colton",
  journal="Natl. Geographic Mag.",
@@ -7525,6 +7680,38 @@ keywords="computer vision, imagenet"
  year="1995"
 }
 
+@article{Cotter2014,
+ author="Alexander P. Cotter and Nefertiti Durant and April A. Agne and
+  Andrea L. Cherrington",
+ title="Internet interventions to support lifestyle modification for 
+  diabetes management: A systematic review of the evidence",
+ journal="J. Diabetes and its Complications",
+ volume="28",
+ year="2014",
+ pages="243-251",
+ keywords="type II diabetes self-management",
+ abstract="Reviews 9 articles that compared internet-based
+                  interventions (8 RCTs, 1 pre/post: education,
+                  discussion/social networking, exercise and
+                  medication logs, private e-mail/private instruction,
+                  goal setting) to usual-care baselines, with very
+                  poor results overall.  RESULTS: A1C: 2 studies
+                  reported reduced A1C, of 7 that measured it, in
+                  Internet vs. usual-care baseline.  Physical
+                  activity: 1 / 8 showed improvement re: baseline.
+                  Diet: 1 / 5 showed improvement re: baseline.
+                  Medication adherence: 0 / 2 showed improvement re:
+                  baseline.  BMI: 1 / 4 showed reduction re: baseline.
+                  Diabetes knowledge: 2 / 2 showed increase re:
+                  baseline.  Self-efficacy: 1 / 2 showed improvement.
+                  Decrease of internet portal use over time (3-10
+                  months) was reported by both of the studies that
+                  measured it.  One study measured the modality of
+                  user access.  Patients who accessed the portal using
+                  cell phones showed decreased A1C; those who accessed
+                  the portals using home computers did not"
+}
+		  
 @book{Cover06,
  author="Thomas M. Cover and Joy A. Thomas",
  title="Elements of Information Theory",
@@ -7890,6 +8077,20 @@ keywords="computer vision, imagenet"
   speech recognition"
 }
 
+@inproceedings{Dai2007,
+ keywords="transfer learning",
+ author="Wenyuan Dai and Qiang Yang and Gui-Rong Xue and Yong Yu",
+ title="Boosting for Transfer Learning",
+ booktitle=icml,
+ year="2007",
+ pages="193-200",
+ abstract="boosting over a combination of source-domain and target-domain data.
+  in target-domain data, weights increase with each error, as in normal boosting.
+  in source-domain data, weights decrease with each error.  In worst case, it approaches
+  normal boosting in the target domain, but if there is relevant data in the source domain,
+  it is used to add learning power to the process"
+}
+  
 @inproceedings{Dainora01,
  author="Audra Dainora",
  booktitle="{ISCA} Workshop on Prosody in Speech Recognition and
@@ -8730,6 +8931,24 @@ keywords="imagenet"
  year="1923"
 }
 
+@article{Dick2011,
+ keywords="diabetes self-care",
+ author="Jonathan J. Dick and Shantanu Nundy and Maria C. Solomon and Keisha N. Bishop and 
+ Marshall H. Chin and Monica E. Peek",
+ title="Feasibility and Usability of a Text Message-Based Program for Diabetes Self-Management
+ in an Urban African-American Population",
+ journa="J. Diabetes Science and Technology",
+ volume="5",
+ number="5",
+ year="2011",
+ pages="1246-1254",
+ abstract="Automatic frequent text messages about self-care to 18 urban African-Americans, some
+  required responses; half participants initially uncomfortable with text messaging; eighty
+  percent responded to the required-response texts; missed medication doses decreased from 1.6
+  per week to 0.6 per week; patient confidence in diabetes self-management increased significantly
+  during and one month after the pilot"
+}
+  
 @article{Dickey61,
  author="E. P. Dickey",
  journal=jasa,
@@ -8936,6 +9155,24 @@ computational complexity; hidden Markov models; signal processing;
 trees (mathematics);},
 doi={10.1109/LSP.2003.809034},
 ISSN={1070-9908},}
+
+@inproceedings{Do2017,
+ author="Quoc Truong Do and Sakriani Sakti and Satoshi Nakamura",
+ title="Toward Expressive Speech Translation: A Unified Sequence-to-Sequence
+  LSTMs Approach for Translating Words and Emphasis",
+ booktitle=interspeech,
+ year="2017",
+ pages="2640-2644",
+ keywords="prosody, speech-to-speech translation",
+ abstract="prosodic emphasis (real-valued, [0,1]) is used as a feature auxiliary to words 
+  in neural machine translation, and is regenerated in the target speech.  Since NMT of words
+  is trained using much larger corpora, naively adding emphasis decreases BLEU score by 
+  one percent.  Reduction in BLEU is limited by adding the emphasis after the word encoding
+  as a sort of skip-layer in the encoder; emphasis in the translated word is then estimated
+  after the translated word itself is computed, using the decoder state and translated word
+  as inputs.  This skip-encoding brings the BLEU back up to almost baseline, and also 
+  improves F-score of the translated emphasis from 66.7 to 69.0"
+}
 
 @inproceedings{Do12,
  author={Van Hai Do and Xiong Xiao and Eng Siong Chng and Haizhou Li},
@@ -10227,14 +10464,14 @@ training - preliminary results",
 }
 
 
-@book{Fairbanks40,
+@book{Fairbanks60,
  address="New York",
  author="G. Fairbanks",
- publisher="Harper \& Brothers",
- text=" FAIRBANKS, G.: Voice and articulation drillbook, second
-     ed. New York: Harper \& Brothers 1940",
- title="Voice and articulation drillbook, second ed",
- year="1940"
+ publisher="Harper \& Row",
+ title="Voice and articulation drillbook.",
+ edition="2",
+ year="1960",
+ abstract="the book that published the Rainbow Passage, in pages 124-139"
 }
 
 @article{Falk10,
@@ -12444,6 +12681,42 @@ keywords="speech synthesis, speech analysis"
  year="2005"
 }
 
+@article{Garay1995,
+ author="Ma. Eugenia Garay-Sevilla and Laura E. Nava and Juan M. Malacara
+  and Raquel Huerta and Jorge Diaz de Leon and Aurora Mena and Martha E. Fajardo",
+ year="1995",
+ title="Adherence to Treatment and Social Support in Patients With Non-Insulin 
+  Dependent Diabetes Mellitus",
+ journal="J. Diabetes and Its Complications",
+ volume="9",
+ pages="81-86",
+ keywords="type II diabetes self-management", 
+ abstract="200 Patients filled out a survey, 66 items incl. General
+                  data, social support (degree to which it is
+                  received), life style (smoking, drinking, exercise),
+                  structure of the family (one parent, two parents, or
+                  extended), function of the family (problem-solving,
+                  communication, role of the patient, affective
+                  responsiveness, affective involvement, control of
+                  behavior; control of behavior could be “rigid,”
+                  “flexible,” “laissez-faire,” or “chaotic”),
+                  knowledge of diabetes, adherence to diet, adherence
+                  to treatment.  RESULTS: Adherence to diet was
+                  significantly correlated with years since diagnosis,
+                  and social support, but with no other survey
+                  variables; it predicted lower scores of peripheral
+                  neuropathy and blood creatinine.  Adherence to
+                  medication was significantly correlated with social
+                  support and age of the spouse, but with no other
+                  survey variables.  Control of behavior within the
+                  family: rigid control resulted in less medication
+                  adherence.  Medication adherence predicted lower
+                  blood glucose levels and peripheral neuropathy.
+                  Social support was dependent on control of behavior
+                  within the family: chaotic control resulted in less
+                  social support."
+}
+
 @inproceedings{GarciaRomero08,
  author="Daniel Garcia-Romero and Carol Espy-Wilson",
  booktitle=interspeech,
@@ -13662,7 +13935,18 @@ keywords="speech synthesis, speech analysis"
  year="1999"
 }
 
-@techreport{Graff02,
+@article{Graff2002a,
+ author="David Graff",
+ year="2002",
+ title="An overview of Broadcast News corpora",
+ journal=jsc,
+ volume="37",
+ number="1-2",
+ pages="15-26",
+ abstract="describes HUB-4 and other broadcast news corpora"
+ }
+ 
+@techreport{Graff02b,
  author="David Graff and Alvin Martin and David Miller and Mark Przybocki
   and Kevin Walker",
  year="2002",
@@ -14078,6 +14362,30 @@ keywords="speech synthesis, speech analysis"
  title="Insights into spoken language gleaned from phonetic
      transcription of the {S}witchboard corpus",
  year="1996"
+}
+
+@article{Greenwood2017,
+ keywords="type II diabetes self-care",
+ author="Deborah A. Greenwood and Perry M. Gee and Kathy J. Fatkin and
+                  Malinda Peeples",
+ title="A Systematic Review of Reviews Evaluating Technology-Enabled
+                  Diabetes Self-Management Education and Support",
+ journal="J. Diabetes Science and Technology",
+ volume="11",
+ number="5",
+ pages="1015-1027",
+ year="2017",
+ doi="10.1177/1932296817713506",
+ abstract="Reviewed 25 review papers, of which 18 reported significant
+                  reduction in A1c as an outcome measure. Providing
+                  mixtures of (1) communication, (2) patient-generated
+                  health data, (3) education, and (4) feedback.
+                  Technology-enabled diabetes self-management
+                  solutions significant improve A1c.  The most
+                  effective interventions incorporated 2-way
+                  communication, analyzed patient-generated health
+                  data, tailored education, and individualized
+                  feedback."
 }
 
 @article{Gregory01,
@@ -14949,6 +15257,16 @@ keywords="speech synthesis, speech analysis"
  pages="http://www.cs.columbia.edu/~hgs/sip/sip.html",
  title="{SIP}: Session Initiation Protocol",
  year="1999"
+}
+
+@techreport{Hannun2014,
+ author="Awni Hannun and Carl Case and Jared Casper and Bryan Catanzaro and Greg Diamos and Erich Elsen
+   and Ryan Prenger and Sanjeev Satheesh and Shubho Sengupta and Adam Coates and Andrew Y. Ng",
+ title="Deep Speech: Scaling up end-to-end speech recognition",
+ year="2014",
+ institution="arXiv",
+ number="1412.5567",
+ pages="1-12"
 }
 
 @phdthesis{Hanson95a,
@@ -16072,6 +16390,26 @@ severe dysarthria",
  volume="16",
  year="2002"
 }
+
+@inproceedings{He2017,
+ author="Di He and Zuofu Cheng and Mark Hasegawa-Johnson and Deming Chen",
+ title="Using Approximated Auditory Roughness as a Pre-filtering Feature
+  for Human Screaming and Affective Speech AED",
+ booktitle=interspeech,
+ year="2017",
+ pages="1914-1918",
+ doi="http://dx.doi.org/10.21437/Interspeech.2017-593
+ }
+
+@inproceedings{He2015,
+ author="Kaiming He and Xiangyu Zhang and Shaoqing Ren and Jian Sun",
+ title="Deep Residual Learning for Image Recognition",
+ booktitle=cvpr,
+ year="2015",
+ doi="10.1109/CVPR.2016.90",
+ pages="770-778",
+ keywords="resnet"
+ }
 
 @article{He05,
  abstract="speech understanding for information retrieval (IR):
@@ -18002,6 +18340,18 @@ Constrained Adaptive Filters",
  isbn="978-9954-9135-0-5"
  }
 
+@article{Huang2015,
+ author="Po-Sen Huang and Minje Kim and Mark Hasegawa-Johnson and Paris Smaragdis",
+ title="Joint Optimization of Masks and Deep Recurrent Neural Networks for Monaural Source Separation",
+ journal=tasl,
+ year="2015",
+ volume="23",
+ number="12",
+ pages="2136-2147",
+ doi="10.1109/TASLP.2015.2468583"
+ }
+ 
+
 @article{Huang09a,
  author="Thomas S. Huang and Mark Hasegawa-Johnson and Stephen M. Chu and
     Hao Tang",
@@ -18355,6 +18705,16 @@ and optical images of the tongue and lips",
  year="1996"
 }
 
+@article{Hyman1974,
+ author="Larry M. Hyman and Russell G. Schuh",
+ title="Universals of Tone Rules: Evidence from West Africa",
+ journal="Linguistic Inquiry",
+ volume="5",
+ number="1",
+ year="1974",
+ pages="81-115"
+ }
+
 @article{Hyvarinen00,
  author="Aapo Hyv{\"{a}}rinen and Erkki Oja",
  journal="Neural Networks",
@@ -18398,11 +18758,13 @@ and optical images of the tongue and lips",
    phrase-table level, at alignment level, and at the decoding time"
 }
 
-
-@booklet{IPA93,
- author="International Phonetic Association (IPA)",
- title="International Phonetic Alphabet",
- year="1993"
+@booklet{IPA1999,
+ author="International Phonetic Association",
+ title="Handbook of the International Phonetic Association",
+ year="1999",
+  address="Cambridge",
+  publisher="Cambridge University Press",
+  isbn="0-521-63751-1"
 }
 
 @techreport{ISOIEC98a,
@@ -18636,14 +18998,14 @@ and optical images of the tongue and lips",
  year="1993"
 }
 
-@manual{Inc96,
- address="Pawtucket, RI",
- author="{Hibbitt, Karlsson \& Sorensen, Inc.}",
- keywords="finite element method, software",
- publisher="{Hibbit, Karlsson \& Sorensen, Inc.}",
- title="Getting Started with {ABAQUS}/Standard",
- year="1996"
-}
+@INPROCEEDINGS{Inaguma2019,
+ author={H. {Inaguma} and J. {Cho} and M. K. {Baskar} and T. {Kawahara} and S. {Watanabe}},
+ booktitle=icassp,
+ title={Transfer Learning of Language-independent End-to-end {ASR} with Language Model Fusion},
+ year={2019},
+ pages={6096-6100},
+ keywords="multilingual CTC, cross-lingual CTC"
+ }
 
 @article{Ingard53,
  author="U. Ingard",
@@ -23483,6 +23845,16 @@ keywords="multilingual ASR"
  year="1996"
 }
 
+@article{Lee91,
+ author="Linda Lee and Robert G. Loudon and Barbara H. Jacobson and Roger Stuebing",
+ title="Speech Breathing in Patients with Lung Disease",
+ doi="10.1164/ajrccm/147.5.1199",
+ journal="American Review of Respiratory Diseases",
+ volume="147",
+ number="5",
+ year="1991"
+}
+
 @MastersThesis{Lee98b,
  author="S. Lee",
  school="Massachusetts Institute of Technology",
@@ -23520,6 +23892,17 @@ keywords="multilingual ASR"
  volume="105",
  year="1999"
 }
+
+@article{Lee2002,
+ author="Tan Lee and Wai Lau and Y.W. Wong and P.C. Ching",
+ title="Using tone information in Cantonese continuous speech recognition",
+ journal="ACM Transactions on Asian Language Information Processing",
+ year="2002",
+ volume="1",
+ number="1",
+ doi="10.1145/595576.595581",
+ pages="83-102"
+ }
 
 @inproceedings{Lee87,
  address="San Jose, CA",
@@ -23911,6 +24294,17 @@ keywords="multilingual ASR"
  year="1970"
 }
 
+@article{Levy2006,
+ title="International Primary Care Respiratory Group (IPCRG) Guidelines: Diagnosis of respiratory
+  diseases in primary care",
+ author="Mark L. Levya and Monica Fletcher and David B. Price and Thomas Hausend and Ron J. Halberte
+  and Barbara P. Yawn",
+ journal="Primary Care Respiratory Journal",
+ volume="15",
+ pages="20-34",
+ year="2006"
+}
+
 @article{Lewicki02,
  author="M. S. Lewicki",
  journal="Nature Neuroscience",
@@ -23944,6 +24338,14 @@ keywords="multilingual ASR"
  title="Audio-Visual Speech Recognition using Red Exclusion and
      Neural Networks",
  year="2001"
+}
+
+@inproceedings{LiB06,
+ author="Beinan Li and John A. Burgoyne and Ichiro Fujinaga",
+ title="Extending Audacity for Audio Annotation",
+ booktitle="Proc. International Conference on Music Information Retrieval (ISMIR)",
+ pages="379-380",
+ year="2006"
 }
 
 @inproceedings{Li00a,
@@ -23993,6 +24395,15 @@ keywords="multilingual ASR"
  url="hear.beckman.illinois.edu/wiki/Main/Publications"
 }
 
+@inproceedings{Li99,
+ address="Phoenix, AZ",
+ author="Jiayu Li and Alejandro Murua",
+ booktitle="Proc. ICASSP",
+ keywords="speech recognition, statistical acoustic modeling",
+ title="A 2D Extended {HMM} for Speech Recognition",
+ year="1999"
+}
+
 @article{Li18,
  author="Kun Li and Shaoguang Mao and Xu Li and Zhiyong Wu and Helen Meng",
  title="Automatic lexical stess and pitch accent detection for {L2} English speech
@@ -24003,15 +24414,6 @@ keywords="multilingual ASR"
  pages="28-36"
  }
  
-@inproceedings{Li99,
- address="Phoenix, AZ",
- author="Jiayu Li and Alejandro Murua",
- booktitle="Proc. ICASSP",
- keywords="speech recognition, statistical acoustic modeling",
- title="A 2D Extended {HMM} for Speech Recognition",
- year="1999"
-}
-
 @article{Li94,
  author="M. Li and J. G. Brasseur and W. J. Dodds",
  journal="Amer. J. Phys.",
@@ -24056,12 +24458,34 @@ keywords="multilingual ASR"
  year="2005"
 }
 
-@inproceedings{LiB06,
- author="Beinan Li and John A. Burgoyne and Ichiro Fujinaga",
- title="Extending Audacity for Audio Annotation",
- booktitle="Proc. International Conference on Music Information Retrieval (ISMIR)",
- pages="379-380",
- year="2006"
+@inproceedings{Li2020a,
+ author="Xinjian Li and Siddharth Dalmia and Juncheng Li and Matthew Lee and Patrick Littell and
+  Jiali Yao and Antonios Anastasopoulos and David R. Mortensen and Graham Neubig and Alan W. Black
+  and Florian Metze",
+ year="2020"
+ booktitle=icassp,
+ title="Universal Phone Recognition with a Multilingual Allophone System",
+ keywords="multi-lingual speech recognition, phone recognition, cross-language transfer learning",
+ abstract="proposes that language-dependent phoneme set is a linear transform of a 
+  language-independent phone set.  Train on eleven languages using babel, CSJ, voxforge, openSLR25
+  data, with the linear transform initialized as 1 if phoneme can be implemented using given allophone,
+  otherwise 0, initialized by my members of the author list, then trained on training data.
+  With full training data, PER is 73.8 using universal phone set, 25.6 using private phone
+  sets, 25.0 using Allosaurus.  With 1k utts/language the numbers are 78.4, 43.8, 41.8.",
+ pages="8249-8253"
+ doi="10.1109/ICASSP40776.2020.9054362"
+}
+
+@inproceedings{Li2020b,
+ author="Xinjian Li and Siddharth Dalmia and David R. Mortensen and Juncheng Li  and Alan W. Black 
+  and Florian Metze",
+ year="2020"
+ booktitle=aaai,
+ title="Towards Zero-shot Learning for Automatic Phonetic Transcription",
+ keywords="multi-lingual speech recognition, phone recognition, cross-language transfer learning,
+  articulatory features",
+ abstract="proposes that the hidden vector is projected to a vector of articulatory-feature logits
+  which are then used to estimate the probability of each phone in the target language"
 }
 
 @inproceedings{LiX06,
@@ -24271,7 +24695,65 @@ title="The discrimination of speech sounds
  pages="551-578"
 }
 
-@phdthesis{Lickley94,
+@article{Litchman2019,
+ author="Michelle L Litchman and Linda S Edelman",
+ title="Perceptions of the Diabetes Online Community’s Credibility,
+                  Social Capital, and Help and Harm: Cross-Sectional
+                  Comparison Between Baby Boomers and Younger Adults",
+ journal="JMIR Aging",
+ year="2019",
+ volume="2",
+ number="2",
+ doi="10.2196/10857",
+ keywords="type II diabetes self-management",
+ abstract="The use of online health communities such as the diabetes
+                  online community (DOC) is growing. Individuals who
+                  engage in the DOC are able to interact with peers
+                  who have the same medical condition. It is not known
+                  if older adults are perceiving the DOC differently
+                  compared with younger adults. Objective: The purpose
+                  of this study was to explore and understand how the
+                  DOC is perceived in terms of social capital, source
+                  credibility, and help and harm. The findings from
+                  this study will shed light on how users of different
+                  age groups (baby boomers and younger adult
+                  counterparts) perceive DOC use. Methods: This study
+                  represents a subset of participants from a larger
+                  study of DOC users. Baby boomers and younger adults
+                  with diabetes were recruited from the DOC to
+                  participate in a cross-sectional
+                  survey. Demographics, electronic health use (reasons
+                  to join the DOC, DOC intensity, DOC engagement,
+                  internet social capital, and help or harm from the
+                  DOC), source credibility, health-related quality of
+                  life, and diabetes self-care data were collected. We
+                  examined the differences between baby boomer and
+                  younger adult responses. Results: The participants
+                  included baby boomers (N=76) and younger adult
+                  counterparts (N=102). Participants scored their
+                  diabetes health care team (mean 33.5 [SD 8])
+                  significantly higher than the DOC (mean 32 [SD 6.4])
+                  with regard to competence (P<.05) and
+                  trustworthiness (diabetes health care team mean 36.3
+                  [SD 7.1]; DOC mean 33.6 [SD 6.2]; P<.001). High
+                  bonding and bridging social capital correlated with
+                  high DOC intensity (r=.629; P<.001 and r=.676;
+                  P<.001, respectively) and high DOC engagement
+                  (r=.474; P<.01 and r=.507; P≤.01, respectively). The
+                  greater majority (69.8 percrnt) reported the DOC as
+                  being helpful, and 1.8 percent reported that the DOC
+                  had caused minor harm. Baby boomers perceived DOC
+                  credibility, social capital, help, and harm
+                  similarly to their younger adult counterparts.
+                  Comclusions: Baby boomers are using and perceiving
+                  the DOC similarly to younger adults. DOC users find
+                  the DOC to be credible; however, they scored their
+                  health care team higher with regard to competence
+                  and trustworthiness. The DOC is beneficial with low
+                  risk and may augment current diabetes care."
+}
+
+@phdthesis{Lickley94, 
  author="R.J. Lickley",
  school="University of Edinburgh",
  title="Detecting Disfluency in Spontaneous Speech",
@@ -24537,6 +25019,15 @@ title="The discrimination of speech sounds
                   to the development of high quality synthesis."
 }
 
+@inproceedings{Lin93,
+ author="Chih-Heng Lin and Lin-Shan Lee and Pei-Yih Ting",
+ title="A New Framework for Recognition of Mandarin Syllables With Tones Using Sub-Syllabic Units",
+ booktitle=icassp,
+ year="1993",
+ volume="II",
+ pages="227-230"
+ }
+ 
 @phdthesis{Lin90,
  address="Stockholm",
  author="Qiguang Lin",
@@ -25287,14 +25778,23 @@ keywords="MSCOCO"
 }
 
 @inproceedings{Loof2009,
-	Author = {L{\"o}{\"o}f, Jonas and Gollan, Christian and Ney, Hermann},
-	Booktitle = {Proceedings of Interspeech},
-	Date-Added = {2015-09-17 20:13:03 +0000},
-	Date-Modified = {2015-09-21 20:18:54 +0000},
-	Title = {{Cross-language bootstrapping for unsupervised acoustic model training: rapid development of a Polish speech recognition system}},
-	Year = {2009},
-	pages = "88-91"
-	}
+ Author = {L{\"o}{\"o}f, Jonas and Gollan, Christian and Ney, Hermann},
+ Booktitle = {Proceedings of Interspeech},
+ Date-Added = {2015-09-17 20:13:03 +0000},
+ Date-Modified = {2015-09-21 20:18:54 +0000},
+ Title = {{Cross-language bootstrapping for unsupervised acoustic model training: rapid development of a Polish speech recognition system}},
+ Year = {2009},
+ pages = "88-91"
+ }
+
+@incollection{Loos1997,
+ editor="Eugene E. Loos",
+ year="1997",
+ title="What is a phone?",
+ booktitle="LinguaLinks: Glossary of linguistic terms",
+ publisher="SIL International"
+ }
+
 
 @article{Lorenz63,
  author="E. N. Lorenz",
@@ -25515,6 +26015,16 @@ keywords="MSCOCO"
  abstract="here CAPT = practice at home, then post your best production to a discussion 
  board, and let your classmates rate your production, before you ever come to class.
  CAPT improved pronunciation significantly better than the group who only had in-class instruction"
+ }
+
+@article{Luo2019,
+ author="Yi Luo and Nima Mesgarani",
+ title="Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation",
+ journal=tasl,
+ volume="27",
+ number="8",
+ pages="1256-1266",
+ doi="10.1109/TASLP.2019.2915167"
  }
  
 @article{Lupyan10,
@@ -26357,6 +26867,17 @@ keywords="MSCOCO"
  year="1992"
 }
 
+@article{Maslan2011,
+ title="Maximum Phonation Time in Healthy Older Adults",
+ author="Jonathan Maslan and Xiaoyan Leng and Catherine Rees and David Blalock and Susan G. Butler",
+ year="2011",
+ journal="J. Voice",
+ volume="25",
+ number="6",
+ pages="709-713",
+ doi="10.1016/j.jvoice.2010.10.002"
+ }
+ 
 @article{Mason39,
  abstract="derivation of the electrostatic transducer equations",
  author="W. P. Mason",
@@ -27379,6 +27900,14 @@ abstract="chapter one has prompts for eliciting stories
  year="2001"
 }
 
+@inproceedings{Metze2013,
+  author={F. {Metze} and Z. A. W. {Sheikh} and A. {Waibel} and J. {Gehring} and K. {Kilgour} and Q. B. {Nguyen} and V. H. {Nguyen}},
+  booktitle={2013 IEEE Workshop on Automatic Speech Recognition and Understanding},
+  title={Models of tone for tonal and non-tonal languages},
+  year={2013},
+  pages={261-266}
+  }
+
 @article{MeyerEppler51,
  author="W. Meyer-Eppler",
  journal="Akust. Beih.",
@@ -27424,6 +27953,16 @@ keywords="RNN, LSTM, CTC",
 pages="167-174"
 }
 
+@INPROCEEDINGS{Miao2016, 
+ author={Y. {Miao} and M. {Gowayyed} and X. {Na} and T. {Ko} and F. {Metze} and A. {Waibel}}, 
+ booktitle=icassp,
+ title={An empirical exploration of {CTC} acoustic models}, 
+ year={2016},
+ pages={2623-2627},
+ keywords="phone-based CTC"
+}
+
+
 @article{Michaelis97,
  author="D. Michaelis and T. Gramss and H.W. Strube",
  journal="Acta Acustica",
@@ -27446,7 +27985,49 @@ pages="167-174"
  year="1997"
 }
 
-@inproceedings{Miki97,
+@article{Mignerat2014,
+ author="Muriel Mignerat and Liette Lapointe and Isabelle Vedel",
+ year="2014",
+ title="Using telecare for diabetic patients: A mixed systematic review",
+ journal="Health Policy and Technology",
+ volume="3",
+ pages="90-112",
+ keywords="type II diabetes self-management",
+
+ abstract="50 studies were found that describe telecare technologies
+                  for DM type II.  Interventions included
+                  Telemonitoring, Telediagnosis/consultation,
+                  E-learning, Social networking support group.
+                  Technologies included Direct transmission, Smart
+                  phone or PDA, Teleconference, Web site-Internet,
+                  Pager.  Users were almost always patients, sometimes
+                  also doctors, nurses, other.  RESULTS: Health
+                  outcomes: Of 38 measuring A1c, 34 found reductions.
+                  Exceptions could be explained by lack of adherence
+                  to intervention (2) or poor reliability in the
+                  reporting of blood glucose levels (2).  Health
+                  outcomes little improved (# improved/# measured)
+                  included Hyper/Hypoglycemic events (2/4), BMI or
+                  weight (5/13), Cholesterol (1 / 8), Blood pressure
+                  (1 / 6).  Health outcomes frequently improved
+                  included Quality of life (4/7), Self-perceived
+                  health (2/2), Physical activity (5/5), Mental health
+                  (3/3), Nutrition intake (2/2), Pain (2/2).  Other
+                  patient outcomes: Improvements included Knowlede or
+                  self-care (8/8), Travel time (2/2), Social support
+                  (4/4).  Quality of care: Improvements include
+                  Adherence to best practices (15/18), Accessibility
+                  to health services (2/2), Dose of insulin (1/1).
+                  Exceptions could be explained by lack of familiarity
+                  with the technology used (1), technology’s lack of
+                  user-friendliness (1), data collection issues (1).
+                  Satisfaction with care: Improved in 14/16 cases.
+                  Health service use: Service use improved in 5 / 6
+                  cases, Healthcare costs improved in 2/2 cases, Time
+                  spent by clinicians improved in 4/4 cases."
+}
+
+@inproceedings{Miki97, 
  address="Cluj-Napoca",
  author="Nobuhiro Miki and Yingjie Lu and Tohru Yokoyama and
      Yoshihiko Ogawa",
@@ -28174,6 +28755,14 @@ pages="167-174"
  year="1979"
 }
 
+@misc{Moran2019,
+ editor="Steven Moran and Daniel McCloy",
+ year="2019",
+ title="PHOIBLE 2.0",
+ institution="Jena: Max Planck Institute for the Science of Human History",
+ howpublished="(Available online at http://phoible.org, Accessed on 2020-05-04.)"
+ }
+
 @inproceedings{Moreno94,
  abstract="phoneme error rate on NTIMIT is 58.7, about 10 percent
      higher than on TIMIT; downsampled filtered TIMIT error rate
@@ -28258,6 +28847,14 @@ pages="167-174"
  volume="9",
  year="1987"
 }
+
+@book{Morrell2020,
+ editor="Ernest Morrell and Jennifer Rowsell",
+ title="Stories from Inequity to Justice in Literacy Education: Confronting Digital Divides",
+ publisher="Routledge",
+ year="2020",
+ address="New York"
+ }
 
 @book{Morris76,
  address="Boston, MA",
@@ -29020,6 +29617,37 @@ keywords="speech synthesis"
  year="1989"
 }
 
+@article{Neelakurthi2018,
+ author="Arun R Nelakurthi and Angela M Pinto and Curtiss B Cook and Lynne Jones
+  and Mary Boyle and Jieping Ye and Theodoros Lappas and Jingrui He",
+ title="Should patients with diabetes be encouraged to integrate social media into
+  their care plan?",
+ journal="Future Science",
+ year="2018",
+ volume="4",
+ number="7",
+ doi="10.4155/fsoa-2018-0021",
+ keywords="type II diabetes self-care",
+ abstract="Social media has gained prominence as a source for
+                  healthcare information. This study used both online
+                  surveys and surveys of clinic patients with diabetes
+                  (Diabetes Mellitus -- DM) to understand why patients
+                  with diabetes use DM-specific social networking
+                  sites. The authors found that patients go to these
+                  resources to both offer and receive encouragement
+                  for their health condition. Visiting DM-specific
+                  social networking sites influenced more positive
+                  diabetes care behaviors, such as adhering to diet
+                  and exercise, glucose monitoring and insulin
+                  use. Further research is needed to understand how to
+                  incorporate social media into the care of diabetes.
+                  Self-report measures from the following paper might
+                  be useful for us Toobert DJ, Hampson SE, Glasgow
+                  RE. The summary of diabetes self-care activities
+                  measure. Diabetes Care 23, 943–950 (2000)."
+}
+
+
 @article{Neely79,
  abstract="room impulse response is non-minimum-phase and therefore
      not invertible with stable causal system. minimum-phase
@@ -29252,7 +29880,7 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  year="2000"
 }
 
-@article{Nguyen02,
+@article{NguyenLong2002,
  author="Long Nguyen and Spyros Matsuokas and Jason Davenport and
      Francis Kubala and Richard Schwartz and John Makhoul",
  institution="BBN",
@@ -29267,12 +29895,23 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  year="2002"
 }
 
-@inproceedings{Nguyen09,
+@inproceedings{NguyenLong2009,
  author="Long Nguyen and Tim Ng and Kham Nguyen1  and Rabih Zbib2 and John Makhoul",
  title="Lexical and Phonetic Modeling for Arabic Automatic Speech Recognition",
  booktitle=interspeech,
  year="2009"
 }
+
+@inproceedings{NguyenVanHuy2015,
+ author={ {Van Huy Nguyen} and {Chi Mai Luong} and {Tat Thang Vu}},
+ booktitle=cocosda,
+ title={Tonal phoneme based model for {V}ietnamese {LVCSR}},
+ year={2015},
+ pages={118-122},
+ keywords="hybrid DNN-HMM tone and phone recognition"
+ }
+
+
 
 @inproceedings{Nicholson03,
  abstract="map task used to test the claim that disfluency is a
@@ -30307,6 +30946,32 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
    not seem to be consistent"
 }
 
+@article{Osborn2010,
+ keywords="diabetes self-care",
+ author="Chandra Y. Osborn and Sujeev S. Bains and Leonard E. Egede",
+ title="Health Literacy, Diabetes Self.Care, and Glycemic Control in
+                  Adults with Type 2 Diabetes",
+ journal="Diabetes Technology \& Therapeutics",
+ volume="12",
+ number="11",
+ year="2010",
+ pages="913-919",
+ doi="10.1089/dia.2010.0058",
+ abstract="Found the significant connections in a Bayes-net
+                  multifactorial model using path coefficients (beta)
+                  and RMSEA (root mean squared error of
+                  approximation).  Social support is _negatively_
+                  dependent on health literacy, i.e., those with
+                  better health literacy consume less social support.
+                  Health literacy does not directly predict self-care,
+                  nor does it predict diabetes knowledge or diabetes
+                  fatalism, both of which, along with social support,
+                  are significant predictors of self-care.  Self-care
+                  significantly predicts general diet, specific diet,
+                  foot care, blood testing, and A1C (Bayes net shown
+                  in Fig. 1)"
+}
+
 @article{Oshika75,
  author="B. T. Oshika and V. W. Zue and R. V. Weeks and H. Neu and
      J. Aurbach",
@@ -30340,6 +31005,14 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  title="Imaging Heart Motion Using Harmonic Phase {MRI}",
  volume="19",
  year="2000"
+}
+
+@inproceedings{Ostendorf1999,
+ author="Mari Ostendorf",
+ year="1999",
+ title="Moving beyond the `beads-on-a-string' model of speech',
+ booktitle=asru,
+ pages="79-83"
 }
 
 @techreport{Ostendorf97a,
@@ -31187,6 +31860,36 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  year="1997"
 }
 
+@article{Peimani2018,
+ author="Maryam Peimani and Fateme Monjazebi and Robabeh Ghodssi-Ghassemabadi 
+  and Ensieh Nasli-Esfahani",
+ title="A peer support intervention in improving glycemic control in
+                  patients with type 2 diabetes",
+ journal="Patient Education and Counseling",
+ volume="101",
+ number="3",
+ pages="460-466",
+ year="2018",
+ keywords="type II diabetes self-management",
+ abstract="In this randomized controlled trial, 200 patients referred
+                  to a diabetes specialty clinic were allocated to
+                  peer support or control group. Participants in both
+                  groups received usual education by diabetes
+                  educators. Intervention participants worked with the
+                  trained volunteer peers who encouraged participants
+                  to engage in daily self-management and to discuss
+                  and share their experiences and challenges of
+                  diabetes management. The primary outcomes were
+                  HbA1c, BMI, self-care behaviors, self-efficacy and
+                  life quality RESULTS: After 6 months, patients in
+                  the peer support group experienced a significant
+                  decline in mean A1c value (P=0.045). Also, mean
+                  diabetes self-management scores, mean self-efficacy
+                  scores and mean quality of life scores significantly
+                  improved in peer support group compared to control
+                  group (P values <0.001)."
+}
+
 @article{Pelletier02,
  author="Cathy Pelletier",
  journal="The {ASHA} Leader",
@@ -31490,6 +32193,29 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  year="1988"
 }
 
+@article{Perreault2014,
+ author="Leigh Perreault and Kristine Faerch",
+ year="2014",
+ title="Approaching Pre-diabetes",
+ journal="J. Diabetes and its Complications",
+ volume="28",
+ pages="226-233",
+ keywords="type II diabetes self-management",
+ abstract="Yearly progression rate to diabetes in individuals with
+                  pre-diabetes is 3.5-7.0 percent/year, vs. 2
+                  percent/year in their normal glucose tolerance (NGT)
+                  counterparts.  Retinal and cardiovascular
+                  complications are most significantly correlated with
+                  NGT vs. pre-diabetes, not pre- vs. diabetes.  There
+                  are two phenotypes: impaired glucose tolerance (IGT:
+                  140-199 mg/dl 2-h glucose concentration), and
+                  impaired fasting glucose (IFG: 100-125 mg/dl fasting
+                  glucose concentration).  Intensive lifestyle
+                  modification (low-fat hypocaloric diet, exercise
+                  ~150 min/wk) can reduce diabetes incidence in this
+                  group by 25-75 percent."
+}
+
 @article{Perrier92,
  author="Pascal Perrier and Louis-Jean Bo{\"{e}} and Rudolph Sock",
  journal="J. Speech Hear. Res.",
@@ -31790,6 +32516,14 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  title="Lenition of /h/ and glottal stop",
  year="1992"
 }
+
+@inproceedings{Pietrowicz2015,
+ author="Mary Pietrowicz and Mark Hasegawa-Johnson and Karrie Karahalios",
+ title="Acoustic Correlates for Perceived Effort Levels in Expressive Speech",
+ booktitle=interspeech,
+ year="2015",
+ pages="3720-3724"
+ }
 
 @inproceedings{Pimonow62,
  address="Stockholm, Sweden",
@@ -32226,6 +32960,15 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  year="1950"
 }
 
+@book{Potter66,
+ author="Ralph K. Potter and George A. Kopp and Harriet C. Green",
+ title="Visible Speech",
+ edition="2",
+ publisher="Dover Publications",
+ address="New York",
+ year="1966"
+ }
+
 @inproceedings{Povey02,
  abstract="defines minimum word error rate MWE and minimum phone error
      rate MPE and shows that they are the same thing as MMI but
@@ -32575,6 +33318,16 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  four types of tests, thus a total of 3x2x4x2x4=196 possible test items.  Pre vs post-test showed
  learning, and transfer to new voices, but did not show transfer to new words"
 }
+
+@inproceedings{Qu2017,
+ title="Syllable-based acoustic modeling with CTC-SMBR-LSTM",
+ author="Zhongdi Qu and Parisa Haghani and Eugene Weinstein and Pedro Moreno",
+ year="2017",
+ booktitle=icassp,
+ doi="10.1109/ASRU.2017.8268932",
+ pages="173-177",
+ keywords="CTC recognition of tones and syllables" 
+ }
 
 @article{Quatieri86,
  author="Thomas F. Quatieri and Robert J. McAulay",
@@ -33016,16 +33769,21 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  year="1942"
 }
 
-@inproceedings{Rao00,
- abstract="Iterative Wiener Filtering using quantized LP
-     parameterizations of Wiener filters",
- author="Sharath Rao and T.V. Sreenivas and A. Sreenivasa Murthy",
- booktitle=icslp,
- title="Quantized Wiener Filter for Non-Stationary Noise Speech
-     Enhancement",
- year="2000"
+@article{Rao2017,
+ keywords="children's speech, paralinguistics",
+ author="Hrishkesh Rao and Mark A. Clements and Yin Li and Meghan R. Swanson and Joseph Piven and
+  Daniel S. Messinger",
+ title="Paralinguistic Analysis of Children's Speech in Natural Environments",
+ journal="Mobile Health",
+ year="2017",
+ doi="10.1007/978-3-319-51394-2_12",
+ pages="219-238",
+ abstract="Distinguish child laughter versus speech (85 percent), laughter versus fuss (79 percent),
+  laughter versus non-laughter (81 percent) using periodicity of the energy contour, plus
+  open-smile features.  Adding a video smile detector, using audio and video RBMs with a 
+  second-layer fusion RBM followed by an SVM, raises laugh versus non-laugh to 88 percent."
 }
-
+  
 @inproceedings{Rao15,
  author="Kanishka Rao and Fuchun Peng and Ha{\'{s}}im Sak and 
   Francoise Beaufays",
@@ -33039,6 +33797,16 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
   does not outperform phonetisaurus, but phonetisaurus is outperformed
   if the DBLSTM+CTC output is interpreted as an FST and is fstcomposed
   with a 5-gram G2P model"
+}
+
+@inproceedings{Rao00,
+ abstract="Iterative Wiener Filtering using quantized LP
+     parameterizations of Wiener filters",
+ author="Sharath Rao and T.V. Sreenivas and A. Sreenivasa Murthy",
+ booktitle=icslp,
+ title="Quantized Wiener Filter for Non-Stationary Noise Speech
+     Enhancement",
+ year="2000"
 }
 
 @article{Raphaeli98,
@@ -33090,6 +33858,32 @@ keywords="flickr8k"
   journal = {IEEE Trans. on Signal Processing},
   volume = 42,
   pages = {287-320},
+}
+
+@inproceedings{Ravanelli2018,
+ author="Mirco Ravanelli and Yoshua Bengio",
+ title="Speaker Recognition from Raw Waveform Using Sincnet",
+ year="2018",
+ booktitle=slt,
+ doi="10.1109/SLT.2018.8639585",
+ pages="1021-1028"
+ }
+ 
+@misc{Ravi2018,
+ author="Sathya Ravi and Tuan Dinh and Vishnu Lokhande and Vikas Singh",
+ title="Constrained Deep Learning using Conditional Gradient and Applications in Computer Vision",
+ howpublished="https://arxiv.org/pdf/1803.06453.pdf",
+ year="2018",
+ keywords="constrained optimization, deep neural nets",
+ abstract="Conditional gradient (CG) is a constrained optimization algorithm, an alternative
+  to projected gradient descent (PGD).  It is given by W<-eW+(1-e)s, where 
+  s is argmin_W(g^TW) s.t. R(W)<=lambda, i.e., find the W with minimum (maximally negative)
+  projection onto the gradient, then do a convex linear interpolation with the current W.
+  This article demonstrates that CG is far more efficient than PGD in computing each step of
+  gradient descent.  For L1 norm and L-infinity norm the CG steps are less useful than the PGD
+  steps (slower convergence), but for Frobenius norm, nuclear norm, and path norm the CG steps
+  are as useful as PGD and an order of magnitude faster (linear rather than quadratic time,
+  in most cases, can be computed simultaneously with back-propagation)."
 }
 
 @inproceedings{Ravi09,
@@ -33267,6 +34061,23 @@ keywords="flickr8k"
  year="1994"
 }
 
+@article{Regglannini2013,
+ keywords="children's speech, paralinguistics",
+ author="Brian Regglannini and Stephen J. Sheinkopf and Harvey F. Silverman and Xiaoxue Li and
+  Barry M. Lester",
+ title="A Flexible Analysis Tool for the Quantitative Acoustic Assessment of Infant Cry",
+ journal=jslhr,
+ year="2013",
+ volume="56",
+ number="5",
+ pages="1416-1428",
+ doi="10.1044/1092-4388(2013/11-0298)",
+ abstract="discriminate infant cry from silence w/3 percent EER using cepstral voicing detector.
+  Tracked F0 of the infant cry, in range 200-1000Hz, with 90 percent accuracy.  Two new types of cry
+  discussed: (1) voiced fricative cry detected with 5 percent EER, (2) high-voice cry, with
+  F0 between 1000Hz and 5000Hz, detected with 19 percent EER",
+}
+ 
 @article{Reik94,
  author="W. Reik and K. W. Brown and R. E. Slatter and P. Sartori
      and M. Elliott and E. R. Maher",
@@ -34423,6 +35234,15 @@ Thinking, Practice and Research in the Field of Cerebral Palsy",
  year="2001"
 }
 
+@inproceedings{Ryant2014,
+ author = "Neville Ryant and Jiahong Yuan and Mark Liberman",
+ title = "{M}andarin Tone Classification Without Pitch Tracking",
+ booktitle = "2014 IEEE International Conference On Acoustics, Speech And Signal Processing (ICASSP)",
+ year = "2014",
+ keywords="DNN tone  recognition"
+ }
+
+
 @article{Rydbeck76,
  author="N. Rydbeck and C. E. Sundberg",
  journal="IEEE Trans. Communications",
@@ -34477,6 +35297,29 @@ Thinking, Practice and Research in the Field of Cerebral Palsy",
  year="2006"
 }
 
+@article{Saez2011,
+ keywords="diabetes self-care",
+ author="J. {Sa{\'{e}}z de la Fuente} and V. {Granja Bern{\'{a}}} and
+  P. {Lechuga V{\'{a}}zquez} and B. {Otero Perpi{\~{n}}a} and 
+  A. {Herreros de Tejada L{\'{o}}pez Coterilla} and J. {Medina Asensio}",
+ title="Efficiency of the Information Given at Discharge and Adherence of Polymedicated Patients",
+ journal="Farmacia Hospitalaria",
+ volume="35",
+ number="3",
+ year="2011",
+ pages="128-134",
+ abstract="59 patients randomized into two groups according to whether
+                  or not they received verbal and written information
+                  about their treatment at hospital discharge.  More
+                  in control group adherent at discharge (83.3 versus
+                  62.1 percent, odds ratio 0.1-1.1, p=0.07), but in
+                  telephone follow-up 42.1+/09.6 days later, more in
+                  test group were adherent (62.5 versus 88.5, odds
+                  ratio 1.1-19.8, p=0.03).  Differences in deaths,
+                  visits to emergency department, and hospital
+                  readmissions were not significant."
+}
+
 @phdthesis{Sagey86,
  address="Cambridge, MA",
  author="E. Sagey",
@@ -34527,6 +35370,16 @@ Thinking, Practice and Research in the Field of Cerebral Palsy",
  volume="75",
  year="2000"
 }
+
+@INPROCEEDINGS{Sak2015,
+ author={H. {Sak} and A. {Senior} and K. {Rao} and O. {İrsoy} and A. {Graves} and F. {Beaufays}
+  and J. {Schalkwyk}},
+ booktitle=icassp,
+ title={Learning acoustic frame labeling for speech recognition with recurrent neural networks},
+ year={2015},
+ pages={4280-4284},
+ keywords="neural networks DNN, phone segmentation, forced alignment"
+ }
 
 @article{Sakoe79,
  affiliation="Nippon Electric Company, Kawasaki, JP",
@@ -34753,6 +35606,24 @@ Thinking, Practice and Research in the Field of Cerebral Palsy",
   in which audio is one stream, the other stream is the CCA of audio and
   video"
 }
+
+@inproceedings{Sari2018,
+ author="Leda Sari and Mark Hasegawa-Johnson",
+ title="Speaker Adaptation with an Auxiliary Network",
+ booktitle="Proc. Machine Learning in Speech and Language Processing MLSLP",
+ pages="1-3",
+ year="2018"
+ }
+
+@inproceedings{Sari2019,
+ author="Leda Sar{\i} and Samuel Thomas and Mark Hasegawa-Johnson and Michael Picheny",
+ title="Pre-training of Speaker Embeddings for Low-latency Speaker Change Detection in Broadcast News",
+ booktitle=icassp,
+ year="2019",
+ doi="10.1109/ICASSP.2019.8683612",
+ pages="6286-6290"
+ }
+ 
 
 @techreport{Sass70,
  author="E. J. Sass and G. B. Mackie",
@@ -35573,6 +36444,30 @@ Thinking, Practice and Research in the Field of Cerebral Palsy",
  year="1958"
 }
 
+@article{Seley2007,
+ keywords="type II diabetes self-care",
+ author="Jane Jeffrie Seley and Katie Weinger",
+ title="The State of the Science on Nursing Best Practices for
+                  Diabetes Self-Management",
+ journal="The Diabetes Educator",
+ volume="33",
+ number="4",
+ year="2007",
+ pages="616-626",
+ doi="10.1177/0145721707305121",
+ abstract="survey of chronic care nurses, bullet points list (1)
+                  barriers to optimal care for patients with diabetes
+                  and strategies to overcome them, (2) recommendations
+                  for priorities for nursing research. `people with
+                  more social support perform self-care more
+                  frequently,' `people with diabetes are at risk of
+                  serious complications that can affect their ability
+                  to care for themselves', `nurses in all settings
+                  need simple tools to assess health literacy and
+                  overcome barriers associated with low literacy
+                  levels'"
+}
+
 @book{Selkirk81,
  address="Bloomington, Indiana",
  author="Elisabeth O. Selkirk",
@@ -35821,6 +36716,22 @@ Thinking, Practice and Research in the Field of Cerebral Palsy",
  year="2005"
 }
 
+@article{Shakibazadeh2011,
+ keyword="type II diabetes self-care",
+ author="E. Shakibazadeh and B. Larijani and D. Shojaeezadeh and A. Rashidian and M.H. Fourouzanfar
+  and I.K. Bartholomew",
+ title="Patients' Perspectives on Factors that Influence Diabetes Self-Care",
+ journal="Iranian J. Public Health",
+ volume="40",
+ number="4",
+ year="2011",
+ pages="146-158",
+ abstract="three focus groups (43 patients) discussed barriers; results were in five categories:
+  physical barriers, psychological barriers (such as health beliefs), educational barriers,
+  social barriers (women: pressure to eat with the family, men: pressure not to inject in a public
+  place for fear of being considered a drug user), care system barriers"
+}
+
 @article{Shamma88,
  author="S. Shamma",
  journal="J. Phonetics",
@@ -35830,6 +36741,25 @@ Thinking, Practice and Research in the Field of Cerebral Palsy",
      auditory processing: vowels and voiceless fricatives",
  volume="16",
  year="1988"
+}
+
+@article{Shams2010,
+ keywords="type II diabetes self-care",
+ author="Mohamed E.E. Shams and Enaase A.M.E. Barakat",
+ title="Measuring the rate of therapeutic adherence among outpatients
+                  with T2DM in Egypt",
+ journal="Saudi Pharmaceutical Journal",
+ volume="18",
+ page="225-232",
+ year="2010",
+ abstract="adherence to oral hypoglycemic agents significant
+                  predictors were: (1) marital status, family support,
+                  socio-economic status, (2) knowledge/beliefs about
+                  the disease and medications, frequency of
+                  self-monitoring of blood glucose, (3) number of
+                  drugs taken, complexity of regimen, side effects.
+                  Not significant: gender, age, education, place of
+                  residence, relations w/doctor"
 }
 
 @article{Shannon51,
@@ -36295,6 +37225,20 @@ Thinking, Practice and Research in the Field of Cerebral Palsy",
  year="1984"
 }
 
+@inproceedings{Shor2019,
+ keywords="dysarthria, ALS",
+ author="Joel Shor and Dotan Emmanuel and Oran Lang and Omry Tuval and Michael Brenner and Julie
+  Cattiau and Fernando Vieira and Maeve McNally and Taylor Charbonneau and Melissa Nollstadt and
+  Avinatan Hassidim and Yossi Mattias",
+ title="Personalizing ASR for Dysarthric and Accented Speech with Limited Data",
+ booktitle=interspeech,
+ year="2019",
+ abstract="Fine-tuning transformer;LAS recognizer drops WER 60;80 -> 21;31 percent on severe ALS,
+  13;23->9;11 percent on second-language accented speech, after only 40min of finetuning data.
+  Transformer finetunes best if only the encoder and joint networks are tuned, not the predictor.
+  LAS finetunes best if all layers finetuned.  In ALS, worst 5 phones give 20 percent of errors."
+}
+
 @article{Shore80,
  author="John E. Shore and Rodney W. Johnson",
  journal=transit,
@@ -36642,13 +37586,11 @@ Thinking, Practice and Research in the Field of Cerebral Palsy",
  url="http://journalofvision.org/3/1/1x/"
 }
 
-@misc{Simonyan2014,
+@inproceedings{Simonyan2015,
 author="K Simonyan and A Zisserman",
-year="2014",
-title="Very Deep Convolutional Networks for Large-Scale Image Classification",
-howpublished="https://arxiv.org/abs/1409.1556",
-note="Accessed: 2017-09-14",
-keywords="computer vision, imagenet, VGG"
+year="2015",
+booktitle="International Conference on Learning Representations (ICLR)",
+title="Very Deep Convolutional Networks for Large-Scale Image Classification"
 }
 
 @incollection{Sindhwani05a,
@@ -37087,6 +38029,15 @@ keywords="computer vision, imagenet, VGG"
  title="A voice activity detector employing soft decision based
      noise spectrum adaptation",
  year="1998"
+}
+
+@book{Solove2008,
+ author="Daniel Solove",
+ year="2008",
+ title="Understanding Privacy",
+ publisher="Harvard University Press",
+ address="Cambridge, MA",
+ url="http://ssrn.com/abstract=1127888"
 }
 
 @article{Son99,
@@ -37605,7 +38556,38 @@ yearpp="1994",
  year="2004"
 }
 
-@article{Stevens37, 
+@article{Stetson2011,
+ author="Barbara Stetson and David Schlundt and Chelsea Rothschild and 
+  Jennifer E. Floyd and Whitney Rogers and Sri Prakash Mokshagundam",
+ year="2011",
+ title="Development and validation of The Personal Diabetes Questionnaire (PDQ):
+  A Measure of diabetes self-care behaviors, perceptions and barriers",
+ journal="Diabetes Research and Clinical Practice",
+ volume="91",
+ pages="321-332",
+ keywords="type II diabetes self-management",
+ abstract="PDQ is designed to be completed in 20-30 minutes: less time
+                  than Diabetes Care Profile, but providing more
+                  information than Summary of Diabetes Self-Care
+                  Activities.  Subscales (number of items) are Diet
+                  knowledge and skills (9), Dietary decision making
+                  (6), Eating problems (3), Diet barriers (7),
+                  Problems in medication use (1), Medication barriers
+                  (8), BG monitoring barriers (8), Exercise barriers
+                  (7).  RESULTS: Type 1 Diabetes.  A1C correlates with
+                  Diet knowledge and skills, Dietary decision making,
+                  Eating problems, Diet barriers, and Medication
+                  barriers.  BMI has no correlates at p<=0.01.  Type 2
+                  (using insulin).  A1C correlates only Diet knowledge
+                  and skills.  BMI correlates Eating problems, Diet
+                  barriers, and Exercise barriers.  Type 2 (not using
+                  insulin).  A1C correlates Eating problems, Diet
+                  barriers, Problems in medication use, Medication
+                  barriers.  BMI correlates Eating problems, Diet
+                  barriers, BG monitoring barriers, Exercise barriers."
+}
+
+@article{Stevens37,
  author="Stanley Smith Stevens and John Volkman and Edwin Newman",
  title="A scale for the measurement of the psychological magnitude of pitch",
  year="1937",
@@ -39792,6 +40774,19 @@ yearpp="1994",
  year="1997"
 }
 
+@incollection{Tjandra2017,
+ keywords="cycle-consistent speech recognition and speech synthesis",
+ author="Andros Tjandra and Sakriani Sakti and Satoshi Nakamura",
+ title="Listening while Speaking: Speech Chain by Deep Learning",
+ booktitle=asru,
+ year="2017",
+ doi="10.1109/ASRU.2017.8268950",
+ abstract="LAS-style ASR, tacotron TTS.  BTEC ATR corpus: 80 utterances per speaker paired with
+  text, +360 utterances per speaker not transcribed.  Only the paired data: 26.5 percent CER,
+  10.2 mean cepstral distortion.  Also train on unpaired data using cycle consistency with 
+  a 5-beam: 20.0 percent CER, 9.2 MCD"
+}
+
 @article{Toda08,
  author="T. Toda and A.W. Black and K. Tokuda",
  title="Statistical mapping between articulatory movements and acoustic spectrum
@@ -39842,6 +40837,16 @@ keywords="speech synthesis"
  year="1968"
 }
 
+@article{Tong2018,
+ author = "Sibo Tong and Philip N. Garner and Hervé Bourlard",
+ title = "Multilingual Training and Cross-lingual Adaptation on {CTC}-based Acoustic Model",
+ journal = jsc,
+ volume="104",
+ pages="39-46",
+ year = "2018",
+ keywords="multilingual CTC"
+ }
+     
 @article{Torvik93,
  author="L. Torvik",
  journal="Biomed. Sci. Instrum.",
@@ -41049,6 +42054,26 @@ doi="10.1109/MCSE.2014.80"
  year="1999"
 }
 
+@article{Vries2014,
+ keywords="type II diabetes self-care",
+ author="Sieta T. de Vries and Joost C. Keers and Rosalie Visser and Dick de Zeeuw and 
+  Flora M. Haaijer-Ruskamp and Jaco Voorham and Petra Denig",
+ title="Medication beliefs, treatment complexity, and non-adherence to different drug classes in
+  patients with type 2 diabetes",
+ journal="J. Psychosomatic Research",
+ volume="76",
+ year="2014",
+ pages="134-138",
+ doi="10.1016/j.jpsychores.2013.11.003",
+ abstract="133 patients with three types of medication (glucose, blood pressure, and lipid lowering
+  drugs) were classified as adherent, unintentionally non-adherent, or intentionally non-adherent.
+  necessity beliefs did not differ by group.  concern beliefs (e.g., side effects, dependency) were
+  higher in the intentional non-adherence group for blood pressure lowering drugs (17, vs. 9-13 for
+  every other group and every other treatment).  treatment complexity was lower in the adherent
+  group than in the other two, for blood pressure (3 vs. 4) and glucose (4 vs. 7) but not for lipid
+  reducing drugs (low complexity, 2, in all three groups)."
+}
+
 @article{Vu06,
   author = {Vu, V.-T. and  Bremond, F. and  Davini, G. and  Thonnat, M. and  Quoc-Cuong Pham  and Allezard, N. and  Sayd, P. and  Rouas, J.-L. and  Ambellouis, S. and  Flancquart, A.},
   year = 2006,
@@ -41240,6 +42265,16 @@ doi="10.1109/MCSE.2014.80"
  year="1999"
 }
 
+@inproceedings{Wang2017,
+ author="Fei Wang and Mengqing Jiang and Chen Qian and Shuo Yang and Cheng Li and Honggang Zhang and 
+  Xiaogang Wang and Xiaoou Tang",
+ title="Residual Attention Network for Image Classification",
+ booktitle=cvpr,
+ year="2017",
+ pages="3156-3164",
+ keywords="resnet"
+ }
+
 @inproceedings{Wang91a,
  author="Jhing-Fa Wang and Chung-Hsien Wu and Chaug-Ching Huang and
      Jau-Yien Lee",
@@ -41338,17 +42373,6 @@ doi="10.1109/MCSE.2014.80"
  year="2000"
 }
 
-@article{Wang99b,
- author="Yue Wang and Michelle M. Spence",
- journal=jasa,
- keywords="speech perception, non-native phoneme identification,
-     training",
- pages="3649-3658",
- title="Training American listeners to perceive Mandarin tones",
- volume="106",
- year="1999"
-}
-
 @inproceedings{Wang91b,
  author="Ye-Yi Wang and Alex Waibel",
  booktitle=icassp,
@@ -41369,6 +42393,28 @@ doi="10.1109/MCSE.2014.80"
  pages="597-607",
  keywords="audio-visual recognition AVSR, kernel CCA KCCA"
 }
+
+@article{Wang99b,
+ author="Yue Wang and Michelle M. Spence",
+ journal=jasa,
+ keywords="speech perception, non-native phoneme identification,
+     training",
+ pages="3649-3658",
+ title="Training American listeners to perceive Mandarin tones",
+ volume="106",
+ year="1999"
+}
+
+@article{Wang2013,
+ author="Yuxuan Wang and DeLiang Wang",
+ title="Towards scaling up classification-based speechseparation",
+ journal=tasl,
+ volume="21",
+ number="7",
+ pages="1381–1390",
+ year="2013",
+ doi="10.1109/TASL.2013.2250961"
+ }
 
 @article{Wang00c,
  abstract="demonstrates that backprop training of a network with a
@@ -42201,6 +43247,19 @@ doi="10.1109/MCSE.2014.80"
  year="1999"
 }
 
+@article{Williams1992,
+ author="Ronald J. Williams",
+ title="Simple  Statistical  Gradient-Following  Algorithms for Connectionist  Reinforcement  Learning",
+ journal="Machine Learning",
+ volume="8",
+ pages="229-256",
+ year="1992",
+ abstract="Proposed the REINFORCE algorithm (REward Increment = Nonnegative Factor x 
+  Offset Reinforcement x Characteristic Eligibility) in which samples of the reward,  multiplied 
+  by the gradient of the log probability of each sample, are used as a proxy for the gradient of 
+  expected reward in a reinforcement learning scenario"
+ }
+ 
 @incollection{Willinger96,
  affiliation="Bellcore",
  author="Walter Willinger and Murad S. Taqqu and Ashok Erramilli",
@@ -42723,6 +43782,14 @@ doi="10.1109/MCSE.2014.80"
   abstract="shows a DNN-based ASR that beats human error rates"
 }
 
+@inproceedings{Xu1999,
+ author="Ching X. Xu and Yi Xu and Li-Shi Luo",
+ title="A pitch target approximation model for F0 contours in Mandarin",
+ booktitle=interspeech,
+ year="1999",
+ pages="2359-2362"
+}
+
 @article{Xu,
  author="X.G. Xu and T.C. Chao and A. Bozkurt",
  journal="Health Physics Journal",
@@ -42732,11 +43799,52 @@ doi="10.1109/MCSE.2014.80"
  year="(in review)"
 }
 
+@article{Xu1998,
+ author="Yi Xu",
+ title="Consistency of Tone-Syllable Alignment across Different Syllable Structures and Speaking Rates",
+ year="1998",
+ journal="Phonetica",
+ volume="55",
+ number="4",
+ pages="179-203",
+ doi="10.1159/000028432"
+}
+
 @inproceedings{Xu04,
  author="Y. Xu and C.X. Xu and X. Sun",
  booktitle=speechprosody,
  title="On the Temporal Domain of Focus",
  year="2004"
+}
+
+@article{Yabe2019,
+ keywords="diabetes self-care",
+ author="Daisuke Yabe and Hitoshi Kuwata and Yuuka Fujiwara and Mayuka
+                  Sakaguchi and Shota Moyama and Noboru Makabe and
+                  Kenta Murotani and Hiroshi Asano and Sanae Ito and
+                  Hideyuki Mishima and Hideto Takase and Noriyasu Ota
+                  and Yusuke Seino and Yoshiyuki Hamamoto and Takeshi
+                  Kurose and Yutaka Seino",
+ title="Dietary instructions focusin on meal-sequence and nutritional
+                  balance for prediabetes subjects: An exploratory,
+                  cluster-randomized, prospective, open-label,
+                  clinical trial",
+ journal="J. Diabetes and its Complications",
+ volume="33",
+ year="2019",
+ doi="10.1016/j.jdiacomp.2019.107450",
+ pages="107450.1-8",
+ abstract="Three groups had n=11,18,13 respectively.  Group A:
+                  conventional health guidance, Group B: health
+                  guidance with dietary instructions focusing on meal
+                  sequence, Group C: health guidance with dietary
+                  instructions focusing on nutritional balance.  Body
+                  weight in groups B and C significantly reduced
+                  compared to group A; adherence in group C
+                  significantly reduced compared to group A,
+                  apparently because of complexity of the
+                  instructions; meal sequence instruction appears to
+                  reduce body weight while maintaining adherence"
 }
 
 @techreport{Yaggi62,
@@ -42772,6 +43880,21 @@ doi="10.1109/MCSE.2014.80"
      speech production",
 }
 
+@article{Yamamoto2013,
+ keywords="children's speech, paralinguistics",
+ author="Shota Yamamoto and Yasunari Yoshitomi and Masayoshi Tabuse and Kou Kushida and Taro Asada",
+ title="Recognition of a Baby's Emotional Cry Towards Robotics Baby Caregiver",
+ journal="International Journal of Advanced Robotic Systems",
+ year="2013",
+ volume="10",
+ pages="86.1-7",
+ doi="10.5772/55406",
+ abstract="(A) detect cry using thresholds on (1) transcription confidence of a Julius ASR, (2) F0
+  discontinuity of 150Hz or more in 0.1s or less.  Recall=66 percent, false alarm rate varies 
+  from 2-30 percent depending on corpus (mode 2 percent).  (B) nearest-neighbor classification of
+  cry into three meanings: discomfort, hungry, sleepy, with 62.1 percent accuracy"
+}
+  
 @article{Yamamoto98,
  abstract="60-100 percent of tongue reconstructed from abdominal free
      flap, w/ nerves, vessels, tendinous connections
@@ -43443,99 +44566,16 @@ pages="2263-2266"
  year="1992"
 }
 
-@phdthesis{Zhang03a,
- advisor="Stephen E. Levinson",
- author="Tong Zhang",
- school="University of Illinois",
- title="An empathic tutoring system using automatic speech
-     understanding",
- year="2003"
-}
-
-@inproceedings{Zhang03b,
- address="Kyoto, Japan",
- author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E.
-     Levinson",
- booktitle="{ISCA/IEEE} Workshop on Spontaneous Speech Processing and
-     Recognition ({SSPR})",
- title="Mental State Detection of Dialogue System Users via Spoken
-     Language",
- year="2003"
-}
-
-@inproceedings{Zhang03c,
- author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E. Levinson",
- title="An empathic-tutoring system using spoken language",
- booktitle="Proc. Australian conference on Computer-Human Interaction (OZCHI)",
- year=2003, 
- pages="498-501"
-}
+@inproceedings{ZhangShiliang2019,
+ author="Shiliang Zhang and Ming Lei and Yuan Liu and Wei Li",
+ title="Investigation of Modeling Units for Mandarin Speech Recognition Using Dfsmn-ctc-smbr",
+ booktitle=icassp,
+ year="2019",
+ doi="10.1109/ICASSP.2019.8683859",
+ pages="7085-7089"
+ }
  
-@inproceedings{Zhang04a,
- address="Madeira, Portugal",
- author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E.
-     Levinson",
- booktitle="Intl. Conf. on Intelligent User Interfaces",
- title="Semantic analysis for a speech user interface in an
-     intelligent-tutoring system",
- year="2004"
-}
-
-@inproceedings{Zhang04b,
- address="Jeju Island, Korea",
- author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E.
-     Levinson",
- booktitle=interspeech,
- pages="1441-4",
- title="Children's emotion recognition in an intelligent tutoring
-     scenario",
- year="2004"
-}
-
-@inproceedings{Zhang04c,
- address="Jeju Island, Korea",
- author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E.
-     Levinson",
- booktitle=interspeech,
- pages="581-4",
- title="Automatic detection of contrast for speech understanding",
- year="2004"
-}
-
-@inproceedings{Zhang05,
- address="Pittsburgh",
- author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E.
-     Levinson",
- booktitle="{AAAI} Workshop on Spoken Language Understanding",
- month="July",
- pages="60-67",
- title="A hybrid model for spoken language understanding",
- year="2005"
-}
-
-@article{Zhang06,
- author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E.
-     Levinson",
- journal=jsc,
- number="6",
- pages="616-632",
- title="Cognitive state classification in a spoken tutorial dialog
-     system",
- volume="48",
- year="2006"
-}
-
-@article{Zhang07,
- author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E.
-     Levinson",
- journal=jsc,
- title="Extraction of pragmatic and semantic salience from
-     spontaneous spoken {English}",
- volume="49",
- year="2007"
-}
-
-@article{Zhang01a,
+@article{Zhang2001,
  abstract="segmentation of movie/news audio into 8 classes
      (environmental sound, speech, or silence, all +/- music
      background) by thresholding measurements of variability of
@@ -43551,17 +44591,101 @@ pages="2263-2266"
  year="2001"
 }
 
-@inproceedings{Zhang03c,
+@phdthesis{ZhangTong2003a,
+ advisor="Stephen E. Levinson",
+ author="Tong Zhang",
+ school="University of Illinois",
+ title="An empathic tutoring system using automatic speech
+     understanding",
+ year="2003"
+}
+
+@inproceedings{ZhangTon2003b,
+ address="Kyoto, Japan",
+ author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E.
+     Levinson",
+ booktitle="{ISCA/IEEE} Workshop on Spontaneous Speech Processing and
+     Recognition ({SSPR})",
+ title="Mental State Detection of Dialogue System Users via Spoken
+     Language",
+ year="2003"
+}
+
+@inproceedings{ZhangTong2003c,
  address="Brisbane",
  author="Tong Zhang and Weiyu Zhu and Mark Hasegawa-Johnson and
      Stephen E. Levinson",
  booktitle="Proc. Australian Conf. Computer-Human Interaction
      ({OZCHI})",
  title="An empathic tutoring system using spoken language",
- year="2003"
+ year="2003",
+ pages="498-501" 
 }
 
-@phdthesis{Zhang00,
+@inproceedings{ZhangTong2004a,
+ address="Madeira, Portugal",
+ author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E.
+     Levinson",
+ booktitle="Intl. Conf. on Intelligent User Interfaces",
+ title="Semantic analysis for a speech user interface in an
+     intelligent-tutoring system",
+ year="2004"
+}
+
+@inproceedings{ZhangTong2004b,
+ address="Jeju Island, Korea",
+ author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E.
+     Levinson",
+ booktitle=interspeech,
+ pages="1441-4",
+ title="Children's emotion recognition in an intelligent tutoring
+     scenario",
+ year="2004"
+}
+
+@inproceedings{ZhangTong2004c,
+ address="Jeju Island, Korea",
+ author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E.
+     Levinson",
+ booktitle=interspeech,
+ pages="581-4",
+ title="Automatic detection of contrast for speech understanding",
+ year="2004"
+}
+
+@inproceedings{Zhang2005,
+ address="Pittsburgh",
+ author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E.
+     Levinson",
+ booktitle="{AAAI} Workshop on Spoken Language Understanding",
+ month="July",
+ pages="60-67",
+ title="A hybrid model for spoken language understanding",
+ year="2005"
+}
+
+@article{Zhang2006,
+ author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E. Levinson",
+ journal=jsc,
+ number="6",
+ pages="616-632",
+ title="Cognitive state classification in a spoken tutorial dialog
+     system",
+ volume="48",
+ year="2006"
+}
+
+@article{ZhangTong2007,
+ author="Tong Zhang and Mark Hasegawa-Johnson and Stephen E.
+     Levinson",
+ journal=jsc,
+ title="Extraction of pragmatic and semantic salience from
+     spontaneous spoken {English}",
+ volume="49",
+ year="2007"
+}
+
+@phdthesis{ZhangYou2000,
  advisor="T. Huang",
  author="You Zhang",
  keywords="speechreading, audiovisual speech recognition, Boltzmann
@@ -43572,7 +44696,7 @@ pages="2263-2266"
  year="2000"
 }
 
-@article{Zhang01b,
+@article{ZhangYongyue2001,
  author="Yongyue Zhang and Michael Brady and Stephen Smith",
  journal="{IEEE} Trans. Medical Imaging",
  keywords="biomedical image recognition, image segmentation, bias
@@ -43587,7 +44711,7 @@ pages="2263-2266"
  year="2001"
 }
 
-@inproceedings{Zhao05,
+@inproceedings{Zhao2005,
  abstract="combine GSC beamforming with vector taylor series (VTS)
      model-based noise compensation",
  author="Xianyu Zhao and Zhijian Ou and Minhua Chen and Zuoying
@@ -43599,6 +44723,15 @@ pages="2263-2266"
  year="2005"
 }
 
+@inproceedings{Zhao2018,
+ author="Yuanyuan Zhao and Linhao Dong and Shuang Xu and Bo Xu",
+ title="Syllable-Based Acoustic Modeling with CTC for Multi-Scenarios Mandarin speech recognition",
+ booktitle=ijcnn,
+ year="2018",
+ doi="10.1109/IJCNN.2018.8489589",
+ pages="1-8"
+ }
+ 
 @inproceedings{Zhenga,
  abstract="MLP and RBF SVM were used to classify Democrat vs
      Republican in demographic data based on 300 training
