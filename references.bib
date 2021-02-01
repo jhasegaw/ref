@@ -36,6 +36,7 @@
 @string{jmlr = "Journal of Machine Learning Research"}
 @string{jphonetics = "J. Phonetics"}
 @string{jsc = "Speech Communication"}
+@string{jshr = "Journal of Speech and Hearing Research"}
 @string{jslhr = "J. Speech, Language, and Hearing Research"}
 @string{jspl = "{IEEE} Signal Processing Letters"}
 @string{lrec = "Proceedings of the Conference on Language Resources and Evaluation (LREC)"}
@@ -723,8 +724,7 @@ year="2016"
  keywords="digital signal processing",
  number="3",
  pages="235-239",
- title="Short Term Spectral Analysis, Synthesis, and Modification
-     by Discrete Fourier Transform",
+ title="Short Term Spectral Analysis, Synthesis, and Modification by Discrete Fourier Transform",
  volume="25",
  year="1977"
 }
@@ -1133,7 +1133,7 @@ year="2016"
 }
 
 @inproceedings{Argyriou2008,
- keywords="transfer learning",
+ keywords="transfer learning, spectrum of log probability mass function",
  author="Andreas Argyriou and Charles A. Micchelli and Mssimiliano Pontil and Yiming Yang",
  title="A Spectral Regularization Framework for Multi-Task Structure Learning",
  booktitle="Proc. Neural Information Processing Systems",
@@ -1248,8 +1248,7 @@ deep reinforcement learning"
  text=" ATAL, B. S.: Generalized short-time power spectra and
      autocorrelation function. J. Acoust. Soc. Am. 34, 1679-1683
      1962",
- title="Generalized short-time power spectra and autocorrelation
-     function",
+ title="Generalized short-time power spectra and autocorrelation function",
  volume="34",
  year="1962"
 }
@@ -1601,6 +1600,15 @@ deep reinforcement learning"
  title="Partial Parsing as a Robust Parsing Strategy",
  volume={II},
  year="1993"
+}
+
+@inproceedings{Bahdanau2014,
+ author="Dzmitry Bahdanau and Kyunghyun Cho and Yoshu Bengio",
+ title="Neural Machine Translation by Jointly Learning to Align and Translate",
+ year="2015",
+ pages="1-15",
+ booktitle=iclr,
+ abstract="proposed sequence-to-sequence learning with attention"
 }
 
 @article{Bahl87,
@@ -2734,7 +2742,7 @@ year={2008},
  year="1960"
 }
 
-@book{Bell67,
+@book{Bell1867,
  author="Alexander Melville Bell",
  address="London",
  title="Visible Speech: The Science of the Universal Alphabetic",
@@ -3036,7 +3044,7 @@ year={2008},
  abstract="presents winning system in the Unsupervised and Transfer Learning Challenge, in which
   labels and probabilities were sometimes completely different from training data.  great review
   of 1.2 PCA, manifolds, sparse codes, 1.3 deep circuits can represent, in polynomial time, functions
-  that require exponential timne in a shallow circuit, 2. deep belief networks, with fine-tuning for
+  that require exponential time in a shallow circuit, 2. deep belief networks, with fine-tuning for
   labeled data, but for transfer learning, end it with a PCA layer learned on the test data,
   3. PCA, Norm, DAE, CAE as layers"
 }
@@ -5320,6 +5328,16 @@ abstract="let s be source, t be target.
  year="1992"
 }
 
+@article{Cai2016,
+author="Meng Cai and Jia Liu",
+title="Maxout neurons for deep convolutional and LSTM neural networks in speech recognition",
+journal=jsc,
+year="2016",
+pages="53-64",
+abstract="proposes the max in max-pooling as the nonlinearity for a deep convolutional or LSTM 
+net for ASR, instead of sigmoid, but I think Sainath ICASSP 2013 was already doing this"
+}
+
 @unpublished{Calderbank08,
  author="Robert Calderbank and Sina Jafarpour and Robert Schapire",
  title="Compressed Learning: Universal Sparse Dimensionality Reduction and 
@@ -7037,6 +7055,15 @@ keywords="computer vision, imagenet"
  year="1985"
 }
 
+@inproceedings{Coates2011,
+ author="Adam Coates and Honglak Lee and Andrew Y. Ng",
+ title="Analysis of Single-Layer Networks in Unsupervised Feature Learning",
+ booktitle="Proc. AISTATS",
+ year="2011",
+ pages="215-223",
+ abstract="proposes the sparse autoencoder and the sparse restricted Boltzmann machine"
+}
+
 @article{Cocu2014,
  Author = {Horia Cocu and Andi Buzo and Laurent Besacier and
   Corneliu Burileanu},
@@ -7413,7 +7440,7 @@ keywords="computer vision, imagenet"
 
 @article{Coleman91,
  author="Colette L. Coleman and Lawrence S. Meyers",
- journal="Augmentative and Alternative Communication",
+ journal=jaac,
  number="1",
  pages="34-42",
  title="Computer recognition of the speech of adults with cerebral
@@ -8028,7 +8055,7 @@ keywords="computer vision, imagenet"
  keywords="virtual reality"
 }
 
-@article{Crystal88,
+@article{Crystal1988,
  author="Thomas H. Crystal and Arthur S. House",
  journal=jasa,
  pages="1553-1573",
@@ -8037,6 +8064,22 @@ keywords="computer vision, imagenet"
  volume="83",
  year="1988"
 }
+
+@book{Crystal1997,
+ author="David Crystal",
+ title="English as a Global Language",
+ edition="2",
+ year="1997",
+ publisher="Cambridge University Press",
+ address="Cambridge",
+ abstract="makes the argument that it is useful to have a global language for commerce
+ complemented by local languages for family.  Makes the argument that the rise of English
+ as a global language was driven by a number of economic accidents, coupled with a sense
+ that English was the language of freedom of speech and communication  and radio and film.
+ Suggests that English as global language is historically similar to Latin, but may be 
+ unique because its dominance is at a global scale",
+ keywords="historical linguistics, diachronic linguistics, code-switching"
+ }
 
 @article{Cucchiarini00,
  abstract="speed and number of pauses predict subjective measures of
@@ -8306,7 +8349,7 @@ keywords="computer vision, imagenet"
 
 @article{Darley69,
  author="F. Darley and A. Aronson",
- journal="Journal of Speech and Hearing Research",
+ journal=jshr,
  pages="246-269",
  title="Differential diagnostic patterns of dysarthria",
  volume="12",
@@ -9977,6 +10020,16 @@ keywords="modulation spectrum"
  year="1982"
 }
 
+@article{Ekman1971,
+  author =       "Paul Ekman and Wallace V. Friesen",
+  title =        "Constants across cultures in the face and emotion",
+  journal = "Journal of Personality and Social Psychology",
+  volume = "17",
+  number = "2",
+  pages = "124--129",
+  year = "1971"
+}
+
 @Book{Ekman78,
   author =       "P. Ekman and W. V. Friesen",
   title =        "Facial action coding system",
@@ -11024,8 +11077,7 @@ training - preliminary results",
 @incollection{Ferguson80,
  address="Princeton, NJ",
  author="John D. Ferguson",
- booktitle="Proceedings of the Symposium on the Application of Hidden
-     Markov Models to Text and Speech",
+ booktitle="Proceedings of the Symposium on the Application of Hidden Markov Models to Text and Speech",
  editor="J.D. Ferguson",
  keywords="recognition, acoustic modeling",
  pages="143-179",
@@ -12124,7 +12176,7 @@ training - preliminary results",
  year="2000"
 }
 
-@article{Frankel07,
+@article{Frankel2007,
  author="Joe Frankel and Mirjam Wester and Simon King",
  title="Articulatory feature recognition using dynamic Bayesian networks",
  journal=jcsl,
@@ -12463,8 +12515,7 @@ keywords="computer vision, imagenet"
  text=" FUJISAKI, H.: Automatic extraction of fundamental period
      of speech by autocorrela­tion analysis and peak detection.
      J. Acoust. Soc. Am. 32, 1518 (A) 1960",
- title="Automatic extraction of fundamental period of speech by
-     autocorrelation analysis and peak detection",
+ title="Automatic extraction of fundamental period of speech by autocorrelation analysis and peak detection",
  volume="32",
  year="1960"
 }
@@ -12480,6 +12531,16 @@ keywords="computer vision, imagenet"
  year="1984"
 }
 
+
+@inproceedings{Fujita2019,
+ title="End-to-end neural speaker diarization with self-attention",
+ author="Yusuke Fujita and Naoyuki Kanda and Shota Horiguchi and Yawen Xue and Kenji Nagamatsu and
+  Shinji Watanabe",
+ year="2019",
+ booktitle=icassp,
+ pages="296-303"
+}
+ 
 @inproceedings{Fukada1992,
 author="T Fukada and K Tokuda and T Kobayashi and S Imai",
 title="An adaptive algorithm for mel-cepstral analysis of speech",
@@ -12747,6 +12808,19 @@ keywords="speech synthesis, speech analysis"
  pages="562-569",
  title="Discourse segmentation of multi-party conversation",
  year="2003"
+}
+
+@article{Galka2015,
+author="Jakub Ga\lka and Marcin Grzywacz and Rafa\l Samborski",
+title="Playback attack detection for text-dependent speaker verification over telephone channels",
+journal=jsc,
+year="2015",
+volume="67",
+pages="143--153",
+keywords="speaker verification identification, audio indexing",
+abstract="computes spectral peaks using a peak-template algorithm, then computes graph
+of nearest peak to each peak, as in Shazam audio indexing.  Uses this representation to 
+detect playback of any previously recorded audio sample for text-dependent speaker verification"
 }
 
 @article{Galunov66,
@@ -13176,7 +13250,7 @@ keywords="speech synthesis, speech analysis"
  year="1996"
 }
 
-@unpublished{Ghahramani,
+@unpublished{Ghahramani2000,
  abstract="dynamic Bayesian network with many variables; exact
      likelihood function expensive to compute. maximize a lower
      bound computed by variational methods",
@@ -13185,7 +13259,7 @@ keywords="speech synthesis, speech analysis"
  keywords="variational Bayes, switching Kalman filter, IMM",
  note="Submitted to Neural Computation",
  title="Variational Learning for Switching State-Space Models",
- year="in review"
+ year="2000"
 }
 
 @article{Ghahramani97,
@@ -13542,6 +13616,16 @@ keywords="speech synthesis, speech analysis"
    cursors for the visually impaired and pictographic input for the cognitively
    impaired, programs include SpeakOut for Mac and AccessDOS for DOS. 
    These exemplify design for disability"
+}
+
+@inproceedings{Glorot2011,
+ author="Xavier Glorot and Antoine Bordes and Yoshua Bengio",
+ title="Deep Sparse Rectifier Neural Networks",
+ booktitle=icml,
+ year="2011",
+ abstract="popularized rectified linear units as a more biologically plausible
+ model of neurons, with sparse mostly-zero activations.  Showed that networks with 
+ ReLU, unlike networks with sigmoid or tanh, operate better without unsupervised pre-training."
 }
 
 @article{Gobl88,
@@ -13997,6 +14081,14 @@ keywords="speech synthesis, speech analysis"
  year="1998"
 }
 
+@inproceedings{Goto1999,
+ author="Masataka Goto and Katunobu Itou and Satoru Hayamizu",
+ title="A Real-Time Filled Pause Detection System for Spontaneous Speech Recognition",
+ booktitle=eurospeech,
+ year="1999",
+ pages="227--230"
+}
+
 @inproceedings{Gottesman99,
  address="Phoenix, AZ",
  affiliation="UC Santa Barbara",
@@ -14078,6 +14170,15 @@ keywords="speech synthesis, speech analysis"
  year="2000"
 }
 
+@article{Gowda21,
+ author="Dhananjaya Gowda and Bajibab Bollepalli and Sudarsana Reddy Kadiri and Paavo Alku",
+ title="Formant tracking using quasi-closed phase forward-backward linear prediction analysis and
+  deep neural networks",
+ journal=jspl,
+ year="2021",
+ keywords="formant tracking"
+ }
+ 
 @article{Gower75,
  author="J. C. Gower",
  journal="Psychometrika",
@@ -14241,6 +14342,24 @@ keywords="speech synthesis, speech analysis"
  booktitle="Internat. Conf. Machine Learning (ICML)",
  pages="369-376",
  doi="10.1145/1143844.1143891"
+}
+
+@inproceedings{Graves2012,
+ author="Alex Graves",
+ title="Sequence transduction with recurrent neural networks",
+ booktitle=icml,
+ year="2012",
+ abstract="original proposal of sequence-to-sequence learning in which the 
+ encoder LSTM receives an EOS token, then starts generating the output sequence",
+}
+
+@article{Graves2013,
+ author="Alex Graves",
+ title="Generating sequences with recurrent neural networks",
+ journal="arXiV",
+ year="2013",
+ abstract="proposed a seq2seq with a soft-window summary of the input that is actually
+ attention, although the word attention was apparently invented by Bahdanau"
 }
 
 @inproceedings{Graves13,
@@ -14599,8 +14718,7 @@ keywords="speech synthesis, speech analysis"
 @inproceedings{Grezl14,
  author="Franti{\v{s}}ek Gr{\'{e}}zl and Martin Karafia{\'{a}}t 
   and Karel Vesel{\'{y}}",
- title="Adaptation of Multilingual Stacked Bottle-neck Neural 
-  Network Structure for New Language",
+ title="Adaptation of Multilingual Stacked Bottle-neck Neural Network Structure for New Language",
  booktitle=icassp,
  pages="7704--7708",
  year=2014,
@@ -15446,6 +15564,19 @@ keywords="speech synthesis, speech analysis"
  title="{SIP}: Session Initiation Protocol",
  year="1999"
 }
+
+@article{Hannah1996,
+ author="John Hannah",
+ title="A Geometric Approach to Determinants",
+ journal="The American Mathematical Monthly",
+ volume="103",
+ number="5",
+ pages="401-409",
+ abstract="proposes teaching determinants according to the transformation of volume 
+  geometrical intuition; shows how that leads to the swapping of columns method, and
+  the eigenvalues method"
+  }
+
 
 @techreport{Hannun2014,
  author="Awni Hannun and Carl Case and Jared Casper and Bryan Catanzaro and Greg Diamos and Erich Elsen
@@ -16474,6 +16605,20 @@ keywords="speech2image, image2speech"
      Neural Net and Other Learning Applications",
  volume="100",
  year="1992"
+}
+
+@article{Hautamaki2015,
+author="Rosa Gonz{\'{a}}lez Hautam{\"{a}}ki and Tomi Kinnunen and Ville Hautam{\"{a}}ki and Anne-Maria Laukkanen",
+title="Automatic versus human speaker verification: The case of voice mimicry",
+journal=jsc,
+year="2015",
+volume="72",
+pages="13--31",
+abstract="shows that intentional voice imitation slightly increases the error rate of an 
+automatic speaker verification system by about 10 percent relative, e.g., from 7.16 to 7.74 percent
+for the best system i-vector PLDA with 20-second samples.  With 10-second samples, ivector PLDA is
+less accurate than a simple GMM-UBM (20 percent error), which is less accurate than human listeners
+(12.5 percent error)"
 }
 
 @inproceedings{Havard2017,
@@ -18034,6 +18179,17 @@ Environments",
  year="2001"
 }
 
+@inproceedings{Hori2017,
+ author="Takaaki Hori and Shinji Watanabe and Yu Zhang and William Chan",
+ year="2017",
+ title="Advances in joint {CTC}-attention based end-to-end speech recognition with a deep 
+  {CNN} encoder and {RNN}-{LM}",
+ booktitle=interspeech,
+ pages="949-953",
+ keywords="joint CTC-attention"
+}
+
+
 @article{Horner93a,
  author="Andrew Horner and James Beauchamp and Lippold Haken",
  journal="Computer Music Journal",
@@ -18383,6 +18539,17 @@ Constrained Adaptive Filters",
  year="2010"
 } 
 
+@article{Hu2015,
+author="Wenping Hu and Yao Qian and Frank K. Soong and Yong Wang",
+title="Improved mispronunciation detection with deep neural network trained acoustic models and transfer learning based logistic regression classifiers",
+journal=jsc,
+volume="67",
+pages="154-166",
+year="2015",
+abstract="uses log ratio between probability of correct phone and probability of highest-scoring
+phone, each averaged over the whole segment, as a GOP measure"
+}
+
 @phdthesis{Huang91,
  address="Cambridge, MA",
  author="Caroline Huang",
@@ -18473,8 +18640,7 @@ Constrained Adaptive Filters",
  author="Jui-Ting Huang and Jing Li and Dong Yu and Li Deng and Yifan Gong",
  booktitle=icassp,
  year="2013",
- title="Cross language knowledge transfer using multilingual deep neural 
-  network with shared hidden layers"
+ title="Cross language knowledge transfer using multilingual deep neural network with shared hidden layers"
 }
 
 @article{Huang99,
@@ -19727,7 +19893,17 @@ prosodic features related to F0, duration and voice quality",
  year="1952"
 }
 
-@article{Jang02,
+@inproceedings{Jang2016,
+ author="Eric Jang and Shixiang Gu and Ben Poole",
+ title="Categorical Reparameterization with Gumbel-Softmax",
+ booktitle=icml,
+ year="2016",
+ abstract="replaces the non-differentiable sample from a categorical distribution
+ with a differentiable sample from a novel Gumbel-Softmax distribution, which can be
+ smoothly annealed into a categorical distribution"
+}
+ 
+@article{Jang2002,
  author="Gil-Jin Jang and Te-Won Lee and Yung-Hwan Oh",
  journal="Neurocomputing",
  keywords="independent components analysis ICA, factor analysis,
@@ -21329,7 +21505,7 @@ and selection method in co-training",
 @article{Kent79,
  author="R.D. Kent and R. Netsell and J. Abbs",
  title="Acoustic characteristics of dysarthria associated cerebellar disease",
- journal=jslhr,
+ journal=jshr,
  volume="22",
  pages="627-648",
  year="1979"
@@ -23438,6 +23614,25 @@ keywords="multilingual ASR"
  address="Malden, MA"
 }
 
+@article{Labov2006,
+ author="William Labov",
+ title="A sociolinguistic perspective on sociophonetic research",
+ journal=jphon,
+ year="2006",
+ volume="34",
+ number="4",
+ pages="500-515",
+ abstract="The four papers in this issue of the journal are jointly
+                  focused on two distinct themes: sociophonetics—the
+                  study of speakers and listeners’ sensitivity to the
+                  social context in which language is produced and
+                  perceived—and exemplar theory, as a way of
+                  explaining this behavior. In these comments, I will
+                  try to relate the findings in the first area to the
+                  field of sociolinguistics, and then relate the
+                  discussion of exemplar theory to recent studies of
+                  change in progress."}
+ 
 @incollection{Ladd79,
  address="Baltimore",
  author="D.R. Ladd",
@@ -23493,25 +23688,6 @@ keywords="multilingual ASR"
  year="1982"
 }
 
-@unpublished{Ladefoged06,
- abstract="in order to distinguish all of the phones in an IPA-like
-     universal grammar, it would be necessary to employ
-     distinctive features that do not seem to have any trivial
-     articulatory or acoustic correlate and/or are acted upon by
-     no known phonological rule. It seems more likely that
-     speakers learn phonemes by direct perception mapped to a
-     gestural phonology, and that speakers are capable of
-     mentally analyzing phonemes using different types of binary
-     distinctive feature decompositions for different purposes,
-     e.g., the mental features used for phonology may not
-     necessarily encode all auditory perceptible distinctions",
- author="Peter Ladefoged",
- keywords="distinctive features, phonology, phonetics",
- note="unpublished manuscript",
- title="Features and parameters for different purposes",
- year="2006"
-}
-
 @article{Ladefoged78,
  author="P. Ladefoged and R. Harshman and L. Goldstein and L. Rice",
  journal=jasa,
@@ -23532,13 +23708,34 @@ keywords="multilingual ASR"
  number="3"
  }
  
-@book{Ladefoged96,
+@book{Ladefoged1996,
  address="Oxford",
  author="Peter Ladefoged and Ian Maddieson",
  keywords="phonetics",
  publisher="Blackwell Publishers",
  title="The Sounds of the World's Languages",
  year="1996"
+}
+
+@techreport{Ladefoged2006,
+ abstract="in order to distinguish all of the phones in an IPA-like
+     universal grammar, it would be necessary to employ
+     distinctive features that do not seem to have any trivial
+     articulatory or acoustic correlate and/or are acted upon by
+     no known phonological rule. It seems more likely that
+     speakers learn phonemes by direct perception mapped to a
+     gestural phonology, and that speakers are capable of
+     mentally analyzing phonemes using different types of binary
+     distinctive feature decompositions for different purposes,
+     e.g., the mental features used for phonology may not
+     necessarily encode all auditory perceptible distinctions",
+ author="Peter Ladefoged",
+ keywords="distinctive features, phonology, phonetics",
+ institution="UCLA Working Papers in Phonetics",
+ number="WPP, No. 104",
+ title="Features and parameters for different purposes",
+ url="https://escholarship.org/uc/item/3sf437w9",
+ year="2006"
 }
 
 @article{Ladner08,
@@ -23671,8 +23868,7 @@ keywords="multilingual ASR"
  author="Lori Lamel and Jean-Luc Gauvain and Gilles Adda",
  journal=jcsl,
  pages="115-129",
- title="Lightly supervised and unsupervised acoustic model
-     training",
+ title="Lightly supervised and unsupervised acoustic model training",
  volume="16",
  year="2002"
 }
@@ -23908,7 +24104,26 @@ keywords="multilingual ASR"
  year="1972"
 }
 
-@article{LeCun15,
+@techreport{LeCun1989,
+ author="Yann LeCun",
+ title="Generalization and Network Design Strategies",
+ institution="Department of Computer Science, University of Toronto",
+ year="1989",
+ number="CRG-TR-89-4",
+ abstract="proposes deep (4-layer)  convolutional neural nets for image recognition, as a 
+  generalization to 2D of Waibel's TDNN"
+}
+  
+@inproceedings{LeCun1990,
+ author="Y. LeCun and B. Bengio and J.S. Denker and D. Henderson and R.E. Howard and W. Hubbard
+  and L.D. Jackel",
+ pages="396-404",
+ title="Handwritten Digit Recognition with a Back-Propagation Network",
+ booktitle="Neural Information Processing Systems",
+ year="1990"
+ }
+ 
+@article{LeCun2015,
  author="Yann LeCun and Yoshua Bengio and Geoffrey Hinton",
  title="Deep Learning",
  journal="Nature",
@@ -25206,6 +25421,7 @@ title="The discrimination of speech sounds
      enhancement methods",
  author="Jae S. Lim and Alan V. Oppenheim",
  journal=pieee,
+ title="Enhancement and bandwidth compression of noisy speech",
  keywords="speech coding, speech enhancement",
  number="12",
  pages="1586-1604",
@@ -25728,6 +25944,14 @@ keywords="MSCOCO"
    and then adding the Gaussians from each state of the accented
    monophone to the mixture of Gaussians used in the standard triphone,
    result is better than MLLR and MLLR+SDPBMM is best"
+}
+
+@article{Liu2018,
+ author="Pengju Liu  and Hongzhi Zhang and Kai Zhang and Liang Lin and Wangment Zuo",
+ title="Multi-level Wavelet-CNN for Image Restoration",
+ booktitle=cvpr,
+ year="2018",
+ pages="886-895"
 }
 
 @article{liu16,
@@ -26522,6 +26746,18 @@ keywords="MSCOCO"
  volume="21",
  year="1949"
 }
+
+@inproceedings{MacDonald2020,
+ author="Kyle MacDonald and Marisa Casillas and Okko R{\"{a}}s{\"{a}}nen and Anne Warlaumont",
+ title="Measuring prosodic predictability in children's home language environments",
+ year="2020",
+ booktitle="Proceedings of CogSci",
+ pages="695-701",
+ keywords="motherese, infant-directed speech IDS",
+ abstract="Used Räsänen's model to measure predictability of IDS vs ADS (adult-directed speech) in both 
+  in-lab and home recordings.  Found that IDS is less predictable than ADS in both home
+  and in lab, but that both are more predictable in the home than in the lab"
+ }
 
 @inproceedings{Macherey01,
  abstract="understanding is equated with translation from English to a
@@ -29154,6 +29390,20 @@ pages="167-174"
      for Automatic Speech Recognition",
  volume="9",
  year="1987"
+}
+
+@article{Morise2016,
+author="Masanori Morise",
+journal=jsc,
+title="D4C, a band-aperiodicity estimator for high-quality speech synthesis",
+volume="84",
+pages="57--65",
+abstract="Describes a band-aperiodicity estimator that does not require
+Legacy-STRAIGHT's noncausal smoothing, nor does it have Tandem-STRAIGHT's
+dependence on accurate F0 measurements.  Much more robust than either to 
+F0 estimation errors, jitter and shimmer.  Subjective tests show it has
+quality similar to Legacy-STRAIGHT and much better than Tandem-STRAIGHT",
+keywords="speech synthesis, vocoder"
 }
 
 @book{Morrell2020,
@@ -33169,6 +33419,23 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  year=2006
 }
 
+@article{Porges1995,
+ author="Stephen W. Porges",
+ title="Cardiac Vagal Tone: A Physiological Index of Stress",
+ journal="Neuroscience and Behavioral Reviews",
+ volume="19",
+ number="2,
+ pages="225--233",
+ year="1995",
+ keywords="vagal tone, stress, autonomic nervous system, heart rate, respiratory sinus arrhythmia",
+ abstract="RSA is an increase in heart rate during  inspiration and decrease during expiration.
+ It is promoted by parasympathetic efferent vagus nerve activity.  Stress can be defined as
+ inhibition of parasympathetic activity, hence is negatively correlated w/RSA.
+ RSA is measured by a patented bandpass filter covering typical respiratory rates, apparently
+ around 0.5-1Hz, applied to the Q-Q heart periods (ms) as function of time, followed by calculating
+ the log mean squared amplitude of this BPF signal, resulting in Vhat in ln(ms^2)"
+}
+
 @incollection{Portele97,
  address= "New York",
  affiliation= "",
@@ -33460,7 +33727,7 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  year="1994"
 }
 
-@inproceedings{Price89,
+@inproceedings{Price1989,
  author="P.J. Price and M. Ostendorf and C.W. Wightman",
  booktitle="Proc. of the DARPA Speech Recognition Workshop",
  keywords="prosody, speech production, speech recognition",
@@ -33476,7 +33743,7 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  booktitle="Proceedings of the Third DARPA Speech and Natural Language Workshop",
  editor="Richard Stern",
  publisher="Morgan Kaufmann",
- abstract="proposed Wizard-of-Oz database creation, in which the wizard's responses (what he or she
+ abstract="proposed Wizard-of-Oz (WoZ) database creation, in which the wizard's responses (what he or she
   retrieved from the database and sent to the subject)  are considered the correct responses
   for all further system training"
   }
@@ -33797,8 +34064,7 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  keywords="pitch, signal processing",
  number="5",
  pages="399-418",
- title="A Comparative Performance Study of Several Pitch Detection
-     Algorithms",
+ title="A Comparative Performance Study of Several Pitch Detection Algorithms",
  volume="24",
  year="1976"
 }
@@ -34055,6 +34321,20 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  year="1987"
 }
 
+@article{Ramachandran2019,
+ author="Prajit Ramachandran and Niki Parmar and Ashish Vaswani and Irwan Bello and
+  Anselm Levskaya and Jonathan Shlens",
+ title="Stand-Alone Self-Attention in Vision Models",
+      journal = {arXiv e-prints},
+     keywords = {Computer Science - Computer Vision and Pattern Recognition},
+         year = 2019,
+        month = jun,
+          eid = {arXiv:1906.05909},
+        pages = {arXiv:1906.05909},
+archivePrefix = {arXiv},
+       eprint = {1906.05909}
+       }
+
 @article{Ramamoorthy84,
  author="V. Ramamoorthy and N.S. Jayant",
  journal="AT\&T Bell Labs. Tech. J.",
@@ -34138,7 +34418,7 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
 
 @article{Rao2017,
  keywords="children's speech, paralinguistics",
- author="Hrishkesh Rao and Mark A. Clements and Yin Li and Meghan R. Swanson and Joseph Piven and
+ author="Hrishikesh Rao and Mark A. Clements and Yin Li and Meghan R. Swanson and Joseph Piven and
   Daniel S. Messinger",
  title="Paralinguistic Analysis of Children's Speech in Natural Environments",
  journal="Mobile Health",
@@ -34428,7 +34708,7 @@ keywords="flickr8k"
  year="1994"
 }
 
-@article{Regglannini2013,
+@article{Reggiannini2013,
  keywords="children's speech, paralinguistics",
  author="Brian Regglannini and Stephen J. Sheinkopf and Harvey F. Silverman and Xiaoxue Li and
   Barry M. Lester",
@@ -34512,6 +34792,13 @@ keywords="flickr8k"
  year="1996"
 }
 
+@inproceedings{Ren2016,
+author="Shaoqing Ren and Kaiming He and Ross Girshick and Jian Sun",
+title="Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+year="2016",
+booktitle="Advances in Neural Information Processing Systems"
+}
+ 
 @inproceedings{Ren04,
  address="Nara, Japan",
  author="Yuexi Ren and Sung-Suk Kim and Mark Hasegawa-Johnson and
@@ -35083,7 +35370,7 @@ keywords="flickr8k"
  number="UWEETR-2016-0000"
  }
 
-@article{Ron98,
+@article{Ron1998,
  abstract="algorithm able to learn stochastic regular grammar such
      that learned grammar generates distribution whose KL
      divergence from true distribution is arbitrarily small,
@@ -35094,10 +35381,10 @@ keywords="flickr8k"
  journal="Journal of Computer and System Sciences",
  keywords="language modeling, stochastic grammar, machine learning",
  pages="133-152",
- title="On the Learnability and Usage of Acyclic Probabilistic
-     Finite Automata",
+ title="On the Learnability and Usage of Acyclic Probabilistic Finite Automata",
  volume="56",
- year="1998"
+ year="1998",
+ keywords="WFST weighted finite state transducers"
 }
 
 @article{Rose59,
@@ -35681,6 +35968,17 @@ Thinking, Practice and Research in the Field of Cerebral Palsy",
  year="1988"
 }
 
+@article{Sadjadi2015,
+author="Omid Sadjadi and John H.L. Hansen",
+title="Mean Hilbert envelope coefficients (MHEC) for robust speaker and language identification",
+journal=jsc,
+year="2015",
+volume="72",
+pages="138-148",
+abstract="proposes smoothing the Hilbert envelope of the outputs of gammatone filters
+for noise robust speaker and language ID"
+}
+
 @inproceedings{Saenko05,
  address="Beijing",
  author="K. Saenko and K, Livescu and M. Siracusa and K. Wilson and
@@ -35753,6 +36051,131 @@ Thinking, Practice and Research in the Field of Cerebral Palsy",
  year="2002"
 }
 
+@inproceedings{Sainath2007icassp,
+ author="Tara Sainath and Dimitri Kanevsky and Giridharan Iyengar",
+ title="Unsupervised Audio Segmentation Using Extended Baum-Welch Transformations",
+ booktitle=icassp,
+ year="2007",
+ abstract="Kanevsky's EBW gradient is a measure of fit of the HMM to the audio, so
+  it can be used to decide whether an audio sequence should be one segment or two"
+}
+ 
+@article{Sainath2011tasl,
+ author="Tara Sainath and Bhuvana Ramabhadran and Michael Picheny and David Nahamoo and Dimitri Kanevsky",
+ title="Exemplar-Based Sparse Representation Features: From {TIMIT} to {LVCSR}",
+ journal=tasl,
+ volume="19",
+ number="8",
+ pages="2598-2613",
+ abstract="sparse coding methods are used to project test feature vectors onto the span of
+  training feature vectors.  Error rate is reduced significantly if speaker adaptation has already
+  reduced the error rate enough so that the projection chooses examples of the same phoneme"
+}
+
+@inproceedings{Sainath2013icassp1,
+ author="Tara N. Sainath and Abdel-rahman Mohamed and Brian Kingsbury and Bhuvana Ramabhadran",
+ title="Deep Convolutional Neural Networks for {LVCSR}",
+ booktitle=icassp,
+ year="2013",
+ abstract="first paper to use  CNN for LVCSR (Abdel-Hamid, Mohamed, Jiang and Penn used it
+  for small vocabulary the year before).  Optimal architecture is two layers CNN (128;256), 
+  3X max-pooling in frequency but not in time, then 3 fully-connected (1024) and a 
+  softmax output  (512) PCA-reduced to 40 features, which are used as features of 
+  a GMM-HMM (gave slightly lower error than the hybrid system with 2220 softmax outputs).
+  The 128;256 CNN layer sizes are the largest tested; it's possible that larger layers
+  would work better. Optimal features are MelFB+VTLN+d+dd.  fMLLR does
+  not help; LDA and/or cepstrum do not help; separate energy feature does not help"
+ }
+
+@inproceedings{Sainath2013icassp2,
+ author="Tara N. Sainath and Brian Kingsbury and Vikas Sindhwani and Ebru Arisoy and Bhuvana Ramabhadran",
+ title="Low-Rank Matrix Factorization for Deep Neural Network Training with High-Dimensional Output Targets",
+ booktitle=icassp,
+ year="2013",
+ pages="6655-6659",
+ abstract="the very large number of softmax outputs (e.g., 2220) makes last layer very highly
+  parameterized, since hidden layers should have 1024 nodes.  Parameter count reduced by
+  a low-rank factorization to rank=128 (BN)  or rank=512 (SWB) before training, reducing parameter
+  count by 28\% and training time by 40 \% with no loss of accuracy.  Equivalent to a bottleneck
+  layer without nonlinearity."
+  }
+
+@inproceedings{Sainath2013asru1,
+ author="Tara N. Sainath and Brian Kingsbury and Abdel-rahman Mohamed and George E. Dahl and 
+  George Saon and Hagen Soltau and Tomas Beran and Aleksandr Y. Aravkin and Bhuvana Ramabhadran",
+ title="Improvements to Deep Convolutional Neural Networks for {LVCSR}",
+ booktitle=asru,
+ year="2013",
+ abstract="Found effective methods for fMLLR in CNN: transform to an uncorrelated space using 
+  semi-tied covariance matrices aligned with the fMLLR alignment, then 
+  apply fMLLR, then transform back. For ReLU+dropout in Hessian-free training: keep the dropout
+  mask constant (rate=0.5 in FC layers 3 and 4 only, 0 in earlier  layers) during all iterations of 
+  conjugate gradient within an HF iteration.  With these, the hybrid system outperforms the
+  feature-based system."
+ }
+ 
+@inproceedings{Sainath2013asru2,
+ author="Tara N. Sainath and Brian Kingsbury and Abdel-rahman Mohamed and Bhuvana Ramabhadran",
+ title="Learning Filter Banks within a Deep  Neural Network Framework",
+ booktitle=asru,
+ year="2013",
+ abstract="Replace the mel filterbank with learned filterbanks, but having only the same frequency
+  inputs as the mel-filters, in order to guarantee some degree of frequency locality.
+  exp() is used to guarantee positive filter coefficients. Gets 5\% relative improvement on BN.
+  Z-normalizes the log of the spectrogram power, then exponentiates again, to make sure that
+  spectrogram powers are always positive."
+ }
+
+@article{Sainath2015jnn,
+ author="Tara N. Sainath and Brian Kingsbury and George Saon and Hagen Soltau and
+  Abdel-rahman Mohamed and George Dahl and Bhuvana Ramabhadran",
+ title="Deep Convolutional Neural Networks for Large-scale Speech Tasks",
+ journal="Neural Networks",
+ year="2015",
+ volume="64",
+ pages="39-48",
+ abstract="all results from her 2013 papers, plus: a better review of fMLLR and
+  semi-tied covariance matrices.  Results for larger CNN hidden layers; 
+  accuracy improves up to 512;512 which has 10M parameters, for minimum of 20M
+  training frames (BN).  Larger kernels: 9x9 in first convolutional layer, 4x3
+  (frequencyXtime) in second.  Two-branch architecture with CNN on un-fMLLR features
+  and DNN on fMLLR features, similar to 2014 Interspeech deep scattering spectrum,
+  gives small WER improvement. Adds i-vectors at input to the DNN layer (CNN also 
+  works but is slower)."
+  }
+
+@inproceedings{Sainath2015asru,
+ author="Tara N. Sainath and Ron J. Weiss and Kevin W. Wilson and Arun Narayanan and
+  Michiel Bacchiani and Andrew Senior",
+ title="Speaker Location and Microphone Spacing Invariant Acoustic Modeling from Raw
+  Multichannel Waveforms",
+ booktitle=asru,
+ year="2015",
+ abstract="from raw waveform input: 1 tConv layer, initialized with gammatone filters of 
+  windowlength 25ms, ERB scale, and followed by max-pooling over 10ms stride (total of
+  35ms) then ReLU then log(x+0.01), then 1 fConv layers (256 nodes, 1x8 TxF) w/Glorot-Bengio
+  initialization, 3 LSTM layers (832 cells mediated by a 512d projection layer) 
+  w/uniform init in [-0.02,0.02], 2 FC layers (1024 nodes, Glorot-Bengio init).  
+  Learns beamforming and ASR.  All training uses 2000 hours data with random added
+  noise (0dB to 20dB) and reverb (400ms to 900ms), 8-channel linear mic array@2cm.
+  tConv w/256 filters/mic is as good as 512, better than 128 or 40"
+  }
+
+@inproceedings{Sainath2018icassp1,
+ author="Tara N. Sainath and Chung-Cheng Chiu and Rohit Prabhavalkar and Anjuli Kannan
+  and Yonghui Wu and Patrick Nguyen and Zhifeng Chen",
+ title="Improving the Performance of Online Neural Transducer Models",
+ booktitle=icassp,
+ year="2018",
+ abstract="neural transducer is LAS limited to blocks, so that it can be run
+  in streaming mode.  With attention computed over 10 previous blocks and
+  5 future blocks (300ms), and with attention model pre-trained using LAS in
+  order to guide training of the NT, performance is still a little worse than LAS over
+  the whole utterance.  Gap is eliminated by using word-piece outputs instead
+  of character outputs, apparently because it improves LSTM ability to learn the
+  language model; adding an external FST language model doesn't help"
+  }
+  
 @incollection{SaintArnaud98,
  author="Nicholas Saint-Arnaud and Kris Popat",
  booktitle="Computational Auditory Scene Analysis",
@@ -35800,13 +36223,14 @@ Thinking, Practice and Research in the Field of Cerebral Palsy",
  affiliation="Nippon Electric Company, Kawasaki, JP",
  author="Hiroaki Sakoe and Seibi Chiba",
  journal="IEEE Trans. on Acoustics, Speech, and Sig. Proc.",
- keywords="speech recognition, template-based acoustic models",
+ keywords="speech recognition, template-based acoustic models, DTW",
  number="1",
  pages="43-49",
  title="Dynamic Programming Algorithm Optimization for Spoken Word
      Recognition",
  volume="26",
- year="1978"
+ year="1978",
+ abstract="the article that introduced dynamic time warping DTW to the West"
 }
 
 @inproceedings{Sakoe89,
@@ -36037,7 +36461,14 @@ Thinking, Practice and Research in the Field of Cerebral Palsy",
  doi="10.1109/ICASSP.2019.8683612",
  pages="6286-6290"
  }
- 
+
+@misc{Sari2020,
+ author="Leda Sar\i and Mark Hasegawa-Johnson and Samuel Thomas",
+ title="Auxiliary Networks for Joint Speaker Adaptation and Speaker Change Detection",
+ journal="IEEE Transactions  on  Audio, Speech, and Language",
+ note="accepted for publication"
+ year="2020"
+ }
 
 @techreport{Sass70,
  author="E. J. Sass and G. B. Mackie",
@@ -39213,8 +39644,7 @@ yearpp="1994",
  keywords="phonology, secondary features",
  pages="426-463",
  publisher="Lawrence Erlbaum Associates",
- title="Toward a Phonetic and Phonological Theory of Redundant
-     Features",
+ title="Toward a Phonetic and Phonological Theory of Redundant Features",
  year="1986"
 }
 
@@ -39224,8 +39654,7 @@ yearpp="1994",
  booktitle="Proc. Eleventh Int. Conf. Phonetic Sciences",
  keywords="acoustic correlates",
  pages="352-356",
- title="Relational Properties as Perceptual Correlates of Phonetic
-     Features",
+ title="Relational Properties as Perceptual Correlates of Phonetic Features",
  volume="4",
  year="1987"
 }
@@ -39319,7 +39748,7 @@ yearpp="1994",
  year="1996"
 }
 
-@book{Stevens99b,
+@book{Stevens1999,
  address="Cambridge, MA",
  author="Kenneth N. Stevens",
  keywords="production, phonetics, distinctive features",
@@ -39328,7 +39757,7 @@ yearpp="1994",
  year="1999"
 }
 
-@inproceedings{Stevens00,
+k@inproceedings{Stevens00,
  author="Kenneth N. Stevens",
  title="Models of Speech Perception Based on Acoustic Phonetic Landmarks",
  booktitle=interspeech, 
@@ -41033,6 +41462,23 @@ yearpp="1994",
  year="1999"
 }
 
+@inproceedings{Tishby1999,
+ author="Naftali Tishby and Fernando C. Pereira and William Bialek",
+ title="The Information Bottleneck Method",
+ year="1999",
+ booktitle="Allerton Conference on Communications, Control and Computing",
+ pages="368-377",
+ abstract="rate-distortion theory proposes quantizing X into code symbols ~X so that
+ the distribution over ~X can be quantized using as few bits per X as possible, subject
+ to a specified minimum value of some distortion function.  The solution is a pmf
+ p(~x|x)=p(~x)exp(-beta d(~x,x)), where beta is the Lagrange multiplier for the 
+ constraint on average distortion.  The Blahut-Arimoto algorithm solves for p(~x|x)
+ by alternating between this equation and the LOTUS equation for p(~x).
+ This paper proposes using the distortion function -I(~X,Y), i.e., maximizing
+ the mutual information between ~X and an external meaning representation Y.s
+ This results in the effective distortion function D(p(Y|X)||p(Y|~X))."
+ }
+
 @book{Titchmarsh32,
  address="London",
  author="E. C. Titchmarsh",
@@ -42040,7 +42486,7 @@ title = {Attention is All you Need},
  year="1994"
 }
 
-@article{Veen,
+@article{VanVeen1988,
  author="B. D. {Van Veen} and K. M. Buckley",
  journal="IEEE Acoust. Speech, Signal Process. Mag.",
  pages="4-24",
@@ -42106,7 +42552,9 @@ title = {Attention is All you Need},
      of 200 words. Int. J. Man-Machine Studies 2, 223-234 1970",
  title="Automatic recognition of 200 words",
  volume="2",
- year="1970"
+ year="1970",
+ abstract="invented dynamic time warping DTW.  Measured distance between words using
+  L2 distance between normalized log energy in five frequency bands"
 }
 
 @book{Venables08,
@@ -43590,6 +44038,14 @@ title = {Attention is All you Need},
  keywords="semantics, language modeling, text analysis",
  title="How Latent is Latent Semantic Analysis?"
 }
+
+@article{Wiener30,
+ author="Norbert Wiener",
+ title="Generalized harmonic analysis",
+ journal="Acta Mathematica",
+ year="1930",
+ pages="117-258"
+ }
 
 @article{Wiener46,
  author="F. M. Wiener and D. A. Ross",
