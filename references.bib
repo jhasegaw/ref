@@ -13833,12 +13833,19 @@ detect playback of any previously recorded audio sample for text-dependent speak
 }
 
 @inproceedings{Goldwater2006,
-    author = {Sharon Goldwater and Thomas L. Griffiths and Mark Johnson},
-    title = {{C}ontextual Dependencies in Unsupervised Word Segmentation},
-    booktitle = {Proceedings of the 21st International Conference on Computational Linguistics and 44th Annual Meeting of the Association for Computational Linguistics},
-    year = {2006},
-    pages = {673–680},
-    abstract = "introduces the adaptor grammar"
+ author = {Sharon Goldwater and Thomas L. Griffiths and Mark Johnson},
+ title = {{C}ontextual Dependencies in Unsupervised Word Segmentation},
+ booktitle = {Proceedings of the 21st International Conference on Computational Linguistics and 44th Annual Meeting of the Association for Computational Linguistics},
+ year = {2006},
+ pages = {673–680},
+ abstract = "introduces the adaptor grammar.  G, the grammar over words, is chosen from the set of
+  all possible vocabularies, with a Dirichlet pmf model, then words are selected from G.
+  By marginalizing over G, we get a Chinese restaurant process.  Inference uses iterative 
+  Gibbs sampling: sample every potential boundary location, in turn, keeping remainder of the
+  data fixed in order to give current estimate of words and word probabilities.  In order to
+  incorporate Bigrams, uses a hierarchical Dirichlet process, thus each possible predecessor
+  word gets its own Chinese restaurant, with labels on the tables chosen from backoff
+  to the unigram Chinese restaurant process."
 }
 
 @article{Golestani02,
