@@ -11,12 +11,15 @@
 @string{cocosda =  "International Conference COCOSDA"}
 @string{cvpr = "{IEEE} Conf. Computer Vision and Pattern Recogn. (CVPR)"}
 @string{embs = "Internat. Conf. {IEEE} Engineering in Medicine and Biology Society"}
+@string{emnlp = "Proc. Empirical Methods in Natural Language Processing (EMNLP)"}
 @string{diss = "{ISCA} Workshop on Disfluency in Spontaneous Speech"}
 @string{emnlp = "Empirical Methods in Natural Language Processing (EMNLP)"}
 @string{eurospeech = "Proc. {EUROSPEECH}"}
+@string{facct = "Proc. Conference on Fairness, Accountability and Transparency"}
 @string{globecom = "IEEE Globecom"}
 @string{hlt = "Human Language Technologies Conference (HLT)"}
 @string{icassp = "Proc. {ICASSP}"}
+@artinf{iclr = "Proc. International Conference on Learning Representations (ICLR)")
 @string{icme = "International Conference on Multimedia \& Expo (ICME)"}
 @string{icml = "Proc. International Conference on Machine Learning (ICML)"}
 @string{icphs = "International Conference on Phonetic Sciences"}
@@ -875,6 +878,16 @@ year="2016"
  year="2003"
 }
 
+@article{Alsharhan2020investigating,
+ author="Eiman Alsharhan and Allan Ramsay",
+ title=Investigating the effects of gender, dialect, and training size on the performance of Arabic
+  speech recognition",
+ journal="Language Resources and Evaluation",
+ volume="54",
+ pages="975-998",
+ year="2020"
+}
+
 @article{Alternam13,
  author="Richard Alterman and Johann Ari Larusson",
  title="Participation and common knowledge in a case study of student blogging",
@@ -1171,6 +1184,16 @@ url = { http://proceedings.mlr.press/v70/arjovsky17a.html },
 abstract = {We introduce a new algorithm named WGAN, an alternative to traditional GAN training. In this new model, we show that we can improve the stability of learning, get rid of problems like mode collapse, and provide meaningful learning curves useful for debugging and hyperparameter searches. Furthermore, we show that the corresponding optimization problem is sound, and provide extensive theoretical work highlighting the deep connections to different distances between distributions.}
 } 
 
+@misc{Arjovsky2020invariant,
+author="Martin Arjovsky and L{\'{e}}on Bouttou and Ishaan Gupta and David Lopez-Paz,
+title="Invariant Risk Minimization",
+      year={2020},
+      eprint={1907.02893},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML}
+}
+
+
 @phdthesis{Arnfield94,
  author="Simon Arnfield",
  school="University of Leeds",
@@ -1210,6 +1233,21 @@ abstract = {We introduce a new algorithm named WGAN, an alternative to tradition
  abstract="used DNNs to classify phonological features, which were used to detect mispronunciations,
  analyze errors, and give corrective feedback to learners"
 }
+
+@inproceedings{Arras2017explaining,
+ author="Leila Arras and Gr{\'{e}}goire Montavon and Klaus-Robert M{\"{u}}ller and Wojciech Samek",
+ title="Explaining Recurrent Neural Network Predictions in Sentiment Analysis",
+ booktitle="Proceedings of the 8th Workshop on Computational Approaches to Subjectivity, Sentiment and 
+ Social Media Analysis",
+ pages="159–168",
+ address="Copenhagen, Denmark",
+ year="2017",
+ abstract="defines layer-wise relevance propagation LRP for recurrent neural networks including LSTM.
+ LRP is better than gradient-based relevance propagation because it is signed: each neuron 
+ activation receives a positive amount of relevance if it usually improves the classification score,
+ and a negative amount if it usually degrades the classification score.  This paper suggests that in
+ an LSTM, the gate gets none of the relevance score, the cell or input gets all of it"
+ }
 
 @inproceedings{Arthur2016,
 author="Philip Arthur and Graham Neubig and Satoshi Nakamura",
@@ -1523,6 +1561,20 @@ deep reinforcement learning"
    helped, but unsupervised SMT adaptation didnt help"
 }
 
+@article{Bach2015pixel,
+ author="Sebastian Bach and Alexander Binder and Gr{\'{e}}goire Montavon and Frederick Klauschen and 
+ Klaus-Robert M{\"{u}}ller and Wojciech Samek",
+ title="On Pixel-Wise Explanations for Non-Linear Classifier Decisions by Layer-Wise Relevance Propagation",
+ journal="PLOS ONE",
+ volume="10",
+ number="7",
+ pages="e0130140",
+ abstract="LRP is better than gradient-based relevance propagation because it is signed: each neuron 
+ activation receives a positive amount of relevance if it usually improves the classification score,
+ and a negative amount if it usually degrades the classification score.  This paper suggests that in
+ an LSTM, the gate gets none of the relevance score, the cell or input gets all of it"
+ }
+
 @article{Badin06,
  abstract="PCA of velum and nasopharyngeal wall uncovers two factors
      apparently corresponding to levator veli palatini and
@@ -1586,7 +1638,7 @@ deep reinforcement learning"
  year="1991"
 }
 
-@inproceedings{Baevski2020,
+@inproceedings{Baevski2020wav2vec,
  author="Alexei Baevski and Henry Zhou and Abdelrahman Mohamed and Michael Auli",
  title="wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations",
  booktitle=nips,
@@ -1596,6 +1648,18 @@ deep reinforcement learning"
   then asks it to correctly choose the true quantizer output from K+1 alternatives.
   After pre-training on 50k hours of unlabeled audiobook, fine-tuning on 10 minutes
   of labeled data gives 4.8 percent WER (clean), 8.2 percent (noisy)."
+}
+
+@misc{Baevski2021unsupervised,
+ author="Alexei Baevski and Wei-Ning Hsu and Alexis Conneau and Michael Auli",
+ title="Unsupervised Speech Recognition",
+  url       = {https://arxiv.org/abs/2105.11084},
+ year="2021",
+ abstract="K-nearest-neighbors clusters of wav2vec 2.0  layer-15 embeddings
+ are then combined into segments and labeled with phone labels in order to fool
+ a GAN that compares them to phone sequences created from text.  The KNN sequences are used
+ to pseudo-label a speech corpus which trains a DNN-HMM.  The HMM then pseudo-labels the same
+ corpus which is used to fine-tune wav2vec"
 }
 
 @article{Baggenstoss99,
@@ -6114,6 +6178,17 @@ ISSN={1520-6149},}
  year="2000"
 }
 
+@inproceedings{Chang2020invariant,
+ author="Shiyu Chang and Yang Zhang and Mo Yu and Tommi S. Jaakkola",
+ title="Invariant Rationalization",
+ booktitle=icml,
+ volume="119",
+ pages="1448-1458",
+ year="2020",
+ abstract="rationalization = find a small subset of features that best supports the prediction.
+ invariant rationalization is constrained to enable the same prediction across environments"
+ }
+ 
 @inproceedings{Chang01c,
  address="Aalborg, Denmark",
  author="Shuangyu Chang and Lokendra Shastri and Steven Greenberg",
@@ -6427,6 +6502,18 @@ ISSN={1520-6149},}
  year="2007"
 }
 
+@inproceedings{Chen2019completely,
+author="Kuan-Yu Chen and Che-Ping Tsai and Da-Rong Liu and Hung-Yi Lee and Lin-shan Lee",
+title="Completely Unsupervised Speech Recognition by a Generative Adversarial Network Harmonized With Iteratively Refined Hidden Markov Models",
+booktitle=interspeech,
+year="2019",
+pages="1856-1860",
+doi="10.21437/Interspeech.2019-2068",
+keywords="unsupervised automatic speech recognition ASR, multilingual and cross-lingual zero-shot ASR",
+abstract="Generative Adversarial Network (GAN) for zero-shot unsupervised ASR, in which the generator is an ASR and the discriminator is a phonotactic language model learned from text in the target language.  Hidden Markov Models (HMMs) are iteratively refined from the machine generated labels.  Prior art covering many of the ideas in wav2vec 2.0"
+}
+
+
 @inproceedings{ChenLawrence1998,
  address="Los Angeles, CA",
  author="Lawrence S. Chen and Hai Tao and Thomas S. Huang and T.
@@ -6686,6 +6773,20 @@ keywords="MSCOCO"
    dialects.  Modeling the change of bd- (want) from verb (LA) to noun
    (MSA) helps, but using the b- present aspect marker to label verbs
    does not help, perhaps because the verbs are already clearly verbs"
+}
+
+@inproceedings{Chiappa2019path,
+author="Silvia Chiappa",
+title="Path-Specific  Counterfactual Fairness",
+booktitle=aaai,
+year="2019",
+pages="7801-7808",
+abstract="proposes to enforce fairness at test time by changing the decision to be 
+the one that would have been taken if the protected attribute were changed, and
+the change were propagated along all paths that are considered unfair.  Differs from the models
+of Kilbertus et al. and of Nabi and Shpitser because it allows the learning process to 
+retain fair individual-specific information even if that information is contained  in 
+descendants along  unfair paths"
 }
 
 @book{Chiba41,
@@ -7965,7 +8066,29 @@ keywords="computer vision, imagenet"
                   cell phones showed decreased A1C; those who accessed
                   the portals using home computers did not"
 }
-		  
+
+@article{Coucke2018snips,
+ author="Alice Coucke and Alaa Saade and Adrien Ball and Th{\'{e}}odore Bluche and
+ Alexandre Caullier and David Leroy and Cl{\'{e}}ment Doumouro and Thibault Gisselbrecht
+ and Francesco Caltegirone and Thibaut Lavril and Ma{\"e}}l Primet and Joseph Dureau",
+ title="Snips Voice Platform: an embedded Spoken Language Understanding system for
+ private-by-design voice interfaces",
+  journal   = {CoRR},
+  volume    = {abs/1805.10190},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1805.10190},
+  archivePrefix = {arXiv},
+  eprint    = {1805.10190},
+  timestamp = {Mon, 13 Aug 2018 16:46:59 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1805-10190.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+ abstract="Describes a smart speaker with all ASR on the device, so that no audio  is 
+ ever sent to the cloud.  The key design issues are (1) making an accurate ASR with a sufficiently
+ small footprint to be used on-device, (2) training the system to be robust to real-world user
+ inputs despite never uploading any real user inputs to the cloud.  The latter is done by 
+ hiring Turkers to pretend to be users."
+} 
+
 @book{Cover06,
  author="Thomas M. Cover and Joy A. Thomas",
  title="Elements of Information Theory",
@@ -8259,6 +8382,22 @@ keywords="computer vision, imagenet"
   real-valued scale.  Musical timbre is similar: experiment shows
   categorical perception of soft versus hard bowing of a string instrument"
 }
+
+@article{Cychosz2020longform,
+ author="Margaret Cychosz and Rachel Romeo and Melanie Soderstrom and Camila Scaff and Hillary Ganek
+ and Alejandrina Cristia and Marisa Casillas and Kaya {de Barbaro} and Janet Y. Bang and
+ Adriana Weisleder",
+ title="Longform recordings of everyday life: Ethics for best practices",
+ journal="Behavior Research Methods",
+ volume="52",
+ pages="1951-1969",
+ year="2020",
+ abstract="ethical considerations of things like LENA.  Describes benefits to participants
+ such as recording an endangered language and improving their representation in healthcare
+ policy, benefits to researchers, risks to participants, risks to researchers including the 
+ risk of auditing traumatic material, and possible solutions, notes that distorting 
+ the audio doesn't improve people's willingness to share"
+ }
 
 @incollection{Cziko00,
  author="Gary Cziko",
@@ -9218,6 +9357,16 @@ keywords="imagenet"
  year="1923"
 }
 
+@inproceedings{Dhananjaya2009features,
+ author="Dhananjaya N and S. Rajendran and B. Yegnanarayana",
+ title="Automatic Detection of Voice Bars in Continuous Speech",
+ booktitle=interspeech,
+ year="2009",
+ pages="1321-1324",
+ abstract="neural net observing ZFF features correctly  detected voice bar during
+ voiced plosives with Pm=11.3, Pf=9.1 in English, Pm=7.4, Pf=7.9 in Hindi"
+ }
+ 
 @article{Dick2011,
  keywords="diabetes self-care",
  author="Jonathan J. Dick and Shantanu Nundy and Maria C. Solomon and Keisha N. Bishop and 
@@ -9579,6 +9728,16 @@ ISSN={1070-9908},}
  year="2005"
 }
 
+@inproceedings{Doshi2021extending,
+ author="Rohan Doshi and Youzheng Chen and Liyang Jiang and Xia Zhang and Fadi Biadsy and 
+ Bhuvana Ramabhadran and Fang Chu and Andrew Rosenberg and Pedro J. Moreno",
+ title="Extending {Parrotron}: An End-to-End, Speech Conversion and Speech Recognition Model for 
+ Atypical Speech",
+ booktitle=icassp,
+ year="2021",
+ pages="6988-6992"
+}
+ 
 @article{Doty56,
  author="R. W. Doty and J. F. Bosma",
  journal="Journal of Neurophysiology",
@@ -9852,6 +10011,19 @@ keywords="modulation spectrum"
  year="1995"
 }
 
+@inproceedings{Dufter2020identifying,
+ author="Philipp Dufter and Hinrich Sch{\"{u}}tze",
+ title="Identifying Elements Essential for {BERT}'s Multilinguality",
+ booktitle=emnlp,
+ pages="4423-4437,
+ year="2020",
+ abstract="tests multilingual semantic embedding for different design modifications of BERT.
+ Determines that shared special tokens, shared position embeddings, and a common masking
+ strategy to replace masked tokens with random words contribute to multilinguality.
+ Inverting word order of one language destroys multilinguality.  Limited parameter count
+ and increased training duration improve multilinguality"
+ }
+ 
 @inproceedings{Duh05,
  author="{POS} Tagging of Dialectal Arabic: A Minimally Supervised Approach",
  author="Kevin Duh and Katrin Kirchhoff",
@@ -10378,6 +10550,16 @@ keywords="modulation spectrum"
  year="1983"
 }
 
+@inproceedings{Engel2020,
+ author="Jesse Engel and Lamtharn Hantrakul and Chenjie Gu and Adam Roberts",
+ title="{DDSP}: Differentiable Digital Signal Processing",
+ booktitle=iclr,
+ year="2020",
+ abstract="describes end-to-end neural network package with differentiable components
+ including frequency-sampled zero-phase FIR filters, phase vocoder and frequency voder,
+ and harmonics+noise vocoder"
+}
+ 
 @article{Engstrand03,
  abstract="phoneticians tried to determine language environment by
      listening to babbling. If babbling included only tokens
@@ -11155,10 +11337,23 @@ training - preliminary results",
  year="1998"
 }
 
-@incollection{Fergus,
+@misc{Feng2021quantifying,
+ author="Siyuan Feng and Olya Kudina and Bence Mark Halpern and Odette Scharenborg",
+ title="Quantifying Bias in Automatic Speech Recognition",
+ url = {https://arxiv.org/abs/2103.15122},
+ year="2021",
+ abstract="trains an attention-based encoder-decoder on CGN then tests it on JASMIN CGN,
+ shows that error rates are children > elderly > teens > adults, Flemish > Dutch,
+ dialects within the Netherlands also show variation, female voices > male voices"
+ }
+ 
+@incollection{Fergus2005sparse,
  author="R. Fergus and P. Perona and A. Zisserman",
  title="A Sparse Object Category Model for Efficient Learning and
-     Exhaustive Recognition"
+ Exhaustive Recognition",
+ booktitle=cvpr,
+ year="2005",
+ doi="10.1109/CVPR.2005.47"
 }
 
 @inproceedings{Fergus03,
@@ -13103,6 +13298,19 @@ detect playback of any previously recorded audio sample for text-dependent speak
  year="1993"
 }
 
+@inproceedings{Garg2019improved,
+ author="Abhinav Garg and Dhananjaya Gowda and Ankur Kumar and Kwangyoun Kim and Mehul Kumar
+ and Chanwoo Kim",
+ title="Improved Multi-Stage Training of Online Attention-Based Encoder-Decoder Models",
+ booktitle=asru,
+ year="2019",
+ pages="70-77",
+ abstract="proposes a three-stage training process beginning with a CTC-char encoder
+ then a CTC-BPE encoder then the attention decoder. Pre-trained char encoder is mapped
+ to BPE using a char-to-BPE stack which is trained for one epoch with CTC-char parameters
+ frozen.  Uses AED as an acronym for attention-based encoder-decoder"
+ }
+ 
 @phdthesis{Garg03,
  advisor="Dan Roth",
  author="Ashutosh Garg",
@@ -13605,7 +13813,7 @@ detect playback of any previously recorded audio sample for text-dependent speak
 }
 
 @inproceedings{Gillick89,
- author="L. Gillick and S.J. Cox",
+ author="Larry Gillick and Stephen J. Cox",
  booktitle="Proc. ICASSP",
  keywords="speech recognition, statistical significance,
      classification errors, McNemar's test",
@@ -15759,6 +15967,16 @@ detect playback of any previously recorded audio sample for text-dependent speak
  pages="1-12"
 }
 
+@misc{Hannun2020differentiable,
+ author="Awni Hannun and Vineel Pratap and Jacob Kahn and Wei-Ning Hsu",
+ title="Differentiable Weighted Finite-State  Transducers",
+ year="2020",
+ abstract="express arbitrary structured loss as a mapping from an arbitrary input WFST to a WFST
+ with only one transition.  Use that idea to incorporate arbitrary prior knowledge into a
+ neural net.  Examples are FSTs that implement CTC and RNN-T -- CTC has blanks, RNN-T  doesn't"
+ url       = {https://arxiv.org/abs/2010.01003}
+}
+
 @phdthesis{Hanson95a,
  address="Cambridge, MA",
  author="Helen M. Hanson",
@@ -16930,6 +17148,17 @@ severe dysarthria",
  keywords="resnet"
  }
 
+@inproceedings{He2017mask,
+ author="Kaiming  He and  Georgia Gkioxari and Piotr Doll{\'{a}}r and Ross Girshick",
+ title="Mask {R-CNN}",
+ year="2017",
+ booktitle=iccv,
+ pages="2961-2969",
+ abstract="augments Faster R-CNN with a km^2 binary mask for every ROI, where k is the number of
+ classes and m^2 is the number of pixels in the mask.  Only the mask for the correct class is
+ scored, using binnary cross-entropy"
+}
+ 
 @article{He05,
  abstract="speech understanding for information retrieval (IR):
      attribute-value pairs automatically learned using a
@@ -18048,6 +18277,14 @@ Environments",
  year="2007"
 }
 
+@book{Hogg1992,
+ author="Richard M. Hogg",
+ year="1992",
+ title="The Cambridge History of the English Language",
+ publisher="Cambridge University Press",
+ address="Cambridge"
+ }
+
 @inproceedings{Hokfelt99,
  author="Johan Hokfelt and Ove Edfors and Torleiv Maseng",
  title="Turbo Codes: Correlated Extrinsic Information and its Impact on
@@ -18739,6 +18976,36 @@ Constrained Adaptive Filters",
  year="2010"
 } 
 
+@article{Hu2020whats,
+ author="Lily Hu and Issa Kohler-Hausmann",
+ title="What's sex got to do with fair machine learning?",
+ booktitle=facct,
+ year="2020",
+ pages="513",
+ doi="10.1145/3351095.3375674",
+ abstract="identifies a significant problem with causal analysis of AI fairness:
+ some attribute pairs are related by constitutive relations, not causal relations.
+ If math avoidance is part of what it means to be female, rather than being an independent
+ personality attribute that is caused by femaleness (or causes people to label you as female),
+ then it is not possible to argue
+ that it's fair to discriminate based on math avoidance, but not fair to discriminate based
+ on gender"
+ }
+
+@inproceedings{Hu2019language,
+author="Ronghang Hu and Anna Rohrbach and Trevor Darrell and Kate Saenko",
+title="Language-Conditioned Graph Networks for Relational Reasoning",
+booktitle=iccv,
+year="2019",
+pages="10294-10303",
+keywords="visual question answering VQA, graph neural networks, message passing",
+abstract="answers VQA and reference questions by creating a graph over the detected objects in 
+an image; edge weights on the graph are computed by an attention network, one of whose inputs
+is the language embedding from the question that was asked.  The language embedding, in turn
+is an attention-weighted summary of words in the question, with weight matrices that change
+from one reasoning step to the next, so that several steps of reasoning can be learned"
+}
+
 @article{Hu2015,
 author="Wenping Hu and Yao Qian and Frank K. Soong and Yong Wang",
 title="Improved mispronunciation detection with deep neural network trained acoustic models and transfer learning based logistic regression classifiers",
@@ -19108,6 +19375,14 @@ and optical images of the tongue and lips",
  title="The recognition of speech by machine",
  year="1961"
 }
+
+@phdthesis{Hughes1961,
+ author="George W. Hughes",
+ title="The Recognition of Speech by Machine",
+ year="1961",
+ school="MIT",
+ advisor="Morris Halle"
+ }
 
 @article{Hughes99,
  author="Tadd B. Hughes and Hong-Seok Kim and Joseph H. DiBiase and
@@ -20066,6 +20341,24 @@ prosodic features related to F0, duration and voice quality",
  year="1989"
 }
 
+@inproceedings{Jacot2018neural,
+ author="Arthur Jacot and Franck Gabriel and Cl{\'{e}}ment Hongler",
+ title="Neural Tangent Kernel: Convergence and Generalization in Neural Networks",
+ booktitle=nips,
+ year="2018",
+ pages="8580-8589",
+ abstract="(1) with randomly initialized weights, 
+ the excitation at each layer is a Gaussian random variable with zero mean and with a variance
+ that depends on the values in the training dataset, (2) the function computed by such a neural 
+ network might be imagined to live in an infinite dimensional space, but at each step 
+ of SGD it is updated in a finite dimensional space defined by the gradients of the cost
+ function for each training example.  Combining these two gives the main results that
+ in the limit of infinite width the neural tangent kernel is deterministic at initialization
+ and remains constant throughout SGD.  Though the cost function is non-convex in the data
+ space it is convex  in the function space defined by the NTK (because the NTK is determined
+ by the set of selected data)"
+ }
+ 
 @article{Jaeger00,
  author="M. Jaeger and I. Hertrich and U. Stattrop and P.W.
      Sch{\"{o}}nle and H. Ackermann",
@@ -20395,6 +20688,21 @@ and selection method in co-training",
  year="2003"
 }
 
+@inproceedings{Jiao2018simulating,
+ author="Yishan Jiao and Ming Tu and Visar Berisha and Julie Liss",
+ title="Simulating Dysarthric Speech for Training  Data Augmentation in Clinical Speech Applications",
+ booktitle=icassp,
+ year="2018",
+ abstract="uses WORLD to convert healthy speech to dysarthric speech.  duration is doubled, 
+ then MCEP and BAP parameters are modified using DCGAN, and F0 is renormalized to dysarthric mean
+ and standard deviation.  Dysarthria parameters are estimated over all speakers in TORGO.
+ 65 percent of resulting speech samples are subjectively evaluated by speech-language pathologists
+ to show symptoms of mixed flaccid spastic dysarthria (ALS).  Speech synthesized in  this way is used
+ to augment a classifier that distinguishes between ataxic and ALS speech: the corpus has 16
+ speakers with ataxia, 8 with ALS, who are augmented by the addition of 8 new synthetic speakers.
+ Resulting binary classification accuracy is raised from 68 to 76 percent."
+ }
+
 @article{Jilka99,
  author="Matthias Jilka and Gregor M{\"{o}}hler and Grzegorz Dogil",
  journal="Speech Communication",
@@ -20404,6 +20712,24 @@ and selection method in co-training",
      {English} intonation",
  volume="28",
  year="1999"
+}
+
+@misc{Jin2020domain,
+  author    = {Wengong Jin and
+               Regina Barzilay and
+               Tommi S. Jaakkola},
+  title     = {Domain Extrapolation via Regret Minimization},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2006.03908},
+  abstract = "Studies the problem of environmental invariance when, for many environments,
+ the training data may contain only one example, from only one class.  Proposes a domain invariance
+ method that is like IRM but more strict.  Where IRM seeks an embedding with at least one 
+ optimal environment-independent classifier that is also within the set of optimal classifiers
+ for each class individually, RGM seeks an embedding such that the set of optimal classifiers
+ for the data excluding an environment is a subset of the set of optimal classifiers for the 
+ data from only that class: min L(f*phi) s.t. for all e, F_{-e}(phi) subseteq F_e(phi).
+ They call this regret minimization because it sets to zero the regret suffered if environment
+ e is not in the training set."
 }
 
 @mastersthesis{Jing01,
@@ -23843,6 +24169,29 @@ between the margins, in order to stabilize training"
  year="2007"
 }
 
+@inproceedings{Kusner2017counterfactual,
+ author="Matt Kusner and Joshua Loftus and Chris Russell and Ricardo Silva",
+ title="Counterfactual fairness",
+ booktitle=nips,
+ year="2017",
+ pages="4069-4079",
+ abstract="proposes that a policy is fair if it minimizes the difference between the outcome
+ any individual has under the given policy versus what they would have if they had a counterfactual
+ protected attribute"
+ }
+
+@inproceedings{Kusner2019making,
+ author="Matt J. Kusner and Chris  Russell and Joshua R. Loftus and Ricardo Silva",
+ title="Making Decisions that Reduce Discriminatory Impact",
+ booktitle=icml,
+ year="2019",
+ abstract="proposes that a policy is fair if it minimizes the maximum difference between 
+ the real-world impact of that decision on any individual, minus the impact that individual
+ would have had if they had a counterfactual protected attribute.  Differs from Kusner 2017
+ in assuming that the outcome for each individual is constrained  by the outcomes for other
+ individuals"
+ }
+
 @article{Kyriakakis99,
  abstract="immersive audio: microphone array, loudspeaker arrays, room
      acoustics",
@@ -25106,6 +25455,22 @@ between the margins, in order to stabilize training"
  year="1972"
 }
 
+@inproceedings{Lewis2020bart,
+ author="Mike Lewis and Yinhan Liu and Naman Goyal and Marjan Ghazvininejad and
+ Abdelrahman Mohamed and Omer Levy and Ves Stoyanov and Luke Zettlemoyer",
+ title="{BART}: Denoising Sequence-to-Sequence Pre-training for Natural Language
+ Generation, Translation, and Comprehension",
+ year="2019",
+ booktitle=acl,
+ year="2020",
+ pages="7871-7880",
+ keywords="neural language modeling",
+ abstract="uses a Transformer (instead of BERT's BLSTM) to reconstruct
+ noised sequences of lexical embeddings, where noise includes randomly shufflying the order
+ and replacing sequences of words with single masked tokens"
+ }
+ 
+
 @inproceedings{Lewis01,
  abstract="speech recognition in the dimensions orthogonal to red
      because face is always red",
@@ -25739,6 +26104,17 @@ title="The discrimination of speech sounds
   pages         = "249-252"
 }
   
+@inproceedings{Lin93,
+ author="Chih-Heng Lin and Lin-Shan Lee and Pei-Yih Ting",
+ title="A New Framework for Recognition of Mandarin Syllables With Tones Using Sub-Syllabic Units",
+ booktitle=icassp,
+ year="1993",
+ volume="II",
+ pages="227-230",
+ keywords="automatic speech recognition ASR",
+ abstract="uses initials and finals for Mandarin ASR"
+ }
+ 
 @inproceedings{Lin86,
  address="Amsterdam",
  author="D. Lin",
@@ -25805,15 +26181,6 @@ title="The discrimination of speech sounds
                   to the development of high quality synthesis."
 }
 
-@inproceedings{Lin93,
- author="Chih-Heng Lin and Lin-Shan Lee and Pei-Yih Ting",
- title="A New Framework for Recognition of Mandarin Syllables With Tones Using Sub-Syllabic Units",
- booktitle=icassp,
- year="1993",
- volume="II",
- pages="227-230"
- }
- 
 @phdthesis{Lin90,
  address="Stockholm",
  author="Qiguang Lin",
@@ -25823,6 +26190,17 @@ title="The discrimination of speech sounds
  year="1990"
 }
 
+@inproceedings{Lin2018focal,
+ author="Tsung-Yi Lin and Priya  Goyal and Ross Girshick and Kaiming He and Piotr Doll{\'{a}}r",
+ title="Focal Loss for Dense Object Detection",
+ year="2018",
+ abstract="when classes are imbalanced we can improve AP by scaling the loss for each
+ class according to inverse frequency of the class.  This paper proposes an extra step that 
+ can further improve AP: instead of -logp, loss is -(1-p)^gamma logp, where p is output of the 
+ network for the correct class, and gamma is a constant here set to 2 in order to strongly  
+ de-emphasize the loss on tokens for which the classifier is already confident"
+ }
+ 
 @article{Lin88,
  author="Wei-Chung Lin and Cheng-Chung Liang and Chin-Tu Chen",
  journal="IEEE Trans. on Medical Imaging",
@@ -26021,6 +26399,21 @@ keywords="MSCOCO"
  year="1997"
 }
 
+@article{Lisker1964cross,
+ author="Leigh Lisker and Arthur S. Abramson",
+ title="A Cross-Language Study of Voicing in Initial Stops: Acoustical Measurements",
+ journal="Word",
+ year="1964",
+ pages="384-422",
+ volume="20",
+ number="3",
+ doi="10.1080/00437956.1964.11659830",
+ abstract="English voiced stops are voiced medially, but devoiced initially.
+ English unvoiced stops are aspirated (long VOT) initially, and medially  pre-stress.
+ Spanish unvoiced stops have nearly zero VOT, and Spanish voiced stops have significant
+ pre-voicing"
+ }
+ 
 @article{Lisker75,
  author="Leigh Lisker",
  journal=jasa,
@@ -28811,6 +29204,23 @@ pages="167-174"
  year="1997"
 }
 
+@article{Micheletti2020optimal,
+ author="Megan Micheletti and Kaya {de Barbaro} and Michelle D. Fellows and J. Gregory Hixon
+ and Richard B. Slatcher",
+ title="Optimal Sampling Strategies for Characterizing Behavior and Affect from Ambulatory Audio
+ Recordings",
+ journal="Journal of Family Psychology",
+ doi="10.1037/fam0000654",
+ volume="34",
+ number="8",
+ pages="980-990",
+ abstract="shows that, if you can't label all of the data in a day-long recording, it's 
+ better to choose short snippets (30s) uniformly sampled with high frequency (1/8 of the data)
+ rather than randomly sampled, or longer snippets, or lower frequency",
+ keywords="daylong recordings, LENA, child speech"
+ }
+ 
+
 @article{Mickelson97,
  abstract="adult patients. 3/12: apnea reduced.",
  author="Samuel A. Mickelson and Leon Rosenthal",
@@ -29271,6 +29681,20 @@ pages="167-174"
  title="Commonsense-Based Interfaces",
  volume="43",
  year="2000"
+}
+
+@article{Mishler2021fairness,
+ author="Alan Mishler and Edward H. Kennedy",
+ title="Fairness in Risk Assessment Instruments: Post-Processing to Achieve Counterfactual
+ Equalized Odds",
+ booktitle=facct,
+ year="2021",
+ pages="386-400",
+ abstract="Proposes post-processing an existing risk assessment instrument by randomly  flipping
+ its outcome, with a probability that depends on the protected attribute.  These probabilities
+ are  trained using training data in order to optimize accuracy subject to the constraint that
+ counterfactual equalized odds gap is within specified limits.  Shows that this method converges
+ to the best possible such predictor (minimum error within fairness bounds) at sqrt(n) rates"
 }
 
 @article{Mitchell01,
@@ -30144,6 +30568,29 @@ keywords="speech synthesis"
    5 percent, effects roughly additive"
 }
 
+@inproceedings{Nabi2018fair,
+ author="Razieh Nabia and Ilya Shpitser",
+ title="Fair Inference on Outcomes",
+ booktitle=aaai,
+ year="2018",
+ pages="1931-1940",
+ keywords="causal fairness, causal reasoning, path-specific effects",
+ abstract="Extends Zhang and Wu's idea about  path-specific effects by proposing  
+ an algorithm that works even when the exogenous variables are correlated.  
+ The  key idea: rather than learning the true distribution, learn instead a distribution
+ that is constrained to be fair.  On the learned distribution it  is possible to analytically
+ compute moments, so you can compute moments constrained  on all of  the available observations
+ D, and try to match the data distribution with the model distribution as well as possible.
+ For every path by which discrimination would be considered unfair, specify a measure of the
+ unfairness g(D)=E[Y(a',W(M(a'),a),M(a'))-E[Y(a')], where A=a' is the original variable value,
+ a is the counterfactual value, M(a') is a mediator that is permitted to be correlated with
+ the protected attribute, W is the path variable that should only be relied on to the extent
+ that it can be made independent of the protected attribute, and D is the dataset.
+ Then we choose the distribution that maximizes L(D)  (the data  likelihood) subject to
+ minimum_allowed <= g(D) <= maximum_allowed."
+}
+
+
 @article{Nadas89,
  author="Arthur N{\'{a}}das and David Nahamoo and Michael A.
      Picheny",
@@ -30633,6 +31080,17 @@ keywords="speech synthesis"
    into component monophthongs"
 }
 
+@inproceedings{Nercessian2021end,
+ author="Shahan Nercessian",
+ title="End-to-End Zero-Shot Voice Conversion Using A {DDSP} Vocoder",
+ booktitle=waspaa,
+ year="2021",
+ abstract="since the DDSP vocoder is not  autoregressive, it is possible to hook up 
+ DDSP after AutoVC and  train the whole thing in an end-to-end fashion.  The training criterion
+ (multi-spectrogram loss) is  optimized in this way, but mean-squared error and perceived distortion
+ get slightly worse"
+}
+
 @book{Nespor86,
  addrss="Dordrecht",
  author="M. Nespor and I. Vogel",
@@ -30895,6 +31353,16 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  volume="19"
 }
 
+@article{Nishi2008acoustic,
+ author="Kanae Nishi and Winifred Strange and Reiko Akahane-Yamada and Rieko Kubo and Sonja A. Trent-Brown",
+ title="Acoustic and perceptual similarity of {Japanese} and {American English}  vowels",
+ booktitle=jasa,
+ year="2008",
+ volume="124",
+ number="1",
+ pages="576-588"
+ }
+ 
 @article{Nishiyama10,
  author="Atsuko Nishiyama and Jean-Pierre Koenig",
  title="What is a perfect state?",
@@ -32506,6 +32974,22 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  year= 1992
 }
 
+@article{ParlatoOliveira2020emotional,
+ author="Erika Parlato-Oliveira and Mohamed Chetouani and Jean-Maximilien Cadic and Sylvie Viaux
+ and Zeineb Ghattassi and Jean Xavier and Lisa Ouss and Ruth Feldman and Filippo Muratori and
+ David Cohen and Cathernie Saint-Georges",
+ title="The emotional component of Infant Directed-Speech: A cross-cultural study using 
+ machine learning",
+ journal="Neuropsychiatrie de l’enfance et de l’adolescence",
+ volume="68",
+ pages="106-113",
+ year="2020",
+ abstract="classify emotional IDS vs non-emotional IDS using SVMs with opensmile ComParE
+ features in English, Hebrew, Italian, Portuguese, and French, with data downsampled 
+ to 0.5 chance rate.  Same-language accuracy is 0.64 to 0.91; cross-language accuracy is
+ 0.58 to 0.84"
+ }
+
 @book{Parsons87,
  address="New York",
  author="Thomas Parsons",
@@ -32543,6 +33027,19 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  year="2009"
 }
 
+@article{Patil2016detection,
+ author="Vaishali V. Patil and Preeti Rao",
+ title="Detection of phonemic aspiration for spoken {Hindi} pronunciation evaluation",
+ journal=jphonetics,
+ volume="54",
+ year="2016",
+ pages="202-221",
+ abstract="VOT is insufficient for the four-way plosive distinction in Hindi.  This article
+ develops acoustic features that are sufficient.  A four-way classifier trained on Marathi 
+ works well also in Hindi (cross-lingually).  Tamil learners of Hindi can have  their 
+ aspiration errors automatically detected"
+ }
+ 
 @article{Patterson03,
  abstract="analysis of Switchboard and of Narrative corpus, latter
      contains stories retold by one friend to another. schwa
@@ -33328,6 +33825,18 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  volume="44",
  year="2000"
 }
+
+@article{Pfohl2019counterfactual,
+ author="Stephen  Pfohl and Tony Duan and Daisy Yi Ding and Nigam H. Shah",
+ title="Counterfactual Reasoning for Fair Clinical Risk Prediction",
+ journal="Proceedings of Machine Learning Research",
+ volume="106",
+ pages="325-358",
+ year="2019",
+ abstract="proposes counterfactual equalized odds as a superset of counterfactual equal 
+ opportunity, for the case in which you want to make sure that accuracy is not degraded if
+ a patient's protected attribute is counterfactually changed"
+ }
 
 @article{Phatak07,
  author="Sandeep Phatak and Jont Allen",
@@ -35236,6 +35745,24 @@ keywords="flickr8k"
  year="1996"
 }
 
+@article{Ren2019continuous,
+ author="Jing Ren and Adrien Poulenard and Peter Wonka and Maks Ovsjanikov",
+ title="Continuous and Orientation-preserving Correspondences via Functional Maps",
+ journal="ACM Transactions on Graphics",
+ volume="37",
+ number="6",
+ pages="248:1-16",
+ keywords="computer vision, computational geometry",
+ abstract="functional maps sometimes swap the two sides of a symmetric figure, e.g., a human.
+ This paper solves the problem by defining the triple product omega=<vXw, n> where n is the outward-
+ pointing normal at the point from which v and w originate.  An orientation-preserving map is
+ one that preserves the sign of omega for every pair of vectors v and w, e.g., for the gradients
+ of the functions that are used to compute the functional map.  Sign preservation is a linear 
+ constraint on the learned functional map, therefore it can be easily incorporated into the 
+ functional maps framwork as long as each triangle in each reference shape has a defined outward-
+ pointing  normal"
+ }
+
 @inproceedings{Ren2016faster,
 author="Shaoqing Ren and Kaiming He and Ross Girshick and Jian Sun",
 title="Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
@@ -36501,6 +37028,24 @@ for noise robust speaker and language ID"
                   readmissions were not significant."
 }
 
+@inproceedings{Sagawa200distributionally,
+ author="Shiori Sagawa and Pang Wei Koh and Tatsunori B. Hashimoto and Percy Liang",
+ title="Distributionally Robust Neural Networks for Group Shifts: On the Importance of Regularization
+ for Worst-Case Generalization",
+ booktitle="International Conference on Learning Representations ICLR",
+ year="2020",
+ eprint={1911.08731},
+ archivePrefix={arXiv},
+ primaryClass={cs.LG},
+ abstract="DRO minimizes R(theta)=max_g E_{(x,y)} l(theta, (x,y)).  When a network is
+ overparameterized so that most training examples get zero error, DRO fails to improve generalization,
+ because all of the groups have zero training error; the group you want to minimize is the one
+ that will have the worst generalization error, but you don't know which one that is.
+ In order to make DRO useful it is 
+ necessary to strongly regularize DRO, e.g., with |theta|^2, so that the training loss is not 
+ vanishingly small for most groups"
+} 
+
 @phdthesis{Sagey86,
  address="Cambridge, MA",
  author="E. Sagey",
@@ -37021,6 +37566,19 @@ for noise robust speaker and language ID"
  volume="60",
  year="1951"
 }
+
+@article{Savage1951theory,
+ author="L.J. Savage",
+ title="The Theory of Statistical Decision",
+ journal="Journal of the American Statistical Association",
+ volume="46",
+ number="253",
+ pages="55-67",
+ doi="10.1080/01621459.1951.10500768",
+ abstract="defines minimix regret minimization as a criterion for deciding when to make a 
+ decision.  The loss of income, I, resulting from taking action a in state s is 
+ regret(a,s) = max_{a'} I(a',s)-I(a,s)"
+ }
 
 @inproceedings{Savova03a,
  abstract="table-like input increases disfluency in HCI, decreases it
@@ -37654,6 +38212,20 @@ for noise robust speaker and language ID"
      transducers for speech recognition",
  year="2005"
 }
+
+@inproceedings{Schuster2019cross,
+ author="Sebastian Schuster and Sonal Gupta and Rushin Shah and Mike Lewis",
+ title="Cross-Lingual Transfer Learning for Multilingual Task Oriented Dialog",
+ booktitle=naacl,
+ pages="3795-3805",
+ year="2019",
+ abstract="tries three methods of cross-lingual transfer for slot-filling dialog systems:
+ (1) translated training data, (2) cross-language lexical embeddings, (3) multilingual 
+ lexical embeddings.  Method 3 works best if there are at least a few hundred training 
+ examples in the target language, however, all three methods underperform a monolingual 
+ system using ELMo lexical embeddings trained using only a small amount of target
+ language data"
+ }
 
 @phdthesis{Schutte09,
  author="Kenneth Thomas Schutte",
@@ -38410,6 +38982,15 @@ for noise robust speaker and language ID"
  year="2000"
 }
 
+@inproceedigs{Shi2019capturing,
+ author="Shuju Shi and Chilin Shih and Jinsong Zhang",
+ title="Capturing L1 Influence on L2 Pronunciation by Simulating Perceptual Space Using Acoustic Features",
+ booktitle=interspeech,
+ year="2019",
+ pages="2648-2652",
+ doi="10.21437/Interspeech.2019-3183"
+ }
+ 
 @inproceedings{Shih01,
  address="Red Bank, NJ",
  author="C. Shih and G. Kochanski and E. Fosler-Lussier and M. Chan
@@ -38941,6 +39522,25 @@ year="2015",
 booktitle="International Conference on Learning Representations (ICLR)",
 title="Very Deep Convolutional Networks for Large-Scale Image Classification"
 }
+
+@inproceedings{Simsekli2020hausdorff,
+ author="Umut {\,{S}}im{\,{s}}ekli and Ozan Sener and George Deligiannidis and Murat A. Erdogdu",
+ title="Hausdorff Dimension, Heavy Tails, and Generalization in Neural Networks",
+ booktitle=neurips,
+ year="2020",
+ abstract="proves that generalization error rate of a DNN trained using stochastic gradient 
+ descent is sqrt(d/n) where d is the Hausdorff dimension of the path followed by the neural 
+ network during training.  Neural networks with Brownian paths (Gaussian increments) have 
+ a Hausdorff dimension of 2, but neural networks with more heavy-tailed SGD increments
+ have lower Hausdorff dimensions, e.g., 1 or even lower, which reduces their generalization
+ error.  Key result is theorem 2.  Basic idea: consider a finite delta-cover of all possible
+ parameter vectors.  Assume that the event `generalization error of w exceeds epsilon' is at most
+ very loosely dependent on the event `w is within the path chosen by a particular run of SGD'.
+ Then uses the countability of the delta-cover chosen by a particular path of SGD to limit
+ the probability that this path converges to a solution with generalization error greater than
+ sqrt((2d+log(4M/gamma)/n) with probability 1-gamma, where M is the multiplier in the loose
+ independence assumption"
+ }
 
 @incollection{Sindhwani05a,
  author="Vikas Sindhwani and Misha Belkin and Partha Niyogi",
@@ -41149,6 +41749,16 @@ yearpp="1994",
  year="1997"
 }
 
+@article{Swadesh1934phonemic,
+ author="Morris Swadesh",
+ title="The Phomemic Principle",
+ journal="Language",
+ volume="10",
+ number="2",
+ pages="117-129",
+ year="2934"
+ }
+
 @incollection{Swain85,
  address="Rowley, MA",
  author="M. Swain",
@@ -41375,6 +41985,18 @@ yearpp="1994",
  keywords="audiovisual speech synthesis"
 }
 
+@inproceedings{Tan2020mind,
+ author="Samson Tan and Shafiq Joty and Lav R. Varshney and Min-Yen Kan",
+ title="Mind Your Inflections! Improving {NLP} for Non-Standard Englishes with Base-Inflection Encoding",
+ booktitle=emnlp,
+ year="2020",
+ pages="5647-5663",
+ abstract="instead of bite-pair encoding BPE, encode each noun verb or adjective with its
+ lemma and a code for its Penn treebank inflectional form.  Result: language modeling nearly 
+ as good as BPE, and generalizes better to Singapore English and African American English
+ CORAAL"
+ }
+ 
 @article{Tang97,
  author="B. Tang and A. Shen and A. Alwan and G. Pottie",
  journal="IEEE Transactions on Speech and Audio Processing",
@@ -42852,6 +43474,23 @@ doi="10.1109/MCSE.2014.80"
  year="1996"
 }
 
+@misc{VandenOord2018representation,
+ author="Aaron {van den Oord} and Yazhe Li and Oriol Vinyals",
+ title="Representation Learning with Contrastive Predictive Coding",
+ keywords="representation learning, machine learning, semi-supervised learning",
+ abstract="proposes to learn a representation using autoregressive predictive coding wit
+ a relatively long lead time (e.g., 100 to 200ms in speech)  since doing so forces
+ the neural net to learn a conceptual representation rather than simply modeling smoothness.
+ The `contrastive' in CPC is the loss function: use contrastive learning, where each 
+ positive example is required to be better than 10 or so negative examples, drawn 
+ from the same waveform or from others by the same speaker.  Idea is tested for
+ speech recognition and speaker recognition and computer vision and language modeling"
+      year={2018},
+      eprint={1807.03748},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
 @article{VanderBurg08,
  author="Erik {Van der Burg} and Christian N.L. Olivers and 
    Adelbert W. Bronkhorst and Jan Theeuwes",
@@ -43449,6 +44088,19 @@ title = {Attention is All you Need},
  year="1991"
 }
 
+@inproceedings{Voita2020information,
+ author="Elena Voita and Ivan Titov",
+ title="Information-Theoretic Probing with Minimum Description Length",
+ booktitle=emnlp,
+ year="2020",
+ pages="183-196",
+ abstract="Choose which layer of a pre-trained or self-trained network to use in some downstream task
+ by measuring the MDL of the resulting classifier.  For variational learning, MDL = -ELBO,
+ i.e., negative cross-entropy plus KLD between prior and posterior neural net parameters.
+ Without variational learning, you can estimate MDL by using each block of training data to update
+ parameters for the next block"
+}
+
 @article{Volaitis92,
  author="Lydia E. Volaitis and Joanne L. Miller",
  journal=jasa,
@@ -43731,6 +44383,21 @@ keywords="natural language processing, knowledge graphs",
 abstract="introduces the FVQA benchmark in which a fact from the graph is necessary to 
 answer each question"
 }
+
+@inproceedings{Wang2020mathematical,
+ author="Peng Wang and Junqi Wang and Pushpi Paranamana and Patrick Shafto",
+ title="A mathematical theory of cooperative communication",
+ booktitle=neurips,
+ year="2020",
+ abstract="asks the question: if teacher knows students prior beliefs in hypotheses, and
+ wants to revise them to match some final belief state, what data should the teacher present,
+ i.e., which belief's probability mass should be moved to which other belief?  Assume that there
+ is known cost C(r,p) for moving one belief to another, and that otherwise, low-entropy policies
+ cost more than high-entropy policies.  Solution is entropy-maximized Sinkhorn scaling:
+ start with P=exp(-lambda C), then iteratively renormalize so marginals match r, then renormalize
+ so marginals match p, and so on. Could be used to plan strategy for a  dialog system
+ especially an intelligent tutoring system"
+ }
 
 @inproceedings{Wang91a,
  author="Jhing-Fa Wang and Chung-Hsien Wu and Chaug-Ching Huang and
@@ -44144,6 +44811,23 @@ answer each question"
  title="Theory of vibration of the larynx",
  volume="9",
  year="1930"
+}
+
+@inproceedings{Wei2019regularization,
+ author="Colin Wei and Jason D. Lee and Qiang Liu and Tengyu Ma",
+ title="Regularization Matters: Generalization and Optimization of Neural Nets v.s. their Induced Kernel",
+ year="2019",
+ booktitle=nips,
+ abstract="the neural tangent kernel NTK is not constant if SGD is regularized.
+ This paper demonstrates an XOR problem with only 2  useful dimensions but d total dimensions,
+ shows that regularized SGD learns with O(d) examples but non-regularized SGD and NTK methods
+ require at least O(d^2) examples.  O(d^2) is proven by proving that kernel-based methods
+ are unable to focus exclusively on informative features with fewer than d^2 examples because
+ a kernel solution focusing on few features has high RKHS norm.  O(d) is proven by first
+ noting that in  the infinite-width limit, gradient descent follows dynamics of Wasserstein
+ flow, which converges to a max-margin solution.  Then define perturbed Wasserstein flow, perturbed
+ by the gradient of the regularizer.  Then prove that perturbed Wasserstein  flow converges
+ to a max-margin solution in polynomial time."
 }
 
 @article{Weil01,
@@ -44586,7 +45270,7 @@ answer each question"
 
 @book{Wiener49,
  address="New York",
- author="N. Wiener",
+ author="Norbert Wiener",
  publisher="John Wiley \& Sons",
  text=" WIENER, N.: The extrapolation and smoothing of stationary
      time series with engineering applications. New York: John
@@ -44596,6 +45280,17 @@ answer each question"
  year="1949"
 }
 
+@inproceedings{Wiesner2019zero,
+ author="Matthew Wiesner and Oliver Adams  and David Yarowsky and Jan Trmal and Sanjeev Khudanpur",
+ title="Zero-Shot Pronunciation Lexicons for Cross-Language Acoustic Model Transfer",
+ booktitle=asru,
+ year="2019",
+ pages="1048-1054",
+ abstract="Train a G2P for zero-shot ASR by first computing character n-gram over its text,
+ then finding words in  other languages that best match the character n-gram, then training 
+ G2P on those other-language words"
+ }
+ 
 @article{Wightman94,
  author="Colin Wightman and Mari Ostendorf",
  journal="IEEE Trans. Speech and Audio Proc.",
@@ -44746,6 +45441,17 @@ answer each question"
  title="A bibliographical guide to self-similar traffic and
      performance modeling for modern high-speed networks",
  year="1996"
+}
+
+@inproceedings{Winata2020learning,
+ author="Genta Indra Winata and Samuel Cahyawijaya and Zihan Liu and Zhaojiang Lin and
+ Andrea Madotto and Peng Xu and Pascale Fung",
+ title="Learning Fast Adaptation on Cross-Accented Speech Recognition",
+ booktitle=interspeech,
+ pages="1276-1280",
+ doi="10.21437/Interspeech.2020-45",
+ abstract="improves zero-shot and few-shot cross-dialect adaptation of a multi-dialect system
+ by training using MAML model-agnostic meta-learning on the Common Voice corpus"
 }
 
 @article{Windmann09,
@@ -45264,6 +45970,22 @@ answer each question"
  booktitle=interspeech,
  year="1999",
  pages="2359-2362"
+}
+
+@inproceedings{Xu2019achieving,
+ author="Depeng Xu and Yongkai Wu  and Shuhan Yuan and Lu Zhang and Xintao Wu",
+ title="Achieving Causal Fairness through Generative Adversarial Networks",
+ booktitle=ijcai,
+ year="2019",
+ pages="1452-1458",
+ keywords="counterfactual fairness, fair AI",
+ abstract="achieves counterfactual fairness using a GAN with two generators and two discriminators.  
+ First discriminator distinguishes
+ real from fake examples; second discriminates examples generated with different values  of the
+ protected attribute.  First generator has a latent variable and generator subnet for each
+ variable in the original causal graph; second generator sets protected attribute according to
+ intervention but  uses the same parameters as first network in the subnets for all other
+ variables"
 }
 
 @article{Xu,
@@ -46077,6 +46799,41 @@ pages="2263-2266"
  volume="20",
  year="1992"
 }
+
+@article{Zhang2017anti,
+ author="Lu Zhang and Xintao Wu",
+ title="Anti-discrimination learning: a causal modeling-based framework",
+ journal="Int J Data Sci Anal",
+ volume="4",
+ year="2017",
+ pages="1-16",
+ keywords="fairness, accountability and transparency",
+ abstract="first paper to propose that the distinction between fair and unfair AI can be codified
+ as the distinction between intermediate variables that are considered justifiable,
+ even if they are correlated with the protected attribute, versus those whose correlation with the
+ protected attribute would be considered to be unfair if propagated to the label.  The second
+ category are called, here, `redlining' variables.  The difference between them is then modeled
+ as the path-specific effect of the protected attribute: path-specific effects from protected
+ attribute to label, either directly or via redlining labels, are unfair, and should be minimized.
+ Contains a very clear description  of the do-calculus by way of the difference between 
+ endogenous and exogenous variables"
+ }
+
+@article{Zhang2019causal,
+ author="Lu Zhang and Yongkai Wu and Xintao Wu",
+ title="Causal Modeling-Based Discrimination Discovery and Removal: Criteria, Bounds, and Algorithms",
+ journal="IEEE Transactions on Knowledge and Data Engineering",
+ volume="31",
+ number="11",
+ pages="2035-2050",
+ keywords="counterfactual fairness, Bayes network, causal modeling, fair AI",
+ abstract="defines fairness of an algorithm as minimization of path-specific effects over the 
+ bundle of all unfair paths from protected attribute to outcome.  Observes that path-specific
+ effects are unidentifiable if any intermediate variables satisfies the recanting witness
+ criterion, defined as: there is a path from W to Y that is part of an unfair path, and there  is
+ another path from W  to Y  that is part of a fair path.  In that case, this article demonstrates
+ lower and upper bounds on the path-specific effect"
+ }
 
 @article{Zhang2020,
  author="Marvin Zhang and Henrik Marklund and Nikita Dhawan and Abhishek Gupta and Sergey Levine
