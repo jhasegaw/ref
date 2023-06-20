@@ -1,18 +1,12 @@
-#ref My bibtex database
+#ref ISLE bibtex database
 
-This repo is just a place to store my personal bibtex file.
-This file contains, more or less, every article I've ever read and
-found worth reading, and a few that I haven't read. 
+The primary purpose of this repo is to publish two bibtex databases:
 
-To test if all of the references can be read:
+* isle_pubs.bib - publications of the Illinois Speech and Language Engineering group
+* references.bib - papers that have been cited in ISLE papers, courses, seminars
 
-    git clone https://github.com/jhasegaw/ref
-    cd ref
-    pip install bibtexparser
-    python ./testreferences.py
+Other documents contained here:
 
-Currently returns:
-
-    Successfully read 3752 bibtex entries from references.bib
-    
+* pdfs - pdfs of a few papers that might be hard to find otherwise
+* testreferences.py - test a bibtex file to make sure it parses, and its URLs and DOIs resolve
 
