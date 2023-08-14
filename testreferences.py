@@ -21,18 +21,26 @@ requiredfields = {
 
 
 def main(filename, check_urls, check_required):
-    bd = bibtexparser.parse_file(filename)
+    with open(filename) as bibtex_file:
+        parser = bibtexparser.bparser.BibTexParser()
+        parser.common_strings = True
+        parser.interpolate_strings = True
+        parser.homogenize_fields = False
+        parser.ignore_nonstandard_types = False
+        parser.customization = bibtexparser.customization.convert_to_unicode
+        bd = parser.parse_file(bibtex_file)
+
     print('Successfully read {} bibtex entries from {}'.format(len(bd.entries),filename))
-    print("There were %d failed blocks."%(len(bd.failed_blocks)))
-    for n,b in enumerate(bd.failed_blocks):
-        print('Failed Block number',n,'is of type',b,' and has text',b._raw)
+    #print("There were %d failed blocks."%(len(bd.failed_blocks)))
+    #for n,b in enumerate(bd.failed_blocks):
+    #    print('Failed Block number',n,'is of type',b,' and has text',b._raw)
 
     if check_required:
         for entry in bd.entries:
             missing = []
-            if entry.entry_type in requiredfields:
-                for field in requiredfields[entry.entry_type]:
-                    if field not in entry.fields_dict:
+            if entry['ENTRYTYPE'] in requiredfields:
+                for field in requiredfields[entry['ENTRYTYPE']]:
+                    if field not in entry:
                         missing.append(field)
             if len(missing) > 0:
                 print('%s missing required fields %s'%(entry.key, ', '.join(missing)))
@@ -42,8 +50,8 @@ def main(filename, check_urls, check_required):
         for entry in bd.entries:
             prefixes = {'url':'','software':'','doi':'https://doi.org/'}
             for k,v in prefixes.items():
-                if k in entry.fields_dict:
-                    req = v + entry.fields_dict[k].value
+                if k in entry:
+                    req = v + entry[k].value
                     print('Trying:',req)
                     try:
                         response = requests.get(req,timeout=1)
