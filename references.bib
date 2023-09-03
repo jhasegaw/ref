@@ -8531,6 +8531,27 @@ keywords="computer vision, imagenet"
  volume="312"
 }
 
+@article{cristia2020accuracy,
+ author={Alejandrina Cristia and Federica Bulgarelli and Elika Bergelson},
+ title={Accuracy of the Language Environment Analysis System Segmentation and Metrics: A Systematic Review},
+ journal=jslhr,
+ year={2020},
+ volume="63",
+ pages={1093-1105},
+ abstract={Of 238 studies that report accuracy using LENA, finds 21 annotated for diarization precision and recall, 19 annotated for adult word count accuracy, 17 annotated for child vocalization count accuracy.  It turns out that diarization precision and recall are usually of presegmented utterances being classified among the various possible speakers, and silence is not usually included in the denominator of precision.  Reported precisions and recall vary from 45 to 90, and R-coefficients of AWC and CVC are 0.64 to 0.92, suggesting that for these coarse-grained measures, LENA can do pretty well.  Conversation turn count is also reported in 6 studies, with much lower R: -0.03, 0.14, 0.22, 0.52, 0.59, 0.7},
+ keywords={LENA}
+ }
+
+@article{cristia2021thorough,
+ author={Alejandrina Cristia and Marvin Lavechin and Camila Scaff and Melanie Soderstrom and Caroline Rowland and Okko R{\"{a}}s{\"{a}}nen and John Bunce and Elika Bergelson},
+ title={A thorough evaluation of the Language Environment Analysis ({LENA}) system},
+ year={2021},
+ journal={Behavior Research Methods},
+ volume={53},
+ pages={467-486},
+ abstract={Evaluates LENA much more carefully than any previous study.  Precision and recall of child, man, woman, and otherchild tags evaluated in 10ms frames from daylong recordings with silence and background noise as other options.  AWC, CVC, and CTC evaluated in 1-2 minute clips. Precision and recall vary from 0.4 to 0.87 depending on what one does with electronic speech and overlapping speech, with cohen's kappa of 0.44.  R for AWC, CVC, and CTC is 0.698, 0.649, 0.364 respectively.}
+ }
+ 
 @book{Crocker98,
  address="New York",
  editor="Malcolm Crocker",
@@ -27466,6 +27487,16 @@ keywords="MSCOCO"
   year          = "2016"
 }
 
+@article{liu2021recent,
+ author={Shansong Liu and Mengzhe Geng and Shoukang Hu and Xurong Xie and Mingyu Cui and Jianwei Yu and Xunying Liu and Helen Meng},
+ title={Recent Progress in the CUHK Dysarthric Speech Recognition System},
+ journal=tasl,
+ volume={29},
+ doi={10.1109/TASLP.2021.3091805},
+ pages={2267-2281},
+ abstract={achieves sota on UASpeech of 11.2 CER, 25.21 WER.  TDNN-HMM hybrid systems outperform CTC, LAS and hybrid LSTM; the best architecture included output tiers for both monophone and tied triphone state, and had number of levels and number of hidden nodes optimizes using neural architecture search.  Best system had data augmentation (speed perturbation is most effective), speaker adaptation (LHUC), and audiovisual fusion (with video synthesized, for audios that have no accompanying video, using a video synthesizer trained on UASpeech and a large external corpus)}
+ }
+ 
 @article{Lively93,
  author="Scott E. Lively and John S. Logan and David B. Pisoni",
  journal=jasa,
@@ -47223,6 +47254,19 @@ answer each question"
  year="1992"
 }
 
+@inproceedings{woszczyk2020domain,
+ author={Dominika Woszczyk and Stavros Petridis and David Millard},
+ title={Domain Adversarial Neural Networks for Dysarthric Speech Recognition},
+ booktitle=interspeech,
+ year={2020},
+ pages={3875-3879},
+ doi={10.21437/Interspeech.2020-2845}
+ abstract={dysarthric ASR trained on UASpeech.  Auxiliary task: classify as
+ control speaker vs dysarthric speaker.  Tried multitask learning (maximize domain
+ classification) and adversarial learning (minimize domain classification).  Multitask
+ learning was slightly more effective, both were more effective than just pooling data.}
+ }
+ 
 @inproceedings{Wrench01,
  address="Stratford-upon-Avon, UK",
  author="Alan A. Wrench",
