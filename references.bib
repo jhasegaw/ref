@@ -1177,6 +1177,16 @@ year="2016"
  year="1998"
 }
 
+@inproceedings{ardila2019common,
+  title={Common voice: A massively-multilingual speech corpus},
+  author={Ardila, Rosana and Branson, Megan and Davis, Kelly and Henretty, Michael and Kohler, Michael and Meyer, Josh and Morais, Reuben and Saunders, Lindsay and Tyers, Francis M and Weber, Gregor},
+  booktitle=lrec,
+  pages={4218–4222},
+  url={https://aclanthology.org/2020.lrec-1.520},
+  year={2019},
+  keywords={speech databases}
+}
+
 @inproceedings{Argyriou2008,
  keywords="transfer learning, spectrum of log probability mass function",
  author="Andreas Argyriou and Charles A. Micchelli and Mssimiliano Pontil and Yiming Yang",
@@ -2296,6 +2306,17 @@ year={2008},
   expected loss, over all Yk constructed by ASR from X, of the TTS X* constructed
   from Yk and from f(X) the X-vector.  Ltts is turned into a reward term using the
   REINFORCE algorithm as in the TTE system."
+}
+
+@inproceedings{baskar22b_interspeech,
+  author={Murali Karthick Baskar and Tim Herzig and Diana Nguyen and Mireia Diez and Tim Polzehl and Lukas Burget and Jan Černocký},
+  title={{Speaker adaptation for Wav2vec2 based dysarthric ASR}},
+  year=2022,
+  booktitle={Proc. Interspeech 2022},
+  pages={3403--3407},
+  doi={10.21437/Interspeech.2022-10896},
+  abstract={naive adaptation of wav2vec2 to UASpeech fails, but a bottleneck adaptor layer can
+  succeed, resulting in a new SoTA 22.48 WER on UASpeech}
 }
 
 @article{Bass99,
@@ -3631,7 +3652,7 @@ year={2008},
  pages="5070-5074",
  year="2017"
  }
- 
+
 @inproceedings{Bhat10a,
  author="Suma Bhat and Richard Sproat and Mark Hasegawa-Johnson and 
    Fred Davidson", 
@@ -3647,6 +3668,16 @@ year={2008},
  booktitle="SLaTE (Spoken Language Technology for Education)",
  month="Sep",
  year="2010"
+}
+
+@inproceedings{bhati21_interspeech,
+  author={Saurabhchand Bhati and Jesús Villalba and Piotr Żelasko and Laureano Moro-Velázquez and Najim Dehak},
+  title={{Segmental Contrastive Predictive Coding for Unsupervised Word Segmentation}},
+  year=2021,
+  booktitle={Proc. Interspeech 2021},
+  pages={366--370},
+  doi={10.21437/Interspeech.2021-1874},
+  abstract={segmental CPC is the new standard for unsupervised segmentation.  Each segment computed as the weighted average of all first-layer frames, where the weights are softmax(-scale*abs(cumsum(boundaryprob)-segmentindex)), and boundaryprob is the output of a sigmoid.  The training criterion includes framewise CPC on the representations before segment pooling, and segment-wise CPC on the representations after segment pooling.  Achieves better segment boundary F1 than previous criteria, though the segment labeling results are not superior.}  
 }
 
 @article{Bhattacharyya01,
@@ -5717,6 +5748,17 @@ ISSN={1520-6149},}
  year= "1992"
 }
 
+@article{canault2016reliability,
+  title={Reliability of the language environment analysis system (LENA™) in European French},
+  author={Canault, M{\'e}lanie and Le Normand, Marie-Th{\'e}r{\`e}se and Foudil, Samy and Loundon, Natalie and Thai-Van, Hung},
+  journal={Behavior research methods},
+  volume={48},
+  pages={1109--1124},
+  year={2016},
+  publisher={Springer},
+  keywords={speech data, language acquisition}
+}
+
 @techreport{canavan1996mandarin,
  author="Alexandra Canavan and George Zipperlen",
  title="{CALLHOME} Mandarin Chinese Speech",
@@ -5757,6 +5799,16 @@ ISSN={1520-6149},}
    signals -- generalization to low-rank + sparse is interesting"
 }
  
+@article{candido2022coraa,
+  title={CORAA ASR: a large corpus of spontaneous and prepared speech manually validated for speech recognition in Brazilian Portuguese},
+  author={Candido Junior, Arnaldo and Casanova, Edresson and Soares, Anderson and de Oliveira, Frederico Santos and Oliveira, Lucas and Junior, Ricardo Corso Fernandes and da Silva, Daniel Peixoto Pinto and Fayet, Fernando Gorgulho and Carlotto, Bruno Baldissera and Gris, Lucas Rafael Stefanel and others},
+  journal={Language Resources and Evaluation},
+  pages={1--33},
+  year={2022},
+  publisher={Springer},
+  keywords={speech data},
+  abstract={An excellent example of distributing data via a main software link on github, with links from there to the google drive, internal, and huggingface distributions of train, dev and test.  Unfortunately, since some subcorpora are CC-BY-NC-ND, they decided to release the whole corpus under that restrictive license.  Contains data from Sao Paolo 2010 corpus, TEDx Portuguese, and three others.}
+}
 
 @article{Cantey98,
  author= "J.T. Cantey",
@@ -7121,8 +7173,7 @@ summarized them more accurately, and read more quickly (information per minute o
  author={J. {Cho} and M. K. {Baskar} and R. {Li} and M. {Wiesner} and S. H. {Mallidi} and
   N. {Yalta} and M. {Karafiát} and S. {Watanabe} and T. {Hori}},
  booktitle=slt,
- title={Multilingual Sequence-to-Sequence Speech Recognition: Architecture, Transfer Learning,
-  and Language Modeling},
+ title={Multilingual Sequence-to-Sequence Speech Recognition: Architecture, Transfer Learning, and Language Modeling},
  year={2018},
  pages={521-527},
  keywords="multilingual CTC, cross-lingual CTC"
@@ -7345,6 +7396,23 @@ keywords="computer vision, imagenet"
  year="1996"
 }
 
+@article{chung2012cross,
+    author = {Chung, Hyunju and Kong, Eun Jong and Edwards, Jan and Weismer, Gary and Fourakis, Marios and Hwang, Youngdeok},
+    title = "{Cross-linguistic studies of children’s and adults’ vowel spaces)}",
+    journal = {The Journal of the Acoustical Society of America},
+    volume = {131},
+    number = {1},
+    pages = {442-454},
+    year = {2012},
+    month = {01},
+    abstract = "{This study examines cross-linguistic variation in the location of shared vowels in the vowel space across five languages (Cantonese, American English, Greek, Japanese, and Korean) and three age groups (2-year-olds, 5-year-olds, and adults). The vowels /a/, /i/, and /u/ were elicited in familiar words using a word repetition task. The productions of target words were recorded and transcribed by native speakers of each language. For correctly produced vowels, first and second formant frequencies were measured. In order to remove the effect of vocal tract size on these measurements, a normalization approach that calculates distance and angular displacement from the speaker centroid was adopted. Language-specific differences in the location of shared vowels in the formant values as well as the shape of the vowel spaces were observed for both adults and children.}",
+    keywords={speech data, language acquisition},
+    issn = {0001-4966},
+    doi = {10.1121/1.3651823},
+    url = {https://doi.org/10.1121/1.3651823},
+    eprint = {https://pubs.aip.org/asa/jasa/article-pdf/131/1/442/13259524/442\_1\_online.pdf},
+}
+
 @inproceedings{Chung14,
  title="Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling",
  author="Junyoung Chung and Caglar Culcehre and KyungHyun Cho and Yoshua Bengio",
@@ -7379,13 +7447,16 @@ keywords="computer vision, imagenet"
  year="1998"
 }
 
-@inproceedings{Cieri04,
+@inproceedings{cieri2004fisher,
  author="C. Cieri and D. Miller and K. Walker",
  booktitle=lrec,
  month="May",
  title="The Fisher corpus: a resource for the next generations of
      speech-to-text",
- year="2004"
+ year="2004",
+  volume={4},
+  pages={69--71},
+  keywords={speech data}
 }
 
 @article{Claes00,
@@ -7867,8 +7938,7 @@ keywords="computer vision, imagenet"
  journal=jaac,
  number="1",
  pages="34-42",
- title="Computer recognition of the speech of adults with cerebral
-     palsy and dysarthria",
+ title="Computer recognition of the speech of adults with cerebral palsy and dysarthria",
  volume="7",
  year="1991"
 }
@@ -8656,6 +8726,16 @@ keywords="computer vision, imagenet"
  volume="51",
  number="10",
  pages="853-863"
+}
+
+@article{cuervo2022variable,
+  title={Variable-rate hierarchical CPC leads to acoustic unit discovery in speech},
+  author={Cuervo, Santiago and Lancucki, Adrian and Marxer, Ricard and Rychlikowski, Pawe{\l} and Chorowski, Jan K},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={34995--35006},
+  year={2022},
+  abstract={trained using framewise CPC at the first layer, and segment-wise CPC at the second layer, like segmental CPC.  Unlike segmental CPC, the segmentation is not differentiable, so it is trained using REINFORCE.  Results in better segment labeling.  Boundary F1 is not reported, but I think SCPC is better for that metric.}
 }
 
 @INPROCEEDINGS{Cui03,
@@ -12011,6 +12091,8 @@ training - preliminary results",
  volume="27",
  year="1955b"
 }
+
+Flanagan, 
 
 @article{Flanagan56a,
  author="J. L. Flanagan",
@@ -15588,6 +15670,16 @@ detect playback of any previously recorded audio sample for text-dependent speak
  year="1998"
 }
 
+@article{griffin1984signal,
+ author={D. Griffin and J. Lim},
+ title={Signal estimation from modified short-time Fourier transform},
+ journal={IEEE Transactions on Acoustics, Speech, and Signal Processing},
+ volume={32},
+ number={2},
+ pages={236–243},
+ year={1984}
+ }
+
 @article{Griffin88,
  author="D.W. Griffin and J.S. Lim",
  journal="IEEE Transactions on Acoustics, Speech, and Signal
@@ -17826,6 +17918,15 @@ severe dysarthria",
  year="1958"
 }
 
+@inproceedings{heinz2011tier,
+ author={Jeffrey Heinz and Chetan Rawal and Herbert G. Tanner},
+ title={Tier-based Strictly Local Constraints for Phonology},
+ year={2011},
+ booktitle=acl,
+ pages={58--64},
+ abstract={strictly-local grammars are a sub-regular set of languages where the set of excluded words are only those that include a forbidden n-gram.  Tier-based strictly local permit the forbidden n-gram to be on a tier that only copies some symbols from the word; this modification permits tier-based strictly local grammars to represent the types of long-distance vowel and consonant harmony constraints that exist in attested natural languages}
+ }
+
 @article{Heffernan08,
  author="Neil T. Heffernan and Kenneth R. Koedinger and Leena Razzaq",
  title="Expanding the Model-Tracing Architecture: A 3rd Generation
@@ -18877,6 +18978,18 @@ Environments",
  pages="1871-1875"
 }
 
+@article{holden2023modern,
+  title={Modern Assessments of Intelligence Must Be Fair and Equitable},
+  author={Holden, LaTasha R and Tanenbaum, Gabriel J},
+  journal={Journal of Intelligence},
+  volume={11},
+  number={6},
+  pages={126},
+  year={2023},
+  publisher={MDPI},
+  abstract={review recent developments in the study of intelligence.  In particular, reviews process overlap theory, which posits that each task requires several different processes (not just one), and that processes that are required for many tasks tend to be more highly correlated than those required for just a few tasks, therefore the correlation among those tasks masks the lack of correlation among task-specific processes, producing a statistical singular factor g even when there is no single cognitive process that matches it.  Three key common processes that might cause the illusion of g include (1) executive task control (ordering tasks according to goals), (2) working memory capacity, which is basically the ability to sequence one's attention among items in short-term memory so that they remain in short-term memory, and (3) fluid intelligence, which is the ability to stop attending an item in short-term memory.  Reviews empirical evidence that tests fail to correctly measure levels of task control, WMC and fluid intelligence in African Americans, for reasons that are not known but that might include a reduced subconscious willingness to pliably respond to experimenter objectives}
+}
+
 @article{Hollenstein2007state,
  author="Tom Hollenstein",
  title="State space grids: Analyzing dynamics across development",
@@ -18890,6 +19003,19 @@ Environments",
  that have been able to show differences in state-space dynamic patterns in response to age
  or other independent variables"
  }
+
+@article{holliday2015quantifying,
+  title={Quantifying the robustness of the English sibilant fricative contrast in children},
+  author={Holliday, Jeffrey J and Reidy, Patrick F and Beckman, Mary E and Edwards, Jan},
+  journal={Journal of Speech, Language, and Hearing Research},
+  volume={58},
+  number={3},
+  pages={622--637},
+  year={2015},
+  publisher={ASHA},
+  keyworkds={speech data, language acquisition}
+}
+
 
 @unpublished{Holman96,
  author="Tomlinson Holman",
@@ -19639,6 +19765,16 @@ an image; edge weights on the graph are computed by an attention network, one of
 is the language embedding from the question that was asked.  The language embedding, in turn
 is an attention-weighted summary of words in the question, with weight matrices that change
 from one reasoning step to the next, so that several steps of reasoning can be learned"
+}
+
+@inproceedings{hu2022exploiting,
+  title={Exploiting cross domain acoustic-to-articulatory inverted features for disordered speech recognition},
+  author={Hu, Shujie and Liu, Shansong and Xie, Xurong and Geng, Mengzhe and Wang, Tianzi and Hu, Shoukang and Cui, Mingyu and Liu, Xunying and Meng, Helen},
+  booktitle={ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={6747--6751},
+  year={2022},
+  organization={IEEE},
+  keywords={dysarthric speech recognition, articulatory inversion}
 }
 
 @article{Hu2015,
@@ -21126,6 +21262,16 @@ prosodic features related to F0, duration and voice quality",
  year="2002"
 }
 
+@inproceedings{jardine2016learning,
+ author={Adam Jardine and Jeffrey Heinz},
+ title={Learning Tier-based Strictly 2-Local Languages},
+ booktitle=acl,
+ year={2016},
+ pages={87-98},
+ abstract={proves that a tier-based strictly 2-local language can be learned in quadratic time from a dataset that is at most order of the cubic size of the alphabet by enumerating the 2-paths that occur and the set of alphabet symbols that enable them, and from this determining the content of each tier, and the forbidden bigrams on each tier}
+ }
+
+
 @inproceedings{Jarvinen97,
  author="K. Jarvinen and J. Vainio and P. Kapanen and T. Honkanen
      and P. Haavisto and R. Salami and C. La{F}lamme and J.-P.
@@ -21433,6 +21579,16 @@ and selection method in co-training",
  title="Text Categorization with Support Vector Machines: Learning
      with Many Relevant Features",
  year="1998"
+}
+
+@inproceedings{joglekar20_interspeech,
+  author={Aditya Joglekar and John H.L. Hansen and Meena Chandra Shekar and Abhijeet Sangwan},
+  title={{FEARLESS STEPS Challenge (FS-2): Supervised Learning with Massive Naturalistic Apollo Data}},
+  year=2020,
+  booktitle={Proc. Interspeech 2020},
+  pages={2617--2621},
+  doi={10.21437/Interspeech.2020-3054},
+  keywords={speech data}
 }
 
 @inproceedings{johnson2022automatic,
@@ -24292,6 +24448,18 @@ between the margins, in order to stabilize training"
  year="1995"
 }
 
+@article{kong2012voice,
+  title={Voice onset time is necessary but not always sufficient to describe acquisition of voiced stops: The cases of Greek and Japanese},
+  author={Kong, Eun Jong and Beckman, Mary E and Edwards, Jan},
+  journal={Journal of phonetics},
+  volume={40},
+  number={6},
+  pages={725--744},
+  year={2012},
+  publisher={Elsevier},
+  keywords={speech data, language acquisition}
+}
+
 @article{Kopec86,
  author="Gary E. Kopec",
  journal="IEEE Trans. Acoust. Speech Sig. Proc.",
@@ -25373,6 +25541,16 @@ between the margins, in order to stabilize training"
  year="1995"
 }
 
+@inproceedings{lavechin20_interspeech,
+  author={Marvin Lavechin and Ruben Bousbib and Hervé Bredin and Emmanuel Dupoux and Alejandrina Cristia},
+  title={{An Open-Source Voice Type Classifier for Child-Centered Daylong Recordings}},
+  year=2020,
+  booktitle={Proc. Interspeech 2020},
+  pages={3072--3076},
+  doi={10.21437/Interspeech.2020-1690},
+  keywords={language acquisition}
+}
+
 @article{Lavner00,
  abstract="voices of 20 speakers were modified, and 30 listeners asked
      to identify. vocal tract shape characteristics were more
@@ -25437,7 +25615,16 @@ between the margins, in order to stabilize training"
  number="8",
  pages="1471--1482"
  }
- 
+
+@inproceedings{lea2023user,
+  title={From User Perceptions to Technical Improvement: Enabling People Who Stutter to Better Use Speech Recognition},
+  author={Lea, Colin and Huang, Zifang and Narain, Jaya and Tooley, Lauren and Yee, Dianna and Tran, Dung Tien and Georgiou, Panayiotis and Bigham, Jeffrey P and Findlater, Leah},
+  booktitle={Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems},
+  pages={1--16},
+  year={2023},
+  abstract={61-person survey from people who stutter finds participants want to use speech recognition but are frequently cut off, misunderstood, or speech predictions do not represent intent; second study, where 91 people who stutter recorded voice assistant commands and dictation, we quantify how dysfluencies impede performance in a consumer-grade speech recognition system.  Second study demonstrates improvements to commercial system results by (1) tuning the automatic endpointer duration based on severity of stuttering, (2) fine-tuning with speech of people who stutter, (3) removing repeated words except those on an exception list, (4) experiment with snapshots of the commercial system as released in years 2017 through 2022 -- just this step reduces WER from 30 to 20 percent.}
+}
+
 @incollection{Lea90,
  address="San Mateo, CA",
  affiliation="Speech Communications Research Laboratory",
@@ -26407,6 +26594,18 @@ between the margins, in order to stabilize training"
  year="2002"
 }
 
+@article{li2012language,
+  title={Language-specific developmental differences in speech production: A cross-language acoustic study},
+  author={Li, Fangfang},
+  journal={Child development},
+  volume={83},
+  number={4},
+  pages={1303--1315},
+  year={2012},
+  publisher={Wiley Online Library},
+  keywords={speech data, language acquisition}
+}
+
 @inproceedings{Li2016,
  author="Ruizhi Li and Sri Harish Mallidi and Luka{\v{s}} Burget and Old{\v{r}}ich Plchot and Najim Dehak",
  year="2016",
@@ -27272,7 +27471,17 @@ keywords="MSCOCO"
   and with concepts linked cross-linguistically for many of them}
 }
 
-@article{Liu93,
+@article{liu2023automation,
+  title={Automation of Language Sample Analysis},
+  author={Liu, Houjun and MacWhinney, Brian and Fromm, Davida and Lanzi, Alyssa},
+  journal={Journal of Speech, Language, and Hearing Research},
+  pages={1--13},
+  year={2023},
+  publisher={ASHA},
+  abstract={uses RevAI for ASR, then a BERT utterance tokenizer and punctuator trained using TalkBank, then standardization of RevAI's speaker labels by presenting the user with the longest sample from each, then forced alignment using MFA, then CLAN's morphological analyzer.  WER was 3.6 percent for people with mild cognitive impairment and 2.4 percent for controls.  Tokenization F1 was above 85 percent.  Forced alignment accuracy was about 90 percent.  Available at https://github.com/talkbank}
+}
+
+@article{liu1993locating,
  author="Sharlene A. Liu",
  journal=jasa,
  keywords="recognition, landmarks",
@@ -27408,6 +27617,16 @@ keywords="MSCOCO"
  number="5",
  pages="1526-1540",
  keywords="rich transcription, prosody recognition, hidden events"
+}
+
+@inproceedings{liu2006hkust,
+  title={{HKUST/MTS}: A very large scale mandarin telephone speech corpus},
+  author={Liu, Yi and Fung, Pascale and Yang, Yongsheng and Cieri, Christopher and Huang, Shudong and Graff, David},
+  booktitle={Chinese Spoken Language Processing: 5th International Symposium, ISCSLP 2006, Singapore, December 13-16, 2006. Proceedings},
+  pages={724--735},
+  year={2006},
+  organization={Springer},
+  keywords={speech databases}
 }
 
 @inproceedings{Liu07a,
@@ -33943,6 +34162,17 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  0.58 to 0.84"
  }
 
+@inproceedings{parish2016exploring,
+  title={Exploring autism spectrum disorders using HLT},
+  author={Parish-Morris, Julia and Liberman, Mark and Ryant, Neville and Cieri, Christopher and Bateman, Leila and Ferguson, Emily and Schultz, Robert T},
+  booktitle={Proceedings of the conference. Association for Computational Linguistics. Meeting},
+  volume={2016},
+  pages={74},
+  year={2016},
+  organization={NIH Public Access},
+  keywords={speech data}
+}
+
 @book{Parsons87,
  address="New York",
  author="Thomas Parsons",
@@ -36538,6 +36768,17 @@ archivePrefix = {arXiv},
  pages="107-109",
  abstract="demonstrates removal of the channel as a soft decoding first step
   prior to the iterations of turbo decoding"
+}
+
+@article{rasanen2021alice,
+  title={ALICE: An open-source tool for automatic measurement of phoneme, syllable, and word counts from child-centered daylong recordings},
+  author={R{\"a}s{\"a}nen, Okko and Seshadri, Shreyas and Lavechin, Marvin and Cristia, Alejandrina and Casillas, Marisa},
+  journal={Behavior Research Methods},
+  volume={53},
+  pages={818--835},
+  year={2021},
+  publisher={Springer},
+ keywords={children's speech, language acquisition}
 }
 
 @article{Rasband95,
@@ -44474,6 +44715,23 @@ doi="10.1109/MCSE.2014.80"
      Existing Limitations"
 }
 
+@inproceedings{tsay2005taiwan,
+  title={Taiwan Child Language Corpus: data collection and annotation},
+  author={Tsay, Jane S},
+  booktitle={Proceedings of the Fifth Workshop on Asian Language Resources (ALR-05) and First Symposium on Asian Language Resources Network (ALRN)},
+  year={2005},
+  keywords={speech data}
+}
+
+@inproceedings{tsay2007construction,
+  title={Construction and automatization of a Minnan child speech corpus with some research findings},
+  author={Tsay, Jane S},
+  booktitle={International Journal of Computational Linguistics \& Chinese Language Processing, Volume 12, Number 4, December 2007: Special Issue on Speech and Language Processing for Taiwanese Minnan, Hakka, and Mandarin},
+  pages={411--442},
+  year={2007},
+  keywords={speech data}
+}
+
 @incollection{Tseng06,
  address="Singapore",
  author="Chiu-yu Tseng",
@@ -48256,6 +48514,16 @@ pages="2263-2266"
  doi={10.1109/JSTSP.2022.3191845},
  abstract={shows that masking phonemes is better than masking frames uniformly at random}
 }
+
+@article{yue2022acoustic,
+  title={Acoustic modelling from raw source and filter components for dysarthric speech recognition},
+  author={Yue, Zhengjun and Loweimi, Erfan and Christensen, Heidi and Barker, Jon and Cvetkovic, Zoran},
+  journal={IEEE/ACM Transactions on Audio, Speech, and Language Processing},
+  volume={30},
+  pages={2968--2980},
+  year={2022},
+  publisher={IEEE}
+}
  
 @book{Yuh94,
  address="New York, NY",
@@ -48645,6 +48913,17 @@ pages="2263-2266"
      spontaneous spoken {English}",
  volume="49",
  year="2007"
+}
+
+@article{zhang2020fast,
+  title={Fast screening for children’s developmental language disorders via comprehensive speech ability evaluation—using a novel deep learning framework},
+  author={Zhang, Xing and Qin, Feng and Chen, Zelin and Gao, Leyan and Qiu, Guoxin and Lu, Shuo},
+  journal={Annals of Translational Medicine},
+  volume={8},
+  number={11},
+  year={2020},
+  publisher={AME Publications},
+  keywords={language acquisition}
 }
 
 @phdthesis{ZhangYou2000,
