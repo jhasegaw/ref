@@ -2035,6 +2035,21 @@ year={2008},
  keywords = {Machine learning, co-training, cover bounds, data dependent SRM, efficient learning algorithms, multi-view classification, sample complexity, semi-supervised learning, structural risk minimization (SRM), uniform convergence bounds, value of unlabeled data},
 } 
 
+@inproceedings{balduzzi2018mechanics,
+ author={David Balduzzi and S{\'{e}}bastien Racani{\`{e}}re and James Martens and
+ Jakob Foerster and Karl Tuyls and Thore Graepel},
+ title={The Mechanics of n-Player Differentiable Games},
+ booktitle={Proceedings of teh 35th International Conference on Machine Learning PMLR},
+ year={2018},
+ pages={1-17},
+ abstract={Shows that the payoff matrix in a multiplayer game may be decomposed into
+ symmetric and asymmetric parts.  Singular points of the symmetric part are Nash equilibria
+ and may be reached using multigradient ascent on the symmetric part, but multigradient ascent
+ on the asymmetric part cycles.  The cycle can be made to decay if an asymplectic correction
+ (friction) is added to the gradient, which couples rewards among the players.  Care must be
+ taken to add symplectic correction in the direction of a stable vs. unstable Nash equilibrium}
+ }
+
 @inproceedings{Baljekar2015using,
  author="Pallavi Baljekar and Sunayana Sitaram and Prasanna Kumar Muthukumar and Alan W Black",
  title="Using Articulatory Features and Inferred Phonological Segments in
@@ -2847,6 +2862,25 @@ year={2008},
  year="2003"
 }
 
+@techreport{beggs2005convergence,
+ author={A.W. Beggs},
+ title={On the convergence of reinforcement learning},
+ issn={1471-0498},
+ institution={Oxford University Department of Economics},
+ number={96},
+ year={2005},
+ pages={1-42},
+ abstract={Studies the RL policy of Roth and Erev, in which the probability of choosing an
+ action is proportional to the sum of all previous rewards received by performing that action.
+ Shows that when all players use this strategy, dominated strategies are iteratively deleted.
+ In two-player constant-sum games, average payoffs converge to the value of the game.
+ Converges to the Nash equilibrium if there is a unique pure strategy equilibrium or to the
+ mixed equilibrium if the game is 2x2.  If the opponent is not using the Erev-Roth strategy,
+ then the player using this strategy converges to their best guaranteed payoff on average,
+ but that a clever opponent can prevent the player from always achieving this average point
+ by switching strategies whenever the Erev-Roth player starts to converge to optimum.}
+ }
+
 @article{Behrman99,
  author="Alison Behrman",
  journal=jasa,
@@ -3199,8 +3233,7 @@ year={2008},
 @inproceedings{Bengio12,
  keywords="transfer learning",
  author="Yoshua Bengio",
- title="Deep learning of representations for unsupervised and
-   transfer learning",
+ title="Deep learning of representations for unsupervised and transfer learning",
  booktitle="JMLR: Proceedings of Unsupervised and Transfer
    Learning Challenge and Workshop",
  pages="17--36",
@@ -8069,6 +8102,18 @@ keywords="computer vision, imagenet"
  publisher="Oxford University Press"
 }
 
+@article{condon1992complexity,
+ author={Anne Condon},
+ title={The Complexity of Stochastic Games},
+ year={1992},
+ journal={Information and Computation},
+ volume={96},
+ pages={203-242},
+ abstract={shows that a two-player minimax finite game is a linear invertible problem
+ if strategies of both players are known but that determining whether the game is
+ winnable by player 1 is in the class of NP union co-NP}
+ }
+ 
 @incollection{Conkie97,
  address= "New York",
  affiliation= "",
@@ -9913,6 +9958,18 @@ keywords="imagenet"
  year="2004"
 }
 
+@article{ding2021accentron,
+ author={Shaojin Ding and Guanlong Zhao and Ricardo Gutierrez-Osuna},
+ title={Accentron: Foreign accent conversion to arbitrary non-native speakers using zero-shot
+ learning},
+ journal={Computer Speech and Language},
+ volume={72},
+ year={2021},
+ doi={10.1016/j.csl.2021.101302},
+ abstract={voice conversion independently across speaker and accent by learning 
+ an accent embedding usind different folds of CommonVoice}
+}
+
 @article{Dios94,
  author="P. Diz Dios and J. Fdez. Feijoo and M. Castro Ferreiro and
      J. Alvarez Alvarez",
@@ -11327,6 +11384,24 @@ training - preliminary results",
  doi="10.21437/Interspeech.2021-556",
  abstract="ASR (CommonVoice and ETAPE), SLU (MEDIA), and speech-to-text translation
  (CoVoST-2 and TEDx, French to English, Portuguese and Spanish) as benchmarks for speech representations"
+ }
+
+@article{evangelista2023current,
+ author={Emily Evangelista and Rohan Kale and Desiree McCutcheon and Anais Rameau and Alexander Gelbard
+ and Maria Powell and Michael Johns and Anthony Law and Philip Song and Matthew Naunheim and
+ Stephanie Watts and Paul C Bryson and Matthew G Crowson and Jeremy Pinto and Bridge2Ai-Voice
+ and Yael Bensoussan},
+ title={Current practices in Voice Data Collection and Limitations to Voice {AI} Research:
+ A National Survey},
+ journal={Laryngoscope},
+ year={2023},
+ doi={10.1002/lary.31052},
+ pmid={38087983},
+ abstract={59 laryngologists and 13 speech-language pathologists took a 30-question online survey.
+ 87 percent conduct voice research but only 38 percent do so on a multi-insitutional level.
+ Only 28 percent use standardized protocols for collection and storage of acoustic data.
+ 30 percent think lack of standardization hinders collaborative research while 55 percent
+ blame lack of human resources}
  }
  
 @article{Evans09,
@@ -15769,6 +15844,19 @@ detect playback of any previously recorded audio sample for text-dependent speak
  year="1937"
 }
 
+@unpublished{gu2023mamba,
+ author={Albert Gu and Tri Dao},
+ title={Mamba: Linear-Time Sequence Modeling with Selective State Spaces},
+ year={2023},
+ pages={1-37},
+ abstract={as an alternative to transformers, proposes a state space model in which
+ the B and C matrices are functions of the input, as is the quantization step Delta,
+ and then the A and B matrices are discretized using Delta before feeding state forward
+ and generating output.  Shows that this model matches transformer performance on language
+ model pretraining, DNA sequence pretraining, and audio waveform pretraining while
+ maintaining complexity linear in sequence length}
+ }
+ 
 @inproceedings{Guenther95a,
  address="Stockholm",
  author="Frank H. Guenther",
@@ -19777,6 +19865,16 @@ from one reasoning step to the next, so that several steps of reasoning can be l
   keywords={dysarthric speech recognition, articulatory inversion}
 }
 
+@inproceedings{hu2023exploring,
+ author={Shujie Hu and Xurong Xie and Zengrui Jin and Mengzhe Geng and Yi Wang and Mingyu Cui and Jiajun Deng and Xunying Liu and Helen Meng},
+ title={Exploring self-supervised pre-trained asr models for dysarthric and elderly speech recognition},
+ booktitle=icassp,
+ year={2023},
+ pages={1-5},
+ publisher={IEEE},
+ doi={10.1109/ICASSP49357.2023.10097275}
+ }
+
 @article{Hu2015,
 author="Wenping Hu and Yao Qian and Frank K. Soong and Yong Wang",
 title="Improved mispronunciation detection with deep neural network trained acoustic models and transfer learning based logistic regression classifiers",
@@ -20350,6 +20448,18 @@ and optical images of the tongue and lips",
  doi="10.1109/ICASSP.1992.225979",
  Pages="174-179"
 }
+
+@inproceedings{hwang2023comparison,
+ author={Dongseong Hwang and Khe Chai Sim and Yu Zhang and Trevor Strohman},
+ year={2023},
+ month={6},
+ title={Comparison of soft and hard target {RNN-T} distillation for large-scale {ASR}},
+ booktitle=icassp,
+ pages={1-5},
+ publisher={IEEE},
+ doi={10.1109/ICASSP49357.2023.10096418}
+}
+
 
 @book{Hygienists96,
  address="Cincinatti",
@@ -26486,7 +26596,7 @@ between the margins, in order to stabilize training"
  year="2001"
 }
 
-@inproceedings{LiB06,
+@inproceedings{li2006extending,
  author="Beinan Li and John A. Burgoyne and Ichiro Fujinaga",
  title="Extending Audacity for Audio Annotation",
  booktitle="Proc. International Conference on Music Information Retrieval (ISMIR)",
@@ -26614,6 +26724,18 @@ between the margins, in order to stabilize training"
  pages="3265-3269",
  doi="10.21437/Interspeech.2016-1584"
 }
+
+@inproceedings{li2022targeted,
+ author={Tianhong Li and Peng Cao and Yuan Yuan and Lijie Fan and Yuzhe Yang and Rogerio Feris
+ and Piotr Indyk and Dina Katabi},
+ title={Targeted Supervised Contrastive Learning for Long-Tailed Recognition},
+ booktitle={Computer Vision and Pattern Recognition CVPR},
+ pages={6918-6928},
+ abstract={contrastive learning can learn a representation that's better balanced between
+ majority and minority classes.  Improved results can be obtained by creating a codevector
+ that maximizes angle between targets for each class, then using a contrastive loss that encourages
+ tokens from each class to resemble their target codevector}
+ }
 
 @inproceedings{Li05,
  author="X. Li and H. Jiang and C. Liu",
@@ -26867,64 +26989,6 @@ title="The discrimination of speech sounds
  number="6",
  year="1978",
  pages="551-578"
-}
-
-@article{Litchman2019,
- author="Michelle L Litchman and Linda S Edelman",
- title="Perceptions of the Diabetes Online Community’s Credibility,
-                  Social Capital, and Help and Harm: Cross-Sectional
-                  Comparison Between Baby Boomers and Younger Adults",
- journal="JMIR Aging",
- year="2019",
- volume="2",
- number="2",
- doi="10.2196/10857",
- keywords="type II diabetes self-management",
- abstract="The use of online health communities such as the diabetes
-                  online community (DOC) is growing. Individuals who
-                  engage in the DOC are able to interact with peers
-                  who have the same medical condition. It is not known
-                  if older adults are perceiving the DOC differently
-                  compared with younger adults. Objective: The purpose
-                  of this study was to explore and understand how the
-                  DOC is perceived in terms of social capital, source
-                  credibility, and help and harm. The findings from
-                  this study will shed light on how users of different
-                  age groups (baby boomers and younger adult
-                  counterparts) perceive DOC use. Methods: This study
-                  represents a subset of participants from a larger
-                  study of DOC users. Baby boomers and younger adults
-                  with diabetes were recruited from the DOC to
-                  participate in a cross-sectional
-                  survey. Demographics, electronic health use (reasons
-                  to join the DOC, DOC intensity, DOC engagement,
-                  internet social capital, and help or harm from the
-                  DOC), source credibility, health-related quality of
-                  life, and diabetes self-care data were collected. We
-                  examined the differences between baby boomer and
-                  younger adult responses. Results: The participants
-                  included baby boomers (N=76) and younger adult
-                  counterparts (N=102). Participants scored their
-                  diabetes health care team (mean 33.5 [SD 8])
-                  significantly higher than the DOC (mean 32 [SD 6.4])
-                  with regard to competence (P<.05) and
-                  trustworthiness (diabetes health care team mean 36.3
-                  [SD 7.1]; DOC mean 33.6 [SD 6.2]; P<.001). High
-                  bonding and bridging social capital correlated with
-                  high DOC intensity (r=.629; P<.001 and r=.676;
-                  P<.001, respectively) and high DOC engagement
-                  (r=.474; P<.01 and r=.507; P≤.01, respectively). The
-                  greater majority (69.8 percrnt) reported the DOC as
-                  being helpful, and 1.8 percent reported that the DOC
-                  had caused minor harm. Baby boomers perceived DOC
-                  credibility, social capital, help, and harm
-                  similarly to their younger adult counterparts.
-                  Comclusions: Baby boomers are using and perceiving
-                  the DOC similarly to younger adults. DOC users find
-                  the DOC to be credible; however, they scored their
-                  health care team higher with regard to competence
-                  and trustworthiness. The DOC is beneficial with low
-                  risk and may augment current diabetes care."
 }
 
 @phdthesis{Lickley94, 
@@ -27471,6 +27535,80 @@ keywords="MSCOCO"
   and with concepts linked cross-linguistically for many of them}
 }
 
+@article{Litchman2019,
+ author="Michelle L Litchman and Linda S Edelman",
+ title="Perceptions of the Diabetes Online Community’s Credibility,
+                  Social Capital, and Help and Harm: Cross-Sectional
+                  Comparison Between Baby Boomers and Younger Adults",
+ journal="JMIR Aging",
+ year="2019",
+ volume="2",
+ number="2",
+ doi="10.2196/10857",
+ keywords="type II diabetes self-management",
+ abstract="The use of online health communities such as the diabetes
+                  online community (DOC) is growing. Individuals who
+                  engage in the DOC are able to interact with peers
+                  who have the same medical condition. It is not known
+                  if older adults are perceiving the DOC differently
+                  compared with younger adults. Objective: The purpose
+                  of this study was to explore and understand how the
+                  DOC is perceived in terms of social capital, source
+                  credibility, and help and harm. The findings from
+                  this study will shed light on how users of different
+                  age groups (baby boomers and younger adult
+                  counterparts) perceive DOC use. Methods: This study
+                  represents a subset of participants from a larger
+                  study of DOC users. Baby boomers and younger adults
+                  with diabetes were recruited from the DOC to
+                  participate in a cross-sectional
+                  survey. Demographics, electronic health use (reasons
+                  to join the DOC, DOC intensity, DOC engagement,
+                  internet social capital, and help or harm from the
+                  DOC), source credibility, health-related quality of
+                  life, and diabetes self-care data were collected. We
+                  examined the differences between baby boomer and
+                  younger adult responses. Results: The participants
+                  included baby boomers (N=76) and younger adult
+                  counterparts (N=102). Participants scored their
+                  diabetes health care team (mean 33.5 [SD 8])
+                  significantly higher than the DOC (mean 32 [SD 6.4])
+                  with regard to competence (P<.05) and
+                  trustworthiness (diabetes health care team mean 36.3
+                  [SD 7.1]; DOC mean 33.6 [SD 6.2]; P<.001). High
+                  bonding and bridging social capital correlated with
+                  high DOC intensity (r=.629; P<.001 and r=.676;
+                  P<.001, respectively) and high DOC engagement
+                  (r=.474; P<.01 and r=.507; P≤.01, respectively). The
+                  greater majority (69.8 percrnt) reported the DOC as
+                  being helpful, and 1.8 percent reported that the DOC
+                  had caused minor harm. Baby boomers perceived DOC
+                  credibility, social capital, help, and harm
+                  similarly to their younger adult counterparts.
+                  Comclusions: Baby boomers are using and perceiving
+                  the DOC similarly to younger adults. DOC users find
+                  the DOC to be credible; however, they scored their
+                  health care team higher with regard to competence
+                  and trustworthiness. The DOC is beneficial with low
+                  risk and may augment current diabetes care."
+}
+
+@techreport{littman1996,
+ author={Michael L. Littman and Csaba Szepesva{\'{r}}i},
+ title={A Generalized Reinforcement-Learning Model: Convergence and Applications},
+ year={1996},
+ month={2},
+ institution={Brown University Department of Computer Science},
+ number={CS-96-10},
+ pages={1-18},
+ abstract={Generalizes the expectation and max in Bell's equation, and shows that for 
+ as long as both operations are non-expansions, Q-learning can find an optimum strategy.
+ Mentions that the optimum strategy is deterministic in one-player games but can be 
+ stochastic in two-player games},
+ note={Extended version of an ICML paper}
+}
+ 
+
 @article{liu2023automation,
   title={Automation of Language Sample Analysis},
   author={Liu, Houjun and MacWhinney, Brian and Fromm, Davida and Lanzi, Alyssa},
@@ -27715,7 +27853,19 @@ keywords="MSCOCO"
  pages={2267-2281},
  abstract={achieves sota on UASpeech of 11.2 CER, 25.21 WER.  TDNN-HMM hybrid systems outperform CTC, LAS and hybrid LSTM; the best architecture included output tiers for both monophone and tied triphone state, and had number of levels and number of hidden nodes optimizes using neural architecture search.  Best system had data augmentation (speed perturbation is most effective), speaker adaptation (LHUC), and audiovisual fusion (with video synthesized, for audios that have no accompanying video, using a video synthesizer trained on UASpeech and a large external corpus)}
  }
- 
+
+@inproceedings{liu2022model,
+ author={Zhe Liu and Irina-Elena Veliche and Fuchuan Peng},
+ title={Model-based approach for measuring the fairness in {ASR}},
+ booktitle=icassp,
+ year={2022},
+ pages={6532-6536},
+ abstract={Demonstrates the use of Poisson regression to measure the significance of
+ different factors that might contribute to differences between groups in the error rate of
+ ASR including speaker variability as a random effect, group as a fixed effect on the acoustic model,
+ and word choice as a fixed offset function of the sentence embedding vector}
+ }
+
 @article{Lively93,
  author="Scott E. Lively and John S. Logan and David B. Pisoni",
  journal=jasa,
@@ -31056,6 +31206,19 @@ pages="167-174"
  address="Boston, MA"
 }
 
+@article{momeni2023backpropagation,
+ author={Ali Momeni and Babak Rahmani and Matthieu Mall{\'{e}}jac and Philipp del Hougne and Romain Fleury},
+ title={Backpropagation-free training of deep physical neural networks},
+ journal={Science},
+ pages={1297-1303},
+ year={2023},
+ abstract={Contrastive learning can be back-propagation free local learning if each layer attempts to 
+ transform positive examples to match a positive prototype and negative examples to match
+ a negative prototype.  This paper demonstrates acoustic system, microwave, and optical
+ echo systems that implement neural networks with local learning, and shows that the acoustic 
+ system can learn to recognize visual characters and spoken vowels}
+}
+
 @article{Moncur67,
  author="J. P. Moncur and D. Dirks",
  journal="J. Speech Hear. Res.",
@@ -31260,6 +31423,16 @@ F0 estimation errors, jitter and shimmer.  Subjective tests show it has
 quality similar to Legacy-STRAIGHT and much better than Tandem-STRAIGHT",
 keywords="speech synthesis, vocoder"
 }
+
+@article{morovelazquez2018study,
+ author={Laureano Moro-Velazquez and Jorge Andreas Gomez-Garcia and Juan Ignacio Godino-Llorente and Jan Rusz and Sabine Skodda and Francisco Grandas and Jos{\'{e}}-Miguel Velazquez and Juan Rafael Orozco-Arroyave and Elmar N{\"{o}}th and Najim Dehak},
+ title={Study of the automatic detection of Parkison’s Disease based on speaker recognition technologies and allophonic distillation},
+ booktitle={40th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
+ pages={1404-1407},
+ publisher={IEEE},
+ year={2018}
+ }
+
 
 @inproceedings{morovelazquez2019study,
  author={Laureano Moro-Velazquez and JaeJin Cho and Shinji Watanabe and Mark A. Hasegawa-Johnson and
@@ -32202,6 +32375,19 @@ keywords="speech synthesis"
  year="2001"
 }
 
+@article{nencheva2022understanding,
+ author={Mira L. Nencheva and Casey Lew-Williams},
+ journal={Developmental Review},
+ year={2017},
+ volume={66},
+ title={Understanding why infant-directed speech supports learning: A dynamic attention
+ perspective},
+ doi={10.1016/j.dr.2022.101047},
+ pages={101047:1-17},
+ abstract={Reviews acoustic characteristics of IDS and their correlates with infant behavior
+ including learning, attention and affect}
+ }
+
 @inproceedings{Nerbonne1997,
  author="John Nerbonne and Wilbert Heeringa",
  year="1997",
@@ -32378,6 +32564,15 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  title="Progress in transcription of Broadcast News using Byblos",
  volume="38",
  year="2002"
+}
+
+@inproceedings{nguyen2005bbn,
+ author={Long Nguyen and Bing Xiang and Mohamed Afify and Sherif Abdou and Spyros Matsoukas and Richard Schwartz and John Makhoul},
+ year={2005},
+ title={The {BBN} {RT04} English broadcast news transcription system},
+ booktitle=interspeech,
+ pages={1673--1676},
+ publisher={ISCA}
 }
 
 @inproceedings{NguyenLong2009,
@@ -32885,6 +33080,14 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  year="1959"
 }
 
+@inproceedings{orozco2014new,
+  title={New Spanish speech corpus database for the analysis of people suffering from Parkinson's disease.},
+  author={Orozco-Arroyave, Juan Rafael and Arias-Londo{\~n}o, Juli{\'a}n David and Vargas-Bonilla, Jes{\'u}s Francisco and Gonzalez-R{\'a}tiva, Mar{\'\i}a Claudia and N{\"o}th, Elmar},
+  booktitle={LREC},
+  pages={342--347},
+  year={2014}
+}
+
 @book{OShaughnessy87,
  address="Reading, MA",
  author="Douglas O'Shaughnessy",
@@ -33218,6 +33421,19 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
   keywords="source separation"
 }
 
+@article{olatunji2023afrispeech,
+ author={Tobi Olatunje and Tejumade Afonja and Aditya Yadavalli and Chris Chinenenye Emezue
+ and Sahib Singh and Bonaventure F.P. Dossou and Joanne Osuchukwa and Salomey Osei and
+ Atnafu Lambebo Tonja and Naome Etori and Clinton Mbataku},
+ title={{AfriSpeech-200}: Pan-{African} Accented Speech Dataset for Clinical and
+ General Domain {ASR}},
+ year={2023},
+ journal={Transactions of the Association for Computational Linguistics},
+ volume={11},
+ pages={1669-1685},
+ keywords={under-resourced ASR, fairness, data}
+ }
+ 
 @article{Olbrisch82,
  abstract="wedge excision. 83\% improved speech, 78\% had fewer colds
      post-op, etc.",
@@ -33711,6 +33927,18 @@ keywords="neural networks, machine translation, LSTM, sequence-to-sequence"
  volume="45",
  year="2005"
 }
+
+@article{ouyang2022training,
+  title={Training language models to follow instructions with human feedback},
+  author={Ouyang, Long and Wu, Jeffrey and Jiang, Xu and Almeida, Diogo and Wainwright, Carroll and Mishkin, Pamela and Zhang, Chong and Agarwal, Sandhini and Slama, Katarina and Ray, Alex and others},
+  journal={Advances in neural information processing systems},
+  volume={35},
+  pages={27730--27744},
+  year={2022},
+  abstract={defines reinforcement learning with human feedback (RLHF) as a particular case
+  of proximal policy optimization (PPO)}
+}
+
 
 @article{Overath,
  abstract="tone sequences with varied entropy were presented and
@@ -36294,6 +36522,32 @@ averaging.  Background silence also distinguishes IDS from ADS monolingually but
  year="1993"
 }
 
+@article{quinto-pozos2013atypical,
+ author={David Quinto-Pozos and Jenny L. Singleton and Peter C. Hauser and Susan C. Levine
+ and Carrie Lou Garberoglio and Lynn Hou},
+ title={Atypical signed language development: A case study of challenges with visual-spatial processing},
+ journal={Cognitive Neuropsychology},
+ volume={30},
+ number={5},
+ pages={332-359},
+ doi={10.1080/02643294.2013.863756},
+ abstract={case study of a teen female ASL native with specific language impairment
+ whose specific language impairment correlates with difficulty in non-linguistic topographic
+ space i.e. classifiers and referential shift}
+ }
+
+@article{quinto-pozos2016case,
+ author={David Quinto-Pozos and Jenny L. Singleton and Peter C. Hauser},
+ title={A Case of Specific Language Impairment in a Deaf Signer of American Sign Language},
+ journal={Journal of Deaf Studies and Deaf Education},
+ year={2016},
+ pages={1-15},
+ doi={10.1093/deafed/enw074},
+ abstract={case study of a male ASL native with specific language impairment
+ whose specific language impairment especially for fingerspelling correlates with difficulty
+ in memory and sequential processing skills, and with deficiency in English vocabulary}
+ }
+
 @article{Rabiner68a,
  author="L. R. Rabiner",
  journal="Bell System Tech. J.",
@@ -37678,6 +37932,14 @@ keywords="computer vision, object detection"
  year="1997"
 }
 
+@phdthesis{robinson2018phenomenological,
+ author={Jerry L. Robinson},
+ title={A phenomenological look at the life hacking-enabled practices of individuals with
+ mobility and dexterity impairments},
+ year={2018},
+ school={Syracuse University}
+}
+
 @article{Robson01,
  abstract="criteria for deciding between chemotherapy, radical neck
      dissection, modified radical dissection",
@@ -38637,6 +38899,20 @@ for noise robust speaker and language ID"
  year="1998"
 }
 
+@article{saint-georges2013motherese,
+ author={Catherine Saint-Georges and Mohamed Chetouani and Raquel Cassel and Fabio Apicella and
+ Ammar Mahdhoui and Filippo Muratori and Marie-Christine Laznik and David Cohen},
+ title={Motherese in Interaction: At the Cross-Road of Emotion and Cognition? (A Systematic Review)},
+ journal={PLOS one},
+ year={2013},
+ volume={8},
+ number={10},
+ pages={e78103:1-17},
+ abstract={infant-directed speech IDS improves infants' affect, attention and language learning.
+ IDS prosody meets infants' preferences and IDS production and prolongation depend on mother-infant
+ contingency and synchrony}
+ }
+ 
 @article{Saito00,
  author="Hiroshi Saito and Ichizo Itoh",
  journal="Kaiketsu Gakushushi",
@@ -41094,6 +41370,17 @@ title="Very Deep Convolutional Networks for Large-Scale Image Classification"
  pages="207-221"
 }
 
+@article{singh2000convergence,
+ author={Satinder Singh and Tommi Jaakkola and Michael L. Littman and Csaba Szepesv{\'{a}}ri},
+ title={Convergence Results for Single-Step On-Policy Reinforcement-Learning Algorithms},
+ journal={Machine Learning},
+ volume={39},
+ pages={287-308},
+ year={2000},
+ abstract={Proves SARSA for GLIE (greedy in the limit with infinite exploration) and RRR
+ (restricted rank-based randomized) learning policies}
+ }
+
 @inproceedings{Singhal84,
  author="S. Singhal and B. S. Atal",
  booktitle="Proc. ICASSP",
@@ -42868,6 +43155,24 @@ yearpp="1994",
   think like a mathematician"
 }
 
+@article{strmic2018race,
+ author={Hephzibah V. Strmic-Pawl and Brandon A. Jackson and Steve Garner},
+ title={Race Counts: Racial and Ethnic Data on the U.S. Census and the Implications for
+ Tracking Inequality},
+ journal={Sociology of Race and Ethnicity},
+ volume={4},
+ number={1},
+ pages={1-13},
+ doi={10.1177/2332649217742869},
+ abstract={presents desiderata for the decision about the 2020 race and ethnicity categories
+ on the US Census.  Argues that the goal of combating inequality might be well served
+ by asking people not just what they consider to be their own race, but also, what other people
+ consider to be their race.  Observes that race, ethnicity, heritage, and nationality may
+ each be interpreted very differently by different groups of people who are artificially
+ homogenized by the US Census.  Compares to other country's methods of collecting race, ethnicity,
+ language of origin, birth location, other data or, as in France and Sweden, no such data.}
+ }
+
 @article{Stouten06,
  author="Frederik Stouten and Jacques Duchateau and Jean-Pierre
      Martens and Patrick Wambacq",
@@ -43098,6 +43403,18 @@ yearpp="1994",
  keywords="AVSR, audiovisual speech perception"
 }
   
+@article{sun2024said,
+ title={Who Said What? An Automated Approach to Analyzing Speech in Preschool Classrooms},
+ author={Sun, Anchen and Londono, Juan J and Elbaum, Batya and Estrada, Luis and Lazo, Roberto Jose and Vitale, Laura and Villasanti, Hugo Gonzalez and Fusaroli, Riccardo and Perry, Lynn K and Messinger, Daniel S},
+ journal={arXiv preprint arXiv:2401.07342},
+ year={2024},
+ abstract={Uses sony digital recorders to record classroom audio of 4 children 
+ aged 3.8-4.6 years, and 25 teachers.  Uses ALICE for speaker 
+ diarization and Whisper for speech recognition.  Teacher vs. student utterance
+ classification had accuracy 0.76, kappa 0.50.  Word error rate for both children and 
+ teachers was 0.15.}
+}
+
 @inproceedings{Sundaram01,
  author="Ramasubramanian Sundaram and Jonathan Hamaker and Joseph
      Picone",
@@ -43550,6 +43867,15 @@ yearpp="1994",
  title="A Perceptually-Based Embedded Subband Speech Coder",
  volume="5",
  year="1997"
+}
+
+@article{tang2023salmonn,
+ title={Salmonn: Towards generic hearing abilities for large language models},
+ author={Tang, Changli and Yu, Wenyi and Sun, Guangzhi and Chen, Xianzhao and Tan, Tian and Li, Wei and Lu, Lu and Ma, Zejun and Zhang, Chao},
+ journal={arXiv preprint arXiv:2310.13289},
+ year={2023},
+ abstract={unified foundation model for audio speech and music, combining Whisper and BEATS encoders,
+ followed by a Window-level Q-former to convert into tokens of an LLM}
 }
 
 @article{Tang08a,
@@ -47849,6 +48175,21 @@ answer each question"
                   instructions; meal sequence instruction appears to
                   reduce body weight while maintaining adherence"
 }
+
+@techreport{yadav2019evalai,
+ author={Deshraj Yadav and Rishabh Jain and Harsh Agrawal and Prithvijit Chattopadhyay
+ and Taranjeet Singh and Akash Jain and Shiv Baran Singh and Stefan Lee and Dhruv Batra},
+ title={{EvalAI}: Towards Better Evaluation Systems for {AI} Agents},
+ year={2019},
+ institution={arXiV},
+ number={1902.03570v1},
+ pages={1-11},
+ abstract={eval.ai is a new competition site designed to seamlessly integrate
+ human-in-the-loop evaluation and variable-state evaluation environments
+ using, respectively, standardized interface and instruction of crowd workers,
+ and participant-submitted docker containers that can be initialized to variable state for multiple
+ evaluation test condition}
+ }
 
 @techreport{Yaggi62,
  address="Dallas",
