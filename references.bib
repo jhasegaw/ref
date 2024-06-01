@@ -956,6 +956,20 @@ year="2016"
  year="1997"
 }
 
+@book{amari2000methods,
+ author={Shun-ichi Amari and Hiroshi Nagaoka},
+ title={Methods of Information Geometry},
+ year={2000},
+ publisher={American Mathethematical Society},
+ series={Translations of Mathematical Monographs},
+ number={191},
+ abstract={Shows how the coordinate systems of the exponential family and the mixture
+ family of probability distributions are duals in the manifold implied by the f-divergence 
+ measures inluding KL divergence, in the sense that they have the same Riemannian
+ and dual connections, and uses this fact as a foundation for geometric approaches to
+ statistical estimation problems}
+}
+
 @article{Ambady00,
  author="Nalini Ambady and Frank J. Bernieri and Jennifer A. Richison",
  year="2000",
@@ -29352,6 +29366,21 @@ given by Z.  This work uses VAE to estimate the same graph for arbitrary distrib
  year="1992"
 }
 
+@inproceedings{martin2024why,
+ author={Vincent P. Martin and Jean-Luc Rouas},
+ title={Why Voice Biomarkers of Psychiatric Disorders are not used in Clinical Practice?
+ Deconstructing the Myth of the Need for Objective Diagnoses},
+ booktitle=lrec,
+ year={2024},
+ pages={17603-17613},
+ month={5},
+ abstract={Surveys of clinicians indicate that they do not rely on diagnoses because
+ diagnoses are coarse and noisy quantizations of complex profiles of multiple correlated symptoms.
+ Proposes that instead of trying to estimate diagnoses, machine learning (and Interspeech challenges
+ in particular) should try to estimate symptom profiles},
+ keywords={automatic diagnosis, health}
+}
+
 @article{Maslan2011,
  title="Maximum Phonation Time in Healthy Older Adults",
  author="Jonathan Maslan and Xiaoyan Leng and Catherine Rees and David Blalock and Susan G. Butler",
@@ -36773,6 +36802,24 @@ averaging.  Background silence also distinguishes IDS from ADS monolingually but
  data include examples of all of these tasks."
 }
 
+@article{radhakrishnan2024mechanism,
+ author={Adityanarayanan Radhakrishnan and Daniel Beaglehole and Parthe Pandit and Mikhail Belkin},
+ title={Mechanism for feature learning in neural networks and backpropagation-free machine learning
+ models},
+ journal={Science},
+ volume={383},
+ number={6690},
+ pages={1461-1467},
+ year={2024},
+ month={3},
+ abstract={Features of a NN layer are right singular vectors of the weight matrix,
+ equal to the eigenvectors of W^TW, equal to the eigenvectors of the average gradient
+ outer product, sum_psum_j nabla_{uj}f(x_p)nabla_{uj}f(x_p)^T.  The AGOP can be estimated even
+ in machine learning algorithms with no formal trained weight matrix, e.g., kernel methods,
+ and extracting features using the eigenvectors of AGOP makes those algorithms more effective},
+ keywords={explainable AI XAI, neural net features}
+ }
+
 @article{Radlovic08,
  author="Biljana D. Radlovi{\'{c}} and Rodney A. Kennedy", 
  title="Nonminimum-Phase Equalization and Its Subjective Importance in
@@ -36787,6 +36834,20 @@ averaging.  Background silence also distinguishes IDS from ADS monolingually but
    phase distortion which reduces word intelligibility"
 }
 
+@inproceedings{rafailov2023direct,
+ author={Rafael Rafailov and Archit Sharma and Eric Mitchell and Stefano Ermon and
+ Christopher D. Manning and Chelsea Finn},
+ title={Direct Preference Optimization: Your Language Model is Secretly a Reward Model},
+ booktitle=neurips,
+ year={2023},
+ month={12},
+ abstract={PPO learns policy pi=pi_ref(y|x)exp(r(x,y)/beta)/Z, which means
+ r(x,y)=beta\log(pi/pi_ref)+logZ, which can be plugged in to the PPO criterion
+ to show that PPO is nothing more than a less-stable version of directly maximizing log sigmoid
+ of beta times log(pi(ygood)/p_ref(ygood))-log(pi(ybad)/pi_ref(ybad))},
+ keywords={large language model LLM, reinforcement learning from human feedback RLHF, DPO}
+ }
+ 
 @article{raffel2020exploring,
  author={Colin Raffel and Noam Shazeer and Adam Roberts and Katherine Lee and Sharan Narang
  and Michael Matena and Yanqi Zhou and Wei Li and Peter J. Liu},
