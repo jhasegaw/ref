@@ -49,6 +49,7 @@
 @string{jstsp = "{IEEE} Journal on Selected Topics in Signal Processing"}
 @string{kdd = "ACM SIGKDD International Conference on Knowledge Discovery and Data Mining"}
 @string{lncs = "Lecture Notes in Computer Science"}
+@string{lre = "Language Resources and Evaluation"}
 @string{lrec = "Proceedings of the Conference on Language Resources and Evaluation (LREC)"}
 @string{mmsp = "{IEEE} Workshop on Multimodal and Multimedia Signal Processing"}
 @string{naacl = "Human Language Technology/North American Chapter of the Association for Computational Linguistics (HLT/NAACL)"}
@@ -898,11 +899,11 @@ year="2016"
  year="2003"
 }
 
-@article{Alsharhan2020investigating,
+@article{alsharhan2020investigating,
  author="Eiman Alsharhan and Allan Ramsay",
  title="Investigating the effects of gender, dialect, and training size on the performance of Arabic
   speech recognition",
- journal="Language Resources and Evaluation",
+ journal=lre,
  volume="54",
  pages="975-998",
  year="2020"
@@ -6342,6 +6343,14 @@ ISSN={1520-6149},}
   that of a finetuned LM approach"
 }
 
+@unpublished{chang2024self,
+ author={Kalvin Chang and Yi-Hui Chou and Jiatong Shi and Hsuan-Ming Chen and Nicole Holliday
+ and Odette Scharenborg and David R. Mortensen},
+ title={Self-supervised Speech Representations Still Struggle with {African American Vernacular English}},
+ year={2024},
+ note={in review}
+ }
+
 @article{Chang56,
  author="S.-H. Chang",
  journal=jasa,
@@ -6921,6 +6930,16 @@ keywords="MSCOCO"
    a third language, they call this triangulation"
 }
 
+@inproceedings{chen2020low,
+  title={Low-Resource Domain Adaptation for Compositional Task-Oriented Semantic Parsing},
+  author={Chen, Xilun and Ghoshal, Asish and Mehdad, Yashar and Zettlemoyer, Luke and Gupta, Sonal},
+  booktitle={Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  pages={5090--5100},
+  year={2020},
+  keywords={slot-filling, intent classification, TOPv2 corpus},
+  corpus = {https://fb.me/TOPv2Dataset}
+}
+
 @inproceedigs{chen2020improving,
  author="Zhehuai Chen and Andrew Rosenberg and Yu Zhang and Gary Wang and Bhuvana Ramabhadran
  and Pedro J. Moreno",
@@ -6943,6 +6962,21 @@ keywords="MSCOCO"
  pages="4828-4832"
  }
  
+@article{chen2023menli,
+  title={MENLI: Robust Evaluation Metrics from Natural Language Inference},
+  author={Chen, Yanran and Eger, Steffen},
+  journal={Transactions of the Association for Computational Linguistics},
+  volume={11},
+  pages={804--825},
+  year={2023},
+  keywords={semantic distance, machine translation, summarization},
+  abstract={proposes that machine translation outputs should bidirectionally imply and
+  be implied by the reference transcription, hence should be scored using NLI software.
+  Proposes a new adversarial corpus on which only this metric works.  On more general
+  semantic distance, this metric should be linearly interpolated with a more general
+  semantic distance measure, best is 0.1 times this plus 0.9 times BLEURT. For summarization,
+  the source text should imply the summarization}
+}
 
 @unpublished{Chenausky95,
  author="Karen Chenausky",
@@ -8495,7 +8529,9 @@ keywords="computer vision, imagenet"
  ever sent to the cloud.  The key design issues are (1) making an accurate ASR with a sufficiently
  small footprint to be used on-device, (2) training the system to be robust to real-world user
  inputs despite never uploading any real user inputs to the cloud.  The latter is done by 
- hiring Turkers to pretend to be users."
+ hiring Turkers to pretend to be users",
+ keywords = {slot-filling, intent classification, SNIPS corpus},
+ corpus = {https://github.com/sonos/nlu-benchmark}
 } 
 
 @book{Cover06,
@@ -14270,8 +14306,7 @@ detect playback of any previously recorded audio sample for text-dependent speak
  journal="Comput. Speech Language",
  keywords="auditory modeling, speech recognition",
  pages="109-130",
- title="Auditory nerve representation as a front-end for speech
-     recognition in a noisy environment",
+ title="Auditory nerve representation as a front-end for speech recognition in a noisy environment",
  volume="1",
  year="1986"
 }
@@ -23726,6 +23761,16 @@ keywords="multilingual ASR"
  year="1999"
 }
 
+@inproceedings{kim2022evaluating,
+  author={Suyoun Kim and Duc Le and Weiyi Zheng and Tarun Singh and Abhinav Arora and Xiaoyu Zhai and Christian Fuegen and Ozlem Kalinli and Michael Seltzer},
+  title={{Evaluating User Perception of Speech Recognition System Quality with Semantic Distance Metric}},
+  year=2022,
+  booktitle={Proc. Interspeech 2022},
+  pages={3978--3982},
+  doi={10.21437/Interspeech.2022-11144},
+  issn={2958-1796}
+}
+
 @inproceedings{Kim05b,
  address="Lisbon",
  author="S. Kim and S. Wang and R. Bentler",
@@ -26205,6 +26250,21 @@ between the margins, in order to stabilize training"
  year="1961"
 }
 
+@article{leiter2022towards,
+  title={Towards explainable evaluation metrics for natural language generation},
+  author={Leiter, Christoph and Lertvittayakumjorn, Piyawat and Fomicheva, Marina and Zhao, Wei and Gao, Yang and Eger, Steffen},
+  journal={arXiv preprint arXiv:2203.11131},
+  year={2022},
+  keywords = {semantic distance, machine translation, explainable AI xAI},
+  abstract = {gives a great description of different definitions of explanation, local and global,
+  ways in which such explanations can be instantiated, ways in which those map to the goals of users
+  of machine translation, and ways in which different recently proposed explainable metrics
+  instantiate them.  The new contribution is a study of adversarial attacks which concludes
+  that an adversarial attack on MT is hard, because most small changes in the wording of
+  a translation cause significant changes in meaning; see MENLI paper published 2023 for
+  an adversarial attack that actually works interestingly}
+}
+
 @article{Lemaitre12,
  author="Guillaume Lemaitre and Laurie M. Heller",
  title="Auditory perception of material is fragile while action is strikingly robust",
@@ -27622,6 +27682,17 @@ keywords="MSCOCO"
  note={Extended version of an ICML paper}
 }
  
+
+@inproceedings{liu2021benchmarking,
+  title={Benchmarking natural language understanding services for building conversational agents},
+  author={Liu, Xingkun and Eshghi, Arash and Swietojanski, Pawel and Rieser, Verena},
+  booktitle={Increasing Naturalness and Flexibility in Spoken Dialogue Interaction: 10th International Workshop on Spoken Dialogue Systems},
+  pages={165--183},
+  year={2021},
+  organization={Springer},
+  keywords={slot-filling, intent-classification, HWU corpus},
+  corpus={https://github.com/xliuhw/NLU-Evaluation-Data}
+}
 
 @article{liu2023automation,
   title={Automation of Language Sample Analysis},
@@ -29542,7 +29613,7 @@ given by Z.  This work uses VAE to estimate the same graph for arbitrary distrib
  year="1996"
 }
 
-@article{Matsoukas06,
+@article{matsoukas2006advances,
  author="Spyros Matsoukas and Jean-Luc Gauvain and Gilles Adda and 
     Thomas Colthurst and Cia-Lin Kao and Owen Kimball and Lori Lamel and
     Fabrice Lefevre and Jeff Z. Ma and John Makhoul and Long Nguyen and
@@ -30728,13 +30799,12 @@ pages="167-174"
  year="1950"
 }
 
-@article{Miller55,
+@article{miller1955analysis,
  author="G. A. Miller and P. E. Nicely",
  journal=jasa,
  keywords="perception, acoustic correlates",
  pages="338-352",
- title="Analysis of Perceptual Confusions Among Some English
-     Consonants",
+ title="Analysis of Perceptual Confusions Among Some English Consonants",
  volume="27",
  year="1955"
 }
@@ -38110,8 +38180,7 @@ keywords="computer vision, object detection"
  booktitle="Proc. ICASSP",
  keywords="speech coding",
  pges="453-456",
- title="The self-excited vocoder---an alternate approach to toll
-     quality at 4800 bps",
+ title="The self-excited vocoder---an alternate approach to toll quality at 4800 bps",
  year="1986"
 }
 
@@ -40245,6 +40314,16 @@ for noise robust speaker and language ID"
  year="1995"
 }
 
+@inproceedings{sellam2020bleurt,
+  title={BLEURT: Learning Robust Metrics for Text Generation},
+  author={Sellam, Thibault and Das, Dipanjan and Parikh, Ankur},
+  booktitle={Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+  pages={7881--7892},
+  year={2020},
+  keywords={evaluation metric, machine translation},
+  software = {https://github.com/google-research/bleurt}
+}
+
 @article{Selley94,
  author="W. G. Selley and R. E. Ellis and F. C. Flack and C. R.
      Bayliss and V. R. Pearce",
@@ -40440,6 +40519,33 @@ for noise robust speaker and language ID"
  year="2002"
 }
 
+@article{shahamiri2020autism,
+ author={Seyed Reza Shahamiri and Fadi Thabtah},
+ title={Autism AI: a New Autism Screening System Based on Artificial Intelligence}
+ year={2020},
+ journal={Cognitive Computation},
+ volume={12},
+ pages={766-777},
+ abstract={Ten-question survey result is mapped to a 40-dimensional multi-hot vector,
+ which is then expanded to 19x64 using two layers of CNN.  The CNN is learning an expansion
+ of the input, which can then be classified using two fully-connected layers resulting in
+ autism diagnosis with sensitivity 98.8 and specificity 97.4 across infants, toddlers,
+ children, adolescents and adults}
+ }
+
+@inproceedings{shahamiri2023autism,
+ author={Seyed Reza Shahamiri},
+ title={Autism Artificial Intelligence Performance Analysis: Five Years of Operation},
+ booktitle={IEEE International Conference on Advanced Learning Technologies (ICALT)},
+ year={2023},
+ pages={79-83},
+ abstract={10,000 people have used shahamiri2020autism, then reported formal diagnosis
+ using ADI-R, ADOS, 3DI or other if known. Results were scored using Autism-AI and using
+ previous survey scoring methods AQ-10 and CHAT-10. Accuracy is 97 percent with respect to
+ AQ-10 and CHAT-10, but compared to formal diagnosis only 59 percent accurate
+ which is the same as the accuracy of AQ-10 and CHAT-10.}
+ }
+ 
 @article{Shahid05,
  author="Shahjahan Shahid and Jacqueline Walker and Gerard M. Lyones
      and Ciaran A. Byrne and Anand Vishwanath Nene",
