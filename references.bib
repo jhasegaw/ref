@@ -10715,36 +10715,6 @@ keywords="modulation spectrum"
  year="2006"
 }
 
-@inproceedings{dwork2012fairness,
- author="Cynthia Dwork and Moritz Hardt and Toniann Pitassi and Omer Reingold and Richard Zemel",
- title="Fairness through awareness",
- booktitle="Proc. 3rd Innovations in Theoretical Computer Science Conference",
- pages="214-226",
- year="2012"
- }
-
-@inproceedings{dwork2010differential,
-  title={Differential privacy in new settings},
-  author={Dwork, Cynthia},
-  booktitle={Proceedings of the twenty-first annual ACM-SIAM symposium on Discrete Algorithms},
-  pages={174--183},
-  year={2010},
-  organization={SIAM},
-  abstract={Reviews the definition of an algorithm's differential privacy in terms of low percentage
-  change in the probability of the behavior of the algorithm.  Demonstrates that differential
-  privacy can be applied to the underlying data set (called the algorithm's state) in
-  defense against multiple announced intrusions (e.g., subpoena) and at most one
-  unannounced intrusion (data breach), if the data in the internal database is randomized
-  in a manner specifically designed to counter such an attack and is then re-randomized
-  after the attack; this called user-level pan-privacy.  Demonstrates that the question of
-  differential privacy under continual observation of the output is really a question of
-  the algorithm accuracy obtainable if the algorithm is required to maintain differential
-  privacy of its continual output.  In order to guarantee reasonable accuracy and differential
-  privacy a hierarchical array of interaction counters are each randomized at fixed count
-  intervals thus the overall count is private but the error grows only logarithmically with
-  the count}
-}
-
 @book{Eames77,
  author="Charles Eames and Ray Eames",
  publisher="IBM",
@@ -50373,3 +50343,259 @@ pages={851-898},
 abstract={Zero-knowledge proofs may leak knowledge if conducted concurrently, i.e., the prover and adversary run at the same time. This article proves that no knowledge leaks if the adversary's computational advantage is limited to at most a known finite ratio.}
 }
 
+--------------------2025 Sep 10-------------------------------------------------
+
+@inproceedings{dwork2004privacy,
+author={Cynthia Dwork and Kobbi Nissim},
+title={Privacy-Preserving Datamining on Vertically Partitioned Databases},
+year={2004},
+pages={528-544},
+booktitle={Crypto 2004},
+month={8},
+address={Santa Barbara, California, USA},
+abstract={For a number of queries that is less than linear in the size
+                  of the database, (SuLQ: sublinear queries), it is
+                  possible to add enough noise to each entry to
+                  guarantee privacy while preserving utility of the
+                  database. Introduces what will later be known as the
+                  epsilon-delta differential privacy criterion: change
+                  in the log-likelihood ratio after T queries should
+                  be less than epsilon with a probability that is
+                  smaller than delta which is smaller than any
+                  polynomial in the size of the database (was this
+                  criterion previously proposed by Dinur and Nissim?).
+                  Demonstrates that binomial perturbations preserve
+                  privacy under this definition. Shows that this is
+                  true for multi-attribute datasets.}
+}
+
+@unpublished{dwork2004calibrating,
+author={Cynthia Dwork and Frank McSherry and Kobbi Nissim and Adam Smith},
+title={Calibrating Noise to Sensitivity in Private Data Analysis},
+year={2004},
+abstract={Shows that it's possible to maintain privacy by adding
+                  Laplacian noise scaled by the sensitivity of the
+                  query function, defined as the maximum change that
+                  can be caused by adding or removing one entry from
+                  the dataset}
+}
+
+@inproceedings{blum2005practical,
+autor={Avrin Blum and Cynthia Dwork and Frank McSherry and Kobbi Nissim},
+title={Practical Privacy: The {SuLQ} Framework},
+year={2005},
+booktitle={PODS},
+pages={128-138},
+abstract={Shows how to compute principal components, k-means, perceptron learning, and ID3
+while maintaining privacy of the dataset by adding noise to query results}
+}
+
+@unpublished{dwork2006differential,
+author={Cynthia Dwork},
+title={Differential Privacy},
+year={2006},
+abstract={In 1977 Dalenius articulated a desideratum for statistical
+                  databases: nothing about an individual should be
+                  learnable from the database that cannot be learned
+                  without access to the database. We give a general
+                  impossibility result showing that a formalization of
+                  Dalenius’ goal along the lines of semantic security
+                  cannot be achieved. Contrary to intuition, a variant
+                  of the result threatens the privacy even of someone
+                  not in the database. This state of affairs suggests
+                  a new measure, differential privacy, which,
+                  intuitively, captures the increased risk to one’s
+                  privacy incurred by participating in a
+                  database. Epsilon differential privacy is defined,
+                  the Laplacian mechanism is reviewed, and its ability
+                  to guarantee privacy while providing utility is
+                  demonstrated.}
+}
+
+@unpublished{dwork2006our,
+author={Cynthia Dwork and Krishnaram Kenthapadi and Frank McSherry and Ilya Mironov and Moni Naor},
+title={Our Data, Ourselves: Privacy via Distributed Noise Generation},
+year={2006},
+abstract={Shows that Gaussian, binomial, or Poisson noise can be added to a dataset by adding
+some noise to each person's entry before communicating it to the database administrator.
+Laplacian noise requires more trust.}
+}
+
+@inproceedings{dwork2008differential,
+author={Cynthia Dwork},
+year={2008},
+title={Differential Privacy: A Survey of Results},
+booktitle={Theory andApplications of Models of Computation},
+address={Xi'an, China},
+month={4},
+abstract={Reviews differential privacy, the Laplacian mechanism, and the exponential
+utility mechanism of McSherry and Talwar. Reviews mechanisms for summary datasets,
+private half-spaces, and private PAC learning especially for classes with polynomial
+VC dimension.}
+
+@inproceedings{dwork2009complexity,
+author={Cynthia Dwork and Moni Naor and Omer Reingold and Guy N. Rothblum and Salil Vadhan},
+title={On the Complexity of Differentially Private Data Release},
+booktitle={STOC'09},
+year={2009},
+address={Bethesda, Maryland, USA},
+month={6},
+pages={381-390},
+abstrat={Shows that if differentially private queries are possible, then differentially private
+synthetic dataset is also possible, just with double the probability of utility violation
+at the same level of utility. Gives an algorithm for concept classes of polynomial VC dimension:
+just keep reducing the VC dimension, and generating data for that subset.}
+}
+
+@inproceedings{dwork2009differential,
+author={Cynthia Dwork and Jing Lei},
+title={Differential Privacy and Robust Statistics},
+year={2009},
+booktitle={STOC'09},
+year={2009},
+address={Bethesda, Maryland, USA},
+month={6},
+pages={371-380},
+abstract={Demonstrates a propose-test-release algorithm for computing
+                  differentially private summaries, which is similar
+                  to the computation of robust statistics: Propose a
+                  sensitivity. If the query yields lower sensitivity
+                  on the dataset, output only the "false" symbol. If
+                  sensitivity is better, give results of the
+                  query. For example, median, and interquartile-based
+                  linear regression, can be made to satisfy
+                  differential privacy in this way.}
+}
+
+@inproceedings{dwork2010boosting,
+author={Cynthia Dwork and Guy N. Rothblum adn Salil Vadhan},
+title={Boosting and Differential Privacy},
+year={2010},
+booktitle={IEEE 51st Annual Symposium on Foundations of Computer Science},
+pages={51-60},
+abstract={Boosting is a general method for improving the accuracy of
+                  learning algorithms. We use boosting to construct
+                  improved privacy-preserving synopses of an input
+                  database. These are data structures that yield, for
+                  a given set Q of queries over an input database,
+                  reasonably accurate estimates of the responses to
+                  every query in Q, even when the number of queries is
+                  much larger than the number of rows in the
+                  database. Given a base synopsis generator that takes
+                  a distribution on Q and produces a “weak” synopsis
+                  that yields “good” answers for a majority of the
+                  weight in Q, our Boosting for Queries algorithm
+                  obtains a synopsis that is good for all of Q.}
+}
+
+@inproceedings{dwork2010differential1,
+author={Cynthia Dwork and Moni Naor and Toniann Pitassi and Guy N. Rothblum},
+title={Differential Privacy Under Continual Observation},
+booktitle={STOC'10},
+pages={715-724},
+year={2010},
+abstract={Introduces the idea of differentially private counters in a database that is being
+continually updated and whose state is being continually monitored.}
+}
+
+@inproceedings{dwork2010differential2,
+title={Differential privacy in new settings},
+author={Dwork, Cynthia},
+booktitle={Proceedings of the twenty-first annual ACM-SIAM symposium on Discrete Algorithms},
+pages={174--183},
+year={2010},
+organization={SIAM},
+abstract={Reviews the definition of an algorithm's differential
+                  privacy in terms of low percentage change in the
+                  probability of the behavior of the algorithm.
+                  Demonstrates that differential privacy can be
+                  applied to the underlying data set (called the
+                  algorithm's state) in defense against multiple
+                  announced intrusions (e.g., subpoena) and at most
+                  one unannounced intrusion (data breach), if the data
+                  in the internal database is randomized in a manner
+                  specifically designed to counter such an attack and
+                  is then re-randomized after the attack; this called
+                  user-level pan-privacy.  Demonstrates that the
+                  question of differential privacy under continual
+                  observation of the output is really a question of
+                  the algorithm accuracy obtainable if the algorithm
+                  is required to maintain differential privacy of its
+                  continual output.  In order to guarantee reasonable
+                  accuracy and differential privacy a hierarchical
+                  array of interaction counters are each randomized at
+                  fixed count intervals thus the overall count is
+                  private but the error grows only logarithmically
+                  with the count}
+}
+
+@inproceedings{dwork2012fairness,
+author="Cynthia Dwork and Moritz Hardt and Toniann Pitassi and Omer Reingold and Richard Zemel",
+title="Fairness through awareness",
+booktitle="Proc. 3rd Innovations in Theoretical Computer Science Conference",
+pages="214-226",
+year="2012",
+abstract={First, basic fairness: minimize loss subject to the
+                  Lipschitz constraint that differences in outcomes
+                  are less than or equal to differences between
+                  individuals. Second, fairness that guarantees
+                  statistical parity: minimize average loss on group T
+                  plus the loss on group S with weights equal to the
+                  mapping between S and T of the uniform
+                  distribution.}
+}
+
+@article{dwork2014algorithmic,
+author={Cynthia Dwork and Aaron Roth},
+title={The Algorithmic Foundations of Differential Privacy},
+year={2014},
+journal={Foundations and Trends in Theoretical Computer Science},
+volume={9},
+number={3–4},
+year={2013},
+pages={211–407},
+abstract={Textbook-style review of differential privacy. Proves that multiple queries
+give additive privacy loss. Reviews the mechanism for constructing synthetic dataset to
+answer all queries in a class.  Reviews boosting for queries. Reviews propose-test-release
+when worst-case sensitivity is atypical. Reviews mechanism design, online learning, streaming
+and continual learning.}
+}
+
+@article{dwork2015reusable,
+author={Cynthia Dwork and Vitaly Feldman and Moritz Hardt and Toniann Pitassi and Omer Reingold
+and Aaron Roth},
+title={The reusable holdout: Preserving validity in adaptive data analysis},
+journal={Science},
+volume={349},
+number={6248},
+pages={636-638},
+year={2015},
+mont={8},
+abstract={Shows how one can reuse a holdout data set many times using tools from
+differential privacy.}
+}
+
+@article{dwork2018decoupled,
+author={Cynthia Dwork and Nicole Immorlica and Adam Tauman Kalai and Max Leiserson},
+title={Decoupled Classifiers for Group-Fair and Efficient Machine Learning},
+journal=pmlr,
+volume={81},
+pages={1-18},
+year={2018},
+abstract={Proposes learning the best classifier for each group
+                  separately by training a separate classifier for
+                  each group, using a weighted combination of training
+                  data where in-group weights are 1 and out-group
+                  weights are determined by the extent to which the
+                  sample improves in-group performance}
+}
+
+@inproceedings{zemel2017learning,
+author={Richard Zemel and Yu (Ledell) Wu and Kevin Swersky and Toniann Pitassi and Cynthia Dwork},
+title={Learning Fair Representations},
+year={2018},
+booktitle=icml,
+pages={1-9},
+abstract={Learn an embedding that minimizes task error  while maximizing error rate of a
+group classifier (called adversarial learning in later literature)}
+}
