@@ -34,9 +34,9 @@
 @string{interspeech = {Proc. {Interspeech}}}
 @string{iscslp = "International Symposium on Chinese Spoken Language Processing (ISCSLP)"}
 @string{jaac = "AAC Augmentative and Alternative Communication"}
-@string{jacm = "Journal of the ACM"}
+@string{jacm = "Journal of the Association of Computing Machinery"}
 @string{jaes = "Journal of the Audio Engineering Society"}
-@string{jasa = "J. Acoust. Soc. Am."}
+@string{jasa = "Journal of the Acoustical Society of America"}
 @string{jcl = "Computational Linguistics"}
 @string{jcsl = "Computer Speech and Language"}
 @string{jml = "Machine Learning"}
@@ -50292,4 +50292,84 @@ pages="2263-2266"
 }
 
 
+--------------------2025 Sep 09-------------------------------------------------
+
+@article{dolev1987minimal,
+author={Danny Dolev and Cynthia Dwork and Larry Stockmeyer},
+title={On the Minimal Synchronism Needed for Distributed Consensus},
+year={1987},
+journal=jacm,
+volume={34},
+number={1},
+pages={77-97},
+abstract={Reaching agreement is a primitive of distributed computing. Whereas this poses no problem in an ideal, failure-free environment, it imposes certain constraints on the capabilities of an actual system: A system is viable only if it permits the existence of consensus protocols tolerant to some number of failures. Fischer et al. have shown that in a completely asynchronous model, even one failure cannot be tolerated. This paper shows that consensus is tolerant of up to N failures if processor asynchrony is bounded and if either communication asynchrony is bounded or receive/send operations are atomic, or if message ordering is preserved and transmission is broadcast.}
+}
+
+@article{dolev1991nonmalleable,
+author={Danny Dolev and Cynthia Dwork and Moni Naor},
+year={1991},
+title={Non-Malleable Cryptography},
+pages={542-552},
+abstract={The notion of non-malleable cryptography, an extension of semantically secure cryptography, is defined. Informally, the additional requirement is that given the ciphertext it is impossible to generate a different ciphertext so that the respective plaintexts are related. This paper proves a non-malleable cryptographic protocol.  The sender commits to the encoded string, and two code strings (does not reveal them). The receiver chooses one of the code strings. The sender then reveals the encoded string XOR with the selected code string.}
+}
+
+@article{dolev1993perfectly,
+author={Danny Dolev and Cynthia Dwork and Orli Waarts and Moti Yung},
+title={Perfectly Secure Message Transmission},
+year={1993},
+journal=jacm,
+volume={40},
+number={1},
+pages={17-47},
+abstract={Perfect Secrecy: For all sets L of at most s wires, no listening adversary AL, listening to all the wires of L, learns anything about m. Perfect Resiliency. For all sets D of at most p wires (possibly, but not necessarily, disjoint from L), Receiver correctly learns m, regardless of the disrupting adversary AD controlling and coordinating the behavior of the wires in D.  Method: If m is a degree T polynomial, send k samples of the polynomial.  Receiver who gets at least T+1 samples is able to learn the polynomial; adversary who hears any number of samples smaller than T+1 learns nothing}
+}
+
+@article{dwork1988consensus,
+author={Cynthia Dwork and Nancy Lynch and Larry Stockmeyer},
+title={Consensus in the Presence of Partial Synchrony},
+year={1988},
+journal=jacm,
+volume={35},
+number={2},
+pages={288-323},
+abstract={Partial synchrony: upper bounds on message asynchrony and processor asynchrony exist but are unkown, or are known but are only guaranteed starting at unknown time T. Under this condition, fault-tolerant consensus algorithms are given.}
+}
+
+@inproceedings{dwork1992pricing,
+author={Cynthia Dwork and Moni Naor},
+title={Pricing via Processing or Combatting Junk Mail},
+year={1992},
+booktitle={Crypto '92},
+abstract={Access to a controlled resource can be managed by requiring users to solve a moderately hard problem. Example: compute square root mod p. Can be checked with one multiplication, but cannot be solved with fewer than log(p) multiplications, thus the difficulty is precisely controlled}
+}
+
+@inproceedings{dwork2001rank,
+author={Cynthia Dwork and Ravi Kumar and Moni Naor and D. Sivakumar},
+title={Rank Aggregation Methods for the Web},
+year={2001},
+booktitle={WWW10},
+abstract={Models search engine aggregation as a voting problem. Spearman footrule distance is the sum, over all elements, of the absolute difference between rank in original list and rank in aggregated list. It is minimized for complete lists by taking median rank; for incomplete lists an iteration is needed. Kendall tau distance counts the number of pairwise disagreements. Its minimization satisfies the Condorcet criterion (the most frequent pairwise winner should be ranked first), but is NP-complete, however K<=F<=2K, so median is a good starting point that can be improved by local kemenization (local pairwise transpositions). Borda's method (mean rank) does not minimize either metric and does not satisfy Condorcet.}
+}
+
+@article{dwork2003magic,
+author={Cynthia Dwork and Moni Naor and Omer Reingold and Larry Stockmeyer},
+title={Magic Functions},
+year={2003},
+journal=jacm,
+volume={50},
+number={6},
+pages={852-921},
+abstract={We prove that three apparently unrelated fundamental problems in distributed computing, cryptography, and complexity theory, are essentially the same problem. These three problems and brief descriptions of them follow. (1) The selective decommitment problem. An adversary is given commitments to a collection of messages, and the adversary can ask for some subset of the commitments to be opened. The question is whether seeing the decommitments to these open plaintexts allows the adversary to learn something unexpected about the plaintexts that are unopened. (2) The power of 3-round weak zero-knowledge arguments. The question is what can be proved in (a possibly weakened form of) zero-knowledge in a 3-round argument. In particular, is there a language outside of BPP that has a 3-round public-coin weak zero-knowledge argument? (3) The Fiat-Shamir methodology. This is a method for converting a 3-round public-coin argument (viewed as an identification scheme) to a 1-round signature scheme. The method requires what we call a “magic function” that the signer applies to the first-round message of the argument to obtain a second-round message (queries from the verifier.  This article proves, loosely, that if there is a three-round zero-knowledge proof in some language, then there is no magic function (no one-round secure signature) in that language. ZK proofs exist for some NP languages and not for P languages.}
+}
+
+@article{dwork2004concurrent,
+author={Cynthia Dwork and Moni Naor and Amit Sahai},
+title={Concurrent Zero-Knowledge},
+year={2004},
+journal=jacm,
+volume={51},
+number={6},
+pages={851-898},
+abstract={Zero-knowledge proofs may leak knowledge if conducted concurrently, i.e., the prover and adversary run at the same time. This article proves that no knowledge leaks if the adversary's computational advantage is limited to at most a known finite ratio.}
+}
 
