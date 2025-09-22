@@ -50425,7 +50425,7 @@ Laplacian noise requires more trust.}
 author={Cynthia Dwork},
 year={2008},
 title={Differential Privacy: A Survey of Results},
-booktitle={Theory andApplications of Models of Computation},
+booktitle={Theory and Applications of Models of Computation},
 address={Xi'an, China},
 month={4},
 abstract={Reviews differential privacy, the Laplacian mechanism, and the exponential
@@ -50598,4 +50598,108 @@ booktitle=icml,
 pages={1-9},
 abstract={Learn an embedding that minimizes task error  while maximizing error rate of a
 group classifier (called adversarial learning in later literature)}
+}
+
+----------------2025 Sep 22-----------------------------------------------------
+
+@article{chen2024f5tts,
+  author={Yushen Chen and Zhikang Niu and Ziyang Ma and Keqi Deng and Chunhui Wang and Jian Zhao and Kai Yu and Xie Chen},
+  title={F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching},
+  year={2024},
+  month={10},
+  journal={CoRR},
+  volume={abs/2410.06885},
+  url={https://doi.org/10.48550/arXiv.2410.06885},
+  abstract={text input is padded with filler tokens to the same length as input speech,
+  model the input with ConvNeXt to refine the text representation, and denoise using flow matching
+  to generate speech. We further propose an inference-time Sway Sampling strategy for flow step.}
+}
+
+@misc{mcsherry2008mechanism,
+ author={Frank McSherry and Kunal Talwar},
+ year={2008},
+ month={3},
+ title={Mechanism Design via Differential Privacy},
+ abstract={Shows how to maximize an arbitrary utility subject to DP constraint
+ by generating solution U(x) with probability exp(-U(x))}
+ }
+
+@inproceedings{abadi2016deep,
+  title={Deep learning with differential privacy},
+  author={Abadi, Martin and Chu, Andy and Goodfellow, Ian and McMahan, H Brendan and Mironov, Ilya and Talwar, Kunal and Zhang, Li},
+  booktitle={Proceedings of the 2016 ACM SIGSAC conference on computer and communications security},
+  pages={308--318},
+  year={2016},
+  abstract={Demonstrates epsilon,delta-differentially private stochastic gradient descent.
+  Utility is increased by accumulating a moment-generating function instead of directly
+  accumulating epsilons and deltas}
+}
+
+@article{bu2022scalable,
+  title={Scalable and efficient training of large convolutional neural networks with differential privacy},
+  author={Bu, Zhiqi and Mao, Jialin and Xu, Shiyun},
+  journal={Advances in Neural Information Processing Systems},
+  volume={35},
+  pages={38305--38318},
+  year={2022},
+  abstract={The gradient clipping required by abadi2016deep means computing gradient of each
+  layer for each token, computing the vector norm per token, then clipping for each layer based on
+  token-level norm. It is more efficient to do backprop twice: Once to compute and clip the per-token
+  norm, the second time to compute the per-layer gradient and scale it by the per-token clipiing
+  constant}
+}
+
+@inproceedings{ding2024delving,
+title={Delving into Differentially Private Transformer},
+author={Youlong Ding and Xueyang Wu and Yining meng and Yonggang Luo and Hao Wang and Weike Pan},
+booktitle={Forty-first International Conference on Machine Learning},
+year={2024},
+url={https://openreview.net/forum?id=FzyMdAm2fZ},
+abstract={Transformer models with differential privacy are trained using Re-Attention Mechanism and bu2022scalable's Phantom Clipping, respectively.}
+}
+
+@article{zhang2024semdp,
+  title={SemDP: Semantic-level Differential Privacy Protection for Face Datasets},
+  author={Zhang, Xiaoting and Wang, Tao and Ji, Junhao},
+  journal={arXiv preprint arXiv:2412.15590},
+  year={2024},
+  abstract={Resynthesizes a face dataset in order to make the semantic content differentially private
+  in the sense that nameable attributes (hair color, eye color, gender, hat, mustache, glasses, etc)
+  are randomized using the McSherry-Talwar mechanism, then the face is resynthesized with the new
+  attributes}
+}
+
+@inproceedings{desplanques20ecapatdnn,
+  title     = {ECAPA-TDNN: Emphasized Channel Attention, Propagation and Aggregation in TDNN Based Speaker Verification},
+  author    = {Brecht Desplanques and Jenthe Thienpondt and Kris Demuynck},
+  year      = {2020},
+  booktitle = {Interspeech 2020},
+  pages     = {3830--3834},
+  doi       = {10.21437/Interspeech.2020-2650},
+  issn      = {2958-1796},
+  abstract={Proposes speaker verification with (1) initial frame layers restructured into 1-dimensional Res2Net modules with Squeeze-and-Excitation blocks that models temporal context by rescaling the channels according to global properties of the recording, (2) aggregate and propagate features of different hierarchical levels, (3) statistics pooling with channel-dependent frame attention}
+}
+
+@article{yu2023information,
+  title={Information lattice learning},
+  author={Yu, Haizi and Evans, James A and Varshney, Lav R},
+  journal={Journal of Artificial Intelligence Research},
+  volume={77},
+  pages={971--1019},
+  year={2023},
+  abstract={Learns an explainable-by-design generative model using many orders of magnitude
+  less data than a transformer. A rule is a coarsened signal used to help us gain one interpretable
+  insight about the original signal. Seek multiple disentangled rules arranged in a hierarchy.}
+}
+
+@inproceedings{oren2024transformers,
+  title={Transformers are Multi-State RNNs},
+  author={Oren, Matanel and Hassid, Michael and Yarden, Nir and Adi, Yossi and Schwartz, Roy},
+  booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing},
+  pages={18724--18741},
+  year={2024},
+  abstract={Transformer can be conceptualized as an RNN variant with unlimited hidden state size.
+  We further show that transformers can be converted into bounded multistate RNNs by fixing the
+  size of their hidden state, effectively compressing their keyvalue cache. We introduce a novel, trainingfree
+  compression policy—Token Omission Via Attention (TOVA)}
 }
