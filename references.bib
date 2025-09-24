@@ -50800,3 +50800,66 @@ abstract={Transformer models with differential privacy are trained using Re-Atte
   into subspaces of content, prosody, timbre, and acoustic details, and factorized diffusion
   to generate attributes in each subspace following its corresponding prompt}
 }
+
+--------------2025 Sep 24----------------------------------------------------
+
+@article{ghalebikesabi2023differentially,
+  title={Differentially private diffusion models generate useful synthetic images},
+  author={Ghalebikesabi, Sahra and Berrada, Leonard and Gowal, Sven and Ktena, Ira and Stanforth, Robert and Hayes, Jamie and De, Soham and Smith, Samuel L and Wiles, Olivia and Balle, Borja},
+  journal={arXiv preprint arXiv:2302.13861},
+  year={2023},
+  keywords={differential privacy, diffusion model, image generation},
+  abstract={Use DP-SGD to train a diffusion image generation model, then use the diffusion model
+  to generate a synthetic dataset. Synthetic dataset privacy is guaranteed by the DP-SGD
+  of the generation model, so the synthetic dataset can be arbitrarily large. Additional
+  benefit is obtained by self-supervised pretraining on real data, and by using an ensemble
+  of classifiers, resulting in 88 percent CIFAR-10 for the private classifier versus 9.6 percent
+  for a non-private classifier.  Synthetic data can also be used as validation data to choose
+  the best classifier; correlation between model scores on synthetic and real data appears
+  high in linear correlation though rank orderings often differ by plus or minus two or three}
+}
+
+@inproceedings{lipman2023flow,
+  title={Flow Matching for Generative Modeling},
+  author={Lipman, Yaron and Chen, Ricky TQ and Ben-Hamu, Heli and Nickel, Maximilian and Le, Matt},
+  booktitle={11th International Conference on Learning Representations, ICLR 2023},
+  year={2023},
+  keywords={diffusion model, conditional normalizing flow, image generation},
+  abstract={proposes flow between the unit Gaussian at time zero and a mixture of Gaussians
+  at time 1, where the mixture of Gaussians has one mean per datum, each with very small variance.
+  The conditional distribution of xt given x1 can be set to a Gaussian between the two
+  Gaussian endpoints. The marginal distribution of xt can be computed by assuming that x1 is
+  distributed according to the data distribution, and multiplying its distribution times the
+  conditional of xt given x1, and marginalizing to xt. The conditional velocities are straight
+  lines between x0 and x1, and the marginal velocities of xt are computed by marginalizing
+  out x1. Diffusion models are shown to be a special case of this process with a vector field
+  given by the diffusion scalars, which are shown to be less efficient than a simple linear
+  scale}
+}
+
+@inproceedings{ochs2025private,
+  title={Private Synthetic Text Generation with Diffusion Models},
+  author={Ochs, Sebastian and Habernal, Ivan},
+  booktitle={Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
+  pages={10612--10626},
+  year={2025},
+  abstract={Uses DP-SGD to train differentially private language models including both
+  autoregressive and diffusion-based language models.  Resulting synthetic data is then used
+  to train classifiers as suggested by ghalebikesabi2023differentially. Classifiers based on
+  private autoregressive models work acceptably but those based on private diffusion models
+  fail}
+}
+
+@article{hsu2025privacy,
+  title={Privacy-Diffusion: Privacy-Preserving Stable Diffusion Without FHE and Differential Privacy},
+  author={Hsu, Po-Chu and Yu, Ziying and Mise, Shuhei and Miyaji, Hideaki},
+  journal={IEEE Access},
+  year={2025},
+  publisher={IEEE},
+  abstract={Threat model: The client wants their text prompt and final image to be private,
+  server wants their model to be private. This can be accomplished if the first couple of layers
+  of the diffusion model are performed on the client, which then sends the latents to the server
+  where the estimated noise is generated and sent back to the client. There is no formal
+  proof of this claim, other than an observation that max pooling and similar non-reversible
+  layers make it hard to reconstruct the image from a latent vector}
+}
