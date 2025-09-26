@@ -50432,6 +50432,7 @@ abstract={Reviews differential privacy, the Laplacian mechanism, and the exponen
 utility mechanism of McSherry and Talwar. Reviews mechanisms for summary datasets,
 private half-spaces, and private PAC learning especially for classes with polynomial
 VC dimension.}
+}
 
 @inproceedings{dwork2009complexity,
 author={Cynthia Dwork and Moni Naor and Omer Reingold and Guy N. Rothblum and Salil Vadhan},
@@ -50863,3 +50864,28 @@ abstract={Transformer models with differential privacy are trained using Re-Atte
   proof of this claim, other than an observation that max pooling and similar non-reversible
   layers make it hard to reconstruct the image from a latent vector}
 }
+
+--------------2025 Sep 24----------------------------------------------------
+
+@inproceedings{yao2025stablevc,
+  title={Stablevc: Style controllable zero-shot voice conversion with conditional flow matching},
+  author={Yao, Jixun and Yuguang, Yang and Pan, Yu and Ning, Ziqian and Ye, Jianhao and Zhou, Hongbin and Xie, Lei},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  pages={25669--25677},
+  year={2025},
+  abstract={encode content using WavLM with K-means clustering, deduplicated,
+  combined with style and timbre in multiple DiT blocks. In each DiT block the previous
+  block's output (starting with the content vectors is transformed to serve as query
+  in a dual-branch attention, in which one branch uses style as the keys and values,
+  one branch uses timbre as the keys and values.
+  Encode style using a frozen style extractor, followed by an encoder
+  fine-tuned using gradient reversal to avoid encoding timbre. Encode timbre using a stack
+  of mel spectrograms from the target speaker, concatenated with one speaker verification vector.
+  Results of dual-branch attention are added together then passed to the next level.
+  After multiple DiT blocks, a duration prediction module aligns these hidden vectors to
+  target spectrogram, then uses this as hidden vector information for a flow matching module.
+  ODE solver starts with unit normal Gaussian spectrogram and integrates the velocity along
+  ten steps to get the final synthesized spectrogram}
+  }
+
