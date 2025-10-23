@@ -50926,7 +50926,38 @@ abstract={Transformer models with differential privacy are trained using Re-Atte
  publisher={Wiley},
  doi={10.1002/wics.70049},
  pages={1-17},
- abstract={Knowledge distillation can be modeled as smoothing label distributions, regularizing
- empirical risk, and approximating mutual information. These perspectives are reviewed and tested
- experimentally using CIFAR-10}
+ abstract={Knowledge distillation can be modeled as (1) label smoothing regularization
+ with the teacher replacing the uniform distribution (in turn, label smoothing can be viewed
+ as MAP estimation), (2) teacher approximates Bayes posterior given each sample x, and therefore
+ KD loss has lower squared bias w.r.t. true Bayes risk than does the empirical cross-entropy,
+ (3) conditional mutual information between X and Yhat given Y measures the degree to which
+ teacher provides extra information about X beyond what the reference label contains; maximizing
+ this can avoid overtraining of the student, (4) teacher model can be represented using RKHS
+ expansion over dataset, and student generalization error is a function of supervision complexity
+ which is the angle between teacher's RKHS expansion over dataset versus student's expansion.}
  }
+
+@incollection{ozkose2025enhancing,
+ author={Yunus Emre Ozkose and Ali Haznedaroglu},
+ title={Enhancing Speech Recognition Through Text-to-Speech and Voice Conversion Augmentation},
+ editor={A. Karpov and G. Gosztolya},
+ booktitle={Speech and Computer SPECOM 2025},
+ year={2025},
+ publisher={Springer},
+ doi={10.1007/978-3-032-07959-6},
+ pages={45-59},
+ abstract={Voice conversion provides better data augmentation for ASR training than
+ does speech synthesis. VC also has lower average MOS score than TTS, though still higher
+ average MOS score than real speech, suggesting that its value for augmentation may be a result
+ of higher variability}
+ }
+
+@article{srivastav2025open,
+  title={Open ASR Leaderboard: Towards Reproducible and Transparent Multilingual and Long-Form Speech Recognition Evaluation},
+  author={Srivastav, Vaibhav and Zheng, Steven and Bezzam, Eric and Bihan, Eustache Le and Koluguri, Nithin and {\.Z}elasko, Piotr and Majumdar, Somshubra and Moumen, Adel and Gandhi, Sanchit},
+  journal={arXiv preprint arXiv:2510.06961},
+  year={2025},
+  abstract={Lists the 12 datasets for openasr-leaderboard, and the metrics WER and RTFx
+  (real-time factor) and the results of 21 models at the time of writing on English, German,
+  French, Italian, Spanish, and Portuguese}
+}
