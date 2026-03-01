@@ -51195,5 +51195,113 @@ abstract={Transformer models with differential privacy are trained using Re-Atte
   then finally tuned using DPO}
 }
 
+------------------- 2026 February 28 -------------------------------------
+
+@article{bianchi1993time,
+  title={Time-variant power spectrum analysis for the detection of transient episodes in HRV signal},
+  author={Bianchi, Anna M and Mainardi, Luca and Petrucci, Ettore and Signorini, Maria G and Mainardi, Mauro and Cerutti, Sergio},
+  journal={IEEE Transactions on Biomedical Engineering},
+  volume={40},
+  number={2},
+  pages={136--144},
+  year={1993},
+  publisher={IEEE},
+  abstract={Proposes RLS algorithm, updated once per IBI, to model HRV as an autoregressive
+  process with at least one pole pair at very low frequencies, at least one
+  at low frequencies, and at least one at high frequencies, thus order is at least 6
+  but typically 8-15 or more, it is suggested that Itakura-Saito criteria are used
+  to determine the optimal order. Time is discretized in
+  terms of heartbeats; I guess that mapping to standard definitions of VLF, LF, and HF
+  is done at each heartbeat time using a scale of heartbeats/second.}
+}
+
+@article{electrophysiology1996heart,
+  title={Heart rate variability: standards of measurement, physiological interpretation, and clinical use},
+  author={Electrophysiology, Task Force of the European Society of Cardiology the North American Society of Pacing},
+  journal={Circulation},
+  volume={93},
+  number={5},
+  pages={1043--1065},
+  year={1996},
+  publisher={Lippincott Williams \& Wilkins},
+  abstract={Describes time-domain, frequency domain, and nonlinear features characterizing HRV.
+  Cites studies of disorders with which each measure of HRV has been shown to be correlated.}
+}
+
+@inproceedings{yaso2006detection,
+  title={Detection of REM sleep by heart rate},
+  author={Yaso, Masao and Nuruki, Atsuo and Tsujimura, Sei-ichi and Yunokuchi, Kazutomo},
+  booktitle={Proceedings of The First International Workshop on Kansei},
+  pages={1--4},
+  year={2006},
+  abstract={Demonstrates that REM vs NREM can be distinguished with 79 percent accuracy
+  using heart rate. The heart rate measures are not described in this paper, but only in
+  its reference, which does not seem to be available.  This paper suggests that the only
+  heart rate measure being used might be local average IBI}
+}
+
+@article{vandeput2009heart,
+  title={Heart rate variability during REM and non-REM sleep in preterm neonates with and without abnormal cardiorespiratory events},
+  author={Vandeput, Steven and Naulaers, Gunnar and Daniels, Hans and Van Huffel, Sabine},
+  journal={Early human development},
+  volume={85},
+  number={10},
+  pages={665--671},
+  year={2009},
+  publisher={Elsevier},
+  abstract={Shows that neonates with abnormal APGAR have significantly less nonlinear HRV in NREM
+  sleep than neonates with normal APGAR, as measured using a noise titration technique:
+  Noise is added until the prediction accuracy of a nonlinear predictor drops to chance
+  levels, then the noise level is a measure of nonlinear HRV.   Time-domain measures like
+  RMSSD have no significant difference between groups.  Question: the nonlinear predictor
+  is compared only to RMSSD, it is not compared to a linear predictor, so I wonder if the
+  measured effect could be explained just as well using spectral analysis of the HRV}
+}
+
+@article{kalkbrenner2015development,
+  title={Development of a new homecare sleep monitor using body sounds and motion tracking},
+  author={Kalkbrenner, Christoph and Eichenlaub, Manuel and Brucher, Rainer},
+  journal={Current Directions in Biomedical Engineering},
+  volume={1},
+  number={1},
+  pages={30--33},
+  year={2015},
+  publisher={De Gruyter},
+  abstract={Microphone taped to suprasternal notch records breathing sounds and
+  heartbeat.  Heartbeat and breath sounds are easily separated using LPF/HPF
+  at about 100Hz, heartbeat below that, breath above that.}
+}
+
+@inproceedings{kalkbrenner2014sleep,
+  title={Sleep monitoring using body sounds and motion tracking},
+  author={Kalkbrenner, Christoph and Stark, Philipp and Kouemou, Guy and Algorri, Maria-Elena and Brucher, Rainer},
+  booktitle={2014 36th Annual International Conference of the IEEE Engineering in Medicine and Biology Society},
+  pages={6941--6944},
+  year={2014},
+  organization={IEEE},
+  abstract={Heartbeat is detected in suprasternal notch audio recording by keeping continuous
+  estimates of the time, center frequency, and power of the first pulse, and time, center frequency,
+  and power of the second pulse.  Heartbeat is detected (test on training data) with 74-92 percent
+  accuracy depending on the subject. Heartbeat can, in this way, be separated out from the breath
+  sounds; breath sounds are detected (testing on the training data) with 21-80 percent accuracy
+  depending on subject (some subjects have very quiet breathing).
+  IMU is used to keep track of changes in body position. }
+}
+
+@article{isler2016automated,
+  title={An automated method for coding sleep states in human infants based on respiratory rate variability},
+  author={Isler, Joseph R and Thai, Tracy and Myers, Michael M and Fifer, William P},
+  journal={Developmental psychobiology},
+  volume={58},
+  number={8},
+  pages={1108--1115},
+  year={2016},
+  publisher={Wiley Online Library},
+  abstract={Respiratory rate variance drops in NREM sleep. By computing the variance of
+  respiratory rate, and thresholding at 0.29 of the 75th percentile, and testing on
+  the training data one achieves 100 and 90 percent accuracy wrt visual inspection
+  of respiratory trace, 87 and 80 percent wrt polysomnographic coding, 92 and 78
+  percent wrt behavioral coding}
+}
 
 
