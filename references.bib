@@ -51356,3 +51356,133 @@ abstract={Transformer models with differential privacy are trained using Re-Atte
   of -0.45 +/- 0.2, significantly different from 0; LIDS minima are always in REM periods
   but simple thresholding is still not very accurate.}
 }
+
+@article{sridhar2020deep,
+  title={Deep learning for automated sleep staging using instantaneous heart rate},
+  author={Sridhar, Niranjan and Shoeb, Ali and Stephens, Philip and Kharbouch, Alaa and Shimol, David Ben and Burkart, Joshua and Ghoreyshi, Atiyeh and Myers, Lance},
+  journal={NPJ digital medicine},
+  volume={3},
+  number={1},
+  pages={106},
+  year={2020},
+  publisher={Nature Publishing Group UK London},
+  abstract={From the public SHHS dataset, IBI is extracted using the Pan-Tompkins algorithm, outliers
+  greater than 5 standard deviations are omitted, result divided into overlapping intervals
+  spaced 30s apart.  3 layers of convolution + max-pool resulting in a 128d vector per
+  30s, then dilated convolution across vectors to get a 4-class pmf per 30s.  Accuracy is
+  77 percent (66 percent kappa), with good generalization to Physionet CinC. Maybe a good study
+  on which to base an ECE 401 lab?}
+}
+
+@mastersthesis{sethi2020study,
+  title={Study of Inferring Sleep Stages using Wearable Sensors in Home Setting},
+  author={Sethi, Kartik},
+  year={2020},
+  school={University of Maryland, Baltimore County},
+  abstract={IMU on forehead, wrist and ankle with ECG on forehead and wrist
+  combined with 3-lead EEG to do sleep staging with 3-class accuracy around 0.69}
+}
+
+@article{latremouille2021neonatal,
+  title={Neonatal heart rate variability: a contemporary scoping review of analysis methods and clinical applications},
+  author={Latremouille, Samantha and Lam, Justin and Shalish, Wissam and Sant'Anna, Guilherme},
+  journal={BMJ open},
+  volume={11},
+  number={12},
+  pages={e055209},
+  year={2021},
+  publisher={British Medical Journal Publishing Group},
+  abstract={286 articles on neonatal HRV published 2000 to 2020 are reviewed, with numbers
+  increasing over time. Frequency domain measures were most frequent, and most followed the
+  Task Force recommendations for sub-band definitions but with 46 exceptions. Time domain
+  measures were second most frequent, nonlinear measures least frequent.}
+}
+
+@article{pini2022automated,
+  title={An automated heart rate-based algorithm for sleep stage classification: Validation using conventional polysomnography and an innovative wearable electrocardiogram device},
+  author={Pini, Nicol{\`o} and Ong, Ju Lynn and Yilmaz, Gizem and Chee, Nicholas IYN and Siting, Zhao and Awasthi, Animesh and Biju, Siddharth and Kishan, Kishan and Patanaik, Amiya and Fifer, William P and others},
+  journal={Frontiers in Neuroscience},
+  volume={16},
+  pages={974192},
+  year={2022},
+  publisher={Frontiers}
+  abstract={Trained on Physionet CinC https://physionet.org/content/challenge-2018/1.0.0/
+  ECG epoch rejected if SNR<5 dB, recording excluded if 10 percent of epochs rejected.
+  Data for DL include tachogram, HR, HRV, derived respiratory rate estimates, and in bed/out of
+  bed estimates based on accelerometer. Sleep staging algorithm is two-stages of
+  CNNs with inception-residual network, total of 1B parameters. Result is 70 percent accuracy
+  on test set.}
+}
+
+@article{ahmadi2022device,
+  title={Device-based measurement of physical activity in pre-schoolers: Comparison of machine learning and cut point methods},
+  author={Ahmadi, Matthew N and Trost, Stewart G},
+  journal={PLoS One},
+  volume={17},
+  number={4},
+  pages={e0266970},
+  year={2022},
+  publisher={Public Library of Science San Francisco, CA USA},
+  abstract={Video recordings of 3-5 year old children were coded to sedentary (SED),
+  light intensity (LPA) or moderate-to-vigorous intensity (MVPA).  Random forest classifiers
+  achieved 0.76 kappa from hip recorders, 0.72 from wrist recorders, with 83-88 percent accuracy
+  for SED and LPA but 68-78 for MVPA, using leave-one-subject-out cross-validation}
+}
+
+@article{almutairi2023machine,
+  title={Machine-learning-based-approaches for sleep stage classification utilising a combination of physiological signals: a systematic review},
+  author={Almutairi, Haifa and Hassan, Ghulam Mubashar and Datta, Amitava},
+  journal={Applied Sciences},
+  volume={13},
+  number={24},
+  pages={13280},
+  year={2023},
+  publisher={MDPI},
+  abstract={Reviews 38 papers 2000-2023 using ML for sleep staging including studies based on
+  EEG, EMG, EOG, ECG, and respiratory. Public corpora with ECG include Physionet, MIT-BIH,
+  and UCD}
+}
+
+@article{tran2023prediction,
+  title={Prediction of sleep stages via deep learning using smartphone audio recordings in home environments: model development and validation},
+  author={Tran, Hai Hong and Hong, Jung Kyung and Jang, Hyeryung and Jung, Jinhwan and Kim, Jongmok and Hong, Joonki and Lee, Minji and Kim, Jeong-Whun and Kushida, Clete A and Lee, Dongheon and others},
+  journal={Journal of Medical Internet Research},
+  volume={25},
+  pages={e46216},
+  year={2023},
+  publisher={JMIR Publications Toronto, Canada},
+  abstract={Smartphone was placed 0.5-1 meter from participant head and recorded their
+  sleep audio: 812 hospital PSG participants, 829 in-home audio-only participants,
+  45 in-home PSG test participants.  Sleep staging trained on hospital audio recordings
+  with labels from the PSG was then adapted so the marginal distribution of audio samples
+  matched in-home audio environment and tested on in-home PSG test data. 76
+  percent 3-class accuracy (63 percent wake, 84 percent NREM, 65 percent REM)}
+}
+
+@article{yue2024research,
+  title={Research and application of deep learning-based sleep staging: Data, modeling, validation, and clinical practice},
+  author={Yue, Huijun and Chen, Zhuqi and Guo, Wenbin and Sun, Lin and Dai, Yidan and Wang, Yiming and Ma, Wenjun and Fan, Xiaomao and Wen, Weiping and Lei, Wenbin},
+  journal={Sleep Medicine Reviews},
+  volume={74},
+  pages={101897},
+  year={2024},
+  publisher={Elsevier},
+  abstract={Gives citations for ten sleep-staging datasets and for 45 studies that used deep
+  learning methods for sleep staging, almost all from multimodal data including EEG,
+  but three used HR only (Sridhar, Radha, Zhang) and two HR+actigraphy (Fonseca, Zhang)}
+}
+
+@article{catrambone2025methodological,
+  title={Methodological Taxonomy for Functional Brain--Heart Interplay Assessment: Creating a comprehensive taxonomy},
+  author={Catrambone, Vincenzo and Valenza, Gaetano},
+  journal={IEEE Signal Processing Magazine},
+  volume={42},
+  number={5},
+  pages={71--79},
+  year={2025},
+  publisher={IEEE},
+  abstract={Describes methods for preprocessing EEG and HRV signals, then many different methods
+  that can be used to describe correlation and/or causation between the two}
+}
+
+
