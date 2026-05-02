@@ -51671,3 +51671,116 @@ abstract={Transformer models with differential privacy are trained using Re-Atte
   that converge to similar representations.  This allows the system to better learn to generate audio
   from video or from natural language representations.}
 }
+
+------------ 2026 May 2 -------------------------------------------
+
+@article{pokel2026demonstration,
+  title={Demonstration of Adapt4Me: An Uncertainty-Aware Authoring Environment for Personalizing Automatic Speech Recognition to Non-normative Speech},
+  author={Pokel, Niclas and Zhao, Yiming and Moure, Pehu{\'e}n and Gao, Yingqiang and B{\"o}hringer, Roman},
+  journal={arXiv preprint arXiv:2603.20112},
+  year={2026},
+  abstract={Web-based Bayesian adaptive learning for ASR. Initialized with 500 words, then highlights
+  low-certainty words so user can correct more easily. 75 minutes use reduced WER from 70 to 25
+  percent}
+}
+
+article{zhang2026mamba,
+  title={Mamba-based Deep Learning Approach for Sleep Staging on a Wireless Multimodal Wearable System Without Electroencephalography},
+  author={Zhang, Andrew H and He-Mo, Alex and Yin, Richard Fei and Li, Chunlin and Tang, Yuzhi and Gurve, Dharmendra and van der Horst, Veronique and Buchman, Aron S and Ghahjaverestan, Nasim Montazeri and Goubran, Maged and others},
+  journal={Sleep},
+  pages={zsag022},
+  year={2026},
+  publisher={Oxford University Press},
+  abstract={R-peaks detected in ECG 512Hz and PPG 128Hz, and signals were zeroed out
+  unless within 2s of a valid R peak.  Accelerometer at 210Hz bandpass filtered.
+  Then all were converted to spectrograms with 1Hz frame rate, concatenated to chest
+  and limb temperature measures, processed by MAMBA to classify at 30s intervals.
+  Train/dev/test were uniform at random, i.e., same subjects in train and test.
+  Wake/REM/NREM 82 percent recall for each class}
+}
+
+@article{kim2024openvla,
+  title={Openvla: An open-source vision-language-action model},
+  author={Kim, Moo Jin and Pertsch, Karl and Karamcheti, Siddharth and Xiao, Ted and Balakrishna, Ashwin and Nair, Suraj and Rafailov, Rafael and Foster, Ethan and Lam, Grace and Sanketi, Pannag and others},
+  journal={arXiv preprint arXiv:2406.09246},
+  year={2024},
+  abstract={Start with Prismatic VLM (SigLIP and DinoV2 image inputs, Llama2 text inputs and
+  backbone), finetuned for robot action prediction: Each config variable quantized in 256
+  bins which overwrite the 256 least-used tokens in Llama's vocabulary, train using OpenX
+  with 2M robot trajectories, trained on 64 A100s for 14 days
+}
+
+@inproceedings{zhao2020object,
+  title={Object detection with a unified label space from multiple datasets},
+  author={Zhao, Xiangyun and Schulter, Samuel and Sharma, Gaurav and Tsai, Yi-Hsuan and Chandraker, Manmohan and Wu, Ying},
+  booktitle={European conference on computer vision},
+  pages={178--193},
+  year={2020},
+  organization={Springer},
+  abstract={Defines the "unified label space" problem, which seems to have been understudied
+  previously: Test set is labeled using an ontology that is the union of the ontologies
+  used in the training sets.  It is related to partial labeling, but seems not to be
+  exactly the same, and to have different problems. Proposed strategy is to pseudo-label
+  each training instance with those labels that are missing from its labeling scheme}
+}
+
+@article{kim2025fine,
+  title={Fine-tuning vision-language-action models: Optimizing speed and success},
+  author={Kim, Moo Jin and Finn, Chelsea and Liang, Percy},
+  journal={arXiv preprint arXiv:2502.19645},
+  year={2025},
+  abstract={decodes many actions in parallel, with continuous-valued action representations
+  learned using an L1 regression objective and a diffusion transformer}
+}
+
+@inproceedings{driess2025knowledge,
+  title={Knowledge insulating vision-language-action models: Train fast, run fast, generalize better},
+  author={Driess, Danny and Springenberg, Jost Tobias and Ichter, Brian and Yu, Lili and Li-Bell, Adrian and Pertsch, Karl and Ren, Allen Z and Walke, Homer and Vuong, Quan and Shi, Lucy Xiaoyang and others},
+  booktitle=neurips,
+  year={2025},
+  month={12},
+  abstract={***backbone VLM predicts both text descriptions of the action and discrete action units.
+  Action expert is trained with flow-matching to generate real-valued action vectors based on 
+  attention to both the backbone tokens and the previous iteration action tokens.  Gradients
+  from action expert are not backpropagated to the backbone}
+}
+
+@inproceedings{lee2025molmoact,
+ title={MolmoAct: Action Reasoning Models that can Reason in Space},
+ author={Jason Lee and Jiafei Duan and Haoquan Fang and Yuquan Deng and Boyang Li and Shuo Liu and Bohan Fang and Jieyu Zhang and Yi Ru Wang and Sangho Lee and Winson Han and Wilbert Pumacay and Angelica Wu and Rose Hendrix and Karen Farley and Eli VanderBilt and Ali Farhadi and Dieter Fox and Ranjay Krishna},
+ booktitle={Workshop on Making Sense of Data in Robotics: Composition, Curation, and Interpretability at Scale at CoRL 2025},
+ year={2025},
+ url={https://openreview.net/forum?id=5Xye4qjHbY},
+ abstract={VLM is trained to generate action reasoning data, auxiliary depth
+ perception tokens, auxiliary visual reasoning trace which is the 2d trajectory of the end effector,
+ trajectory-conditioned action tokens,
+ and natural language descriptions of the scene.  During inference, action tokens generate
+ the action, whose progress is verified by comparison to the depth and visual reasoning traces}
+}
+
+@inproceedings{zhou2025chatvla,
+  title={ChatVLA: Unified multimodal understanding and robot control with vision-language-action model},
+  author={Zhou, Zhongyi and Zhu, Yichen and Zhu, Minjie and Wen, Junjie and Liu, Ning and Xu, Zhiyuan and Meng, Weibin and Peng, Yaxin and Shen, Chaomin and Feng, Feifei and others},
+  booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing},
+  pages={5377--5395},
+  year={2025},
+  abstract={VLA finetuning causes forgetting of visual-text alignments and task interference
+  between control and understanding tasks. ChatVLA incrementally integrates mnultimodal QA data
+  after initial control mastery, and a mixture-of-experts architecture, so it can continue
+  to perform visual question-answering even after VLA training.}
+}
+
+@inproceedings{wang2026vla,
+  title={VLA-adapter: An effective paradigm for tiny-scale vision-language-action model},
+  author={Wang, Yihao and Ding, Pengxiang and Li, Lingxiao and Cui, Can and Ge, Zirui and Tong, Xinyang and Song, Wenxuan and Zhao, Han and Zhao, Wei and Hou, Pengxu and others},
+  booktitle={Proceedings of the AAAI conference on artificial intelligence},
+  volume={40},
+  number={22},
+  pages={18638--18646},
+  year={2026},
+  abstract={Raw visual data is followed by learnable action query tokens.   A Bridge Attention
+  module at each layer then uses cross-attention over raw visual features as KV, followed by
+  cross-attention over learned action queries as KV, followed by self-attention,
+  result is passed to the input of an L1-diffusion policy network generating the continuous
+  action sequence}
+}
