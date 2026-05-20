@@ -19,7 +19,7 @@
 @string{globecom = "IEEE Globecom"}
 @string{hlt = "Human Language Technologies Conference (HLT)"}
 @string{ica = "Proc. Internat. Congr. Acoust."}
-@string{icassp = "Proc. {ICASSP}"}
+@string{icassp = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}}
 @string{iccl = "International Conference on Computational Linguistics (ICCL)"}
 @string{iccv = "International Conference on Computer Vision (ICCV)"}
 @string{iclr = "Proc. International Conference on Learning Representations (ICLR)"}
@@ -51559,11 +51559,14 @@ abstract={Transformer models with differential privacy are trained using Re-Atte
 
 -----------------2026 March 18 ---------------------------------
 
-@article{yang2026sequence,
+
+@inproceedings{yang2026sequence,
   title={Sequence-Level Unsupervised Training in Speech Recognition: A Theoretical Study},
   author={Yang, Zijian and Barkoczi, J{\"o}rg and Schl{\"u}ter, Ralf and Ney, Hermann},
-  journal={arXiv preprint arXiv:2603.02285},
+  booktitle=icassp,
+  pages={2571--2575},
   year={2026},
+  organization={IEEE},
   abstract={Shows that if the positional unigram matrix has full rank, and the
   translation probability is context-independent token-by-token, then 
   the L1 difference between the estimated and true joint pmfs
@@ -51864,4 +51867,50 @@ abstract={Transformer models with differential privacy are trained using Re-Atte
   abstract={Argues that the microbiome's influence on energy, as well as other metabolic
   influences recently discovered, implies that it must have an influence on social behavior
   even though that has not yet been mapped}
+}
+
+------------ 2026 May 20 -----------------------------------------------
+
+@inproceedings{zeyer2026text,
+  title={Text-Utilization for Encoder-dominated Speech Recognition Models},
+  author={Zeyer, Albert and Posielek, Tim and Schl{\"u}ter, Ralf and Ney, Hermann},
+  booktitle=icassp,
+  year={2026},
+  organization={IEEE},
+  abstract={upsampling text encoding to match ASR durations, or even force-aligns it to
+  phoneme segments, decreases ASR WER}
+}
+
+@inproceedings{wang2026speech,
+  title={Why do speech language models fail to generate semantically coherent outputs? a modality evolving perspective},
+  author={Wang, Hankun and Wang, Haoran and Guo, Yiwei and Li, Zhihan and Du, Chenpeng and Yu, Kai},
+  booktitle={ICASSP 2026-2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={16117--16121},
+  year={2026},
+  organization={IEEE},
+  abstract={Tests (A) phone vs text embeddings, (B) upsampling text embeddings to speech durations,
+  (C) adding errors to match speech error patterns.  Finds that step (C) has the biggest impact, then
+  step (C), while (A) is minor}
+}
+
+@inproceedings{xu2025relcon,
+  title={Relcon: Relative contrastive learning for a motion foundation model for wearable data},
+  author={Xu, Maxwell and Narain, Jaya and Darnell, Gregory and Hallgrimsson, Haraldur and Jeong, Hyewon and Forde, Darren and Fineman, Richard and Raghuram, Karthik and Rehg, James and Ren, Shirley},
+  booktitle={International Conference on Learning Representations},
+  volume={2025},
+  pages={53188--53206},
+  year={2025},
+  abstract={A learnable distance model is trained to ignore invariances, e.g., due to accelerometer position on the
+  body.  That model is then used in contrastive learning to help learn differences between activity categories}
+}
+
+@inproceedings{abhyankar2025osworld,
+  title={OSWorld-Human: Benchmarking the Efficiency of Computer-Use Agents},
+  author={Abhyankar, Reyna and Qi, Qi and Zhang, Yiying},
+  booktitle={ICML 2025 Workshop on Computer Use Agents},
+  year={2025},
+  url={https://openreview.net/forum?id=sV3n6mYy7J},
+  abstract={OSWorld is a set of tasks that agents can perform on computers.  OSWorld-Human is a set of
+  task-completion trajectories by humans completing the same tasks.  Agents generally take 2.7-3.5 times
+  as long as the human to perform the same task}
 }
