@@ -51916,7 +51916,7 @@ abstract={Transformer models with differential privacy are trained using Re-Atte
   as long as the human to perform the same task}
 }
 
------------- 2026 May 20 -----------------------------------------------
+------------ 2026 June 17 -----------------------------------------------
 
 @inproceedings{sennrich2016neural,
   title={Neural machine translation of rare words with subword units},
@@ -51989,4 +51989,36 @@ abstract={Transformer models with differential privacy are trained using Re-Atte
   curve will cut off the data curve (won't be enough compute to process that much data)
   when D and N both reach 10^12, C reaches 10^4 PF-days, and L reaches 1.7 nats/token,
   speculates that this might be the true entropy of natural language}
+}
+
+------------ 2026 May 20 -----------------------------------------------
+
+@inproceedings{li2023theoretical,
+  title={A Theoretical Understanding of Shallow Vision Transformers: Learning, Generalization, and Sample complexity},
+  author={Li, Hongkang and Wang, Meng and Liu, Sijia and Chen, Pin-Yu},
+  booktitle=iclr,
+  year={2023},
+  url={https://arxiv.org/abs/2302.06015},
+  pages={1--40},
+  abstract={Proves generalization error converges to 0 for a one-layer transformer with a two-layer
+  fully-connected output network if the data has strongly limited types of noise:
+  each token is within mu of a standard pattern, where mu is less than one quarter of the
+  minimum inter-pattern difference, only one standard pattern indicates a +1 output
+  and only one indicates a -1 output while the others are decision-irrelevant,
+  the total number of standard patterns is less the minimum of query or key dimension,
+  the value matrix is initialized so that each token's value vector is within sigma
+  of a centroid determined by its pattern label, and alphastar, the fraction of
+  tokens in a sequence supporting the correct label is greater than the fraction supporting
+  the incorrect label divided by 1-sigma-mu.  With these constraints, the fully-connected
+  with a sufficiently large hidden layer (greater than square of the number of patterns
+  times the log data size) converges to zero generalization error after order of
+  1/alphastar iterations if the dataset size is at least 1/(alphastar(alphastar-sigma-tau)) squared,
+  whereas the transformer converges to zero generalization error in 1/alphastar iterations
+  if the dataset is at least 1/(alphastar-sigma-tau) squared. The improvement for self
+  attention comes from convergence of the query and key matrices such that the sum of
+  attention allocated to correct-pattern tokens converges to nearly 1 at a rate of
+  1/t in t iterations.  Interesting that this is a large data proof: Though SGD minimizes
+  empirical error, with dataset size sufficiently larger than the number of iterations times the
+  batch size, each batch is essentially an i.i.d. draw from the underlying distribution,
+  so generalization error converges to zero.}
 }
