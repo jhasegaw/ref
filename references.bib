@@ -13,7 +13,7 @@
 @string{embs = "Internat. Conf. {IEEE} Engineering in Medicine and Biology Society"}
 @string{diss = "{ISCA} Workshop on Disfluency in Spontaneous Speech"}
 @string{eacl = "European Association for Computational Linguistics (EACL)"}
-@string{emnlp = "Empirical Methods in Natural Language Processing (EMNLP)"}
+@string{emnlp = {Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)}}
 @string{eurospeech = "Proc. {EUROSPEECH}"}
 @string{facct = "Proc. Conference on Fairness, Accountability and Transparency"}
 @string{globecom = "IEEE Globecom"}
@@ -15379,11 +15379,11 @@ detect playback of any previously recorded audio sample for text-dependent speak
  year=2012
 }
 
-@inproceedings{Graves2006,
+@inproceedings{graves2006connectionist,
  title="Connectionist Temporal Classification: Labelling Unsegmented Sequence Data with Recurrent Neural Networks",
  author="Alex Graves and Santiago Fern{\'{a}}ndez and Faustino Gomez and J{\"{u}}rgen Schmidhuber",
   year="2006",
- booktitle="Internat. Conf. Machine Learning (ICML)",
+ booktitle=icml,
  pages="369-376",
  doi="10.1145/1143844.1143891"
 }
@@ -31477,7 +31477,7 @@ pages="167-174"
  year="1994"
 }
 
-@article{Morgan95,
+@article{morgan1995continuous,
  author="Nelson Morgan and Herve Bourlard",
  journal=spm,
  keywords="speech recognition, neural networks, hybrid HMM,
@@ -51089,7 +51089,7 @@ abstract={Transformer models with differential privacy are trained using Re-Atte
 @inproceedings{nuhn2014improved,
   title={Improved decipherment of homophonic ciphers},
   author={Nuhn, Malte and Schamper, Julian and Ney, Hermann},
-  booktitle={Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  booktitle=emnlp,
   pages={1764--1768},
   year={2014}
 }
@@ -51913,4 +51913,79 @@ abstract={Transformer models with differential privacy are trained using Re-Atte
   abstract={OSWorld is a set of tasks that agents can perform on computers.  OSWorld-Human is a set of
   task-completion trajectories by humans completing the same tasks.  Agents generally take 2.7-3.5 times
   as long as the human to perform the same task}
+}
+
+------------ 2026 May 20 -----------------------------------------------
+
+@inproceedings{sennrich2016neural,
+  title={Neural machine translation of rare words with subword units},
+  author={Sennrich, Rico and Haddow, Barry and Birch, Alexandra},
+  booktitle={Proceedings of the 54th annual meeting of the association for computational linguistics (volume 1: long papers)},
+  pages={1715--1725},
+  year={2016},
+  abstract={This is the paper that MinBPE credits with re-introducing BPE units in order to
+  eliminate the problem of OOV words in machine translation and speech recognition}
+}
+
+@inproceedings{dingliwal2023personalization,
+  title={Personalization of {CTC} speech recognition models},
+  author={Dingliwal, Saket and Sunkara, Monica and Ronanki, Srikanth and Farris, Jeff and Kirchhoff, Katrin and Bodapati, Sravan},
+  booktitle={2022 IEEE Spoken Language Technology Workshop (SLT)},
+  pages={302--309},
+  year={2023},
+  organization={IEEE},
+  abstract={Words that are rare in the training corpus are provided as a separate lexicon
+  to the CTC-Attention Conformer ASR. A weighted sum of conformer layer activations is used to
+  generate a query vector sequence, which recovers key-value pairs from this lexicon.
+  Resulting context vector is added to the last layer of the conformer just before softmax.
+  During test time, the lexicon is swapped out for a list of rare words in the domain of the
+  ASR task, resulting in improved transcription of rare person, place, and disease/medical names.
+  A series of previously established phoneme multitask, boosting, grapheme-to-grapheme,
+  and adding of the language model log probability provides additional benefit.}
+}
+
+@inproceedings{kannan2018analysis,
+  title={An analysis of incorporating an external language model into a sequence-to-sequence model},
+  author={Kannan, Anjuli and Wu, Yonghui and Nguyen, Patrick and Sainath, Tara N and Chen, Zhijeng and Prabhavalkar, Rohit},
+  booktitle={2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={1--5828},
+  year={2018},
+  organization={IEEE},
+  abstract={Shows that accuracy of an attention-based LSTM encoder-decoder ASR is improved by
+  adding logp(y|x) to logp(y) computed by a language model, plus gamma times a coverage
+  penalty. The coverage penalty ranges from 0 to -1 for each token in y.}
+}
+
+@inproceedings{eom2025siamctc,
+  title     = {{SiamCTC:  Learning Speech Representations through Monotonic Temporal Alignment }},
+  author    = {SooHwan Eom and Mark Hasegawa-Johnson and Chang D. Yoo},
+  year      = {2025},
+  booktitle = {{Interspeech 2025}},
+  pages     = {3573--3577},
+  doi       = {10.21437/Interspeech.2025-2746},
+  issn      = {2958-1796},
+  abstract={Improves SSL representation learning: HuBERT and WavLM generate representations of
+  an original and a time-warped speech signal, and CTC is used to align them. The original
+  model is then fine-tuned to minimize CTC loss plus the KLD between the hard DTW and the soft
+  CTC alignments.  WER improvement is 8 percent relative but PER improvement is almost twenty
+  percent relative.}
+}
+
+@article{kaplan2020scaling,
+  title={Scaling laws for neural language models},
+  author={Kaplan, Jared and McCandlish, Sam and Henighan, Tom and Brown, Tom B and Chess, Benjamin and Child, Rewon and Gray, Scott and Radford, Alec and Wu, Jeffrey and Amodei, Dario},
+  journal={arXiv preprint arXiv:2001.08361},
+  year={2020},
+  abstract={Shows empirically that language model loss, measured in nats, drops
+  as C^-0.05 as a function of
+  training compute, D^-0.095 as a function of datasize in tokens, N^-0.076 as a function
+  of non-embedding parameters over two to nine orders of magnitude when each parameter
+  gives results not bottlenecked by the others. Optimal dff/dmodel is 1-4, optimal
+  dmodel/nlayer is 25-100, dmodel/nhead has no effect in the range 20-100.  LSTMs
+  follow the same trends up to length=100, then saturate.  Generalization from webcrawl
+  to books or Wikipedia loses a constant 0.7 nats regardless of scale.  Optimal batch
+  size is 2e8/loss^(1/0.21) regardless of model size.  Discussion notes that the compute
+  curve will cut off the data curve (won't be enough compute to process that much data)
+  when D and N both reach 10^12, C reaches 10^4 PF-days, and L reaches 1.7 nats/token,
+  speculates that this might be the true entropy of natural language}
 }
