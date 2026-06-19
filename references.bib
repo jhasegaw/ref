@@ -51991,7 +51991,7 @@ abstract={Transformer models with differential privacy are trained using Re-Atte
   speculates that this might be the true entropy of natural language}
 }
 
------------- 2026 May 20 -----------------------------------------------
+------------ 2026 June 18 -----------------------------------------------
 
 @inproceedings{li2023theoretical,
   title={A Theoretical Understanding of Shallow Vision Transformers: Learning, Generalization, and Sample complexity},
@@ -52022,3 +52022,25 @@ abstract={Transformer models with differential privacy are trained using Re-Atte
   batch size, each batch is essentially an i.i.d. draw from the underlying distribution,
   so generalization error converges to zero.}
 }
+
+------------ 2026 June 19 -----------------------------------------------
+
+@article{tao2024scaling,
+  title={Scaling laws with vocabulary: Larger models deserve larger vocabularies},
+  author={Tao, Chaofan and Liu, Qian and Dou, Longxu and Muennighoff, Niklas and Wan, Zhongwei and Luo, Ping and Lin, Min and Wong, Ngai},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={114147--114179},
+  year={2024},
+  abstract={Estimates optimal vocabulary size for a language model in three ways: (1)
+  Varies vocabulary for fixed non-vocabulary parameters, and finds Nv that minimizes loss,
+  (3) Fits the data from method 1 with a chinchilla scaling law, loss=-E + N1/Nv^a1 +
+  N2/Nnv^a2 + N3/D^a3, and finds the optimum Nv for any given Nnv and D, (3)
+  Uses Kaplan's formula C=6ND for the amount of computation necessary to reach any
+  given loss.  As vocabulary size increases, the dataset size, D, initially decreases
+  (roughly as -0.16log(V)+0.006log^2(V)) because of the increased fertility of the tokenizer,
+  but fertility decreases at best logarithmically.  As N=Nnv+Nv becomes dominated by Nv,
+  it overwhelms the decreasing D, so compute rises again.  All three methods suggest that
+  Nv=Nnv^a, where 0.83<=a<=0.86.}
+}
+
